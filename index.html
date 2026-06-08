@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kohnen Law — Three Website Designs</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="./assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Manrope",system-ui,sans-serif;background:#0b0b0d;color:#f4f0e8;line-height:1.6;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:1180px;margin:0 auto;padding:64px 26px 84px}
+    .head{text-align:center;margin-bottom:54px}
+    .logo{width:62px;border-radius:5px;margin:0 auto 22px;display:block}
+    .badge{display:inline-block;font-family:"Archivo";font-size:.72rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:#d22730;border:1px solid rgba(210,39,48,.4);padding:7px 16px;border-radius:50px;margin-bottom:20px}
+    h1{font-family:"Archivo";font-weight:900;font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.02em;line-height:1.05}
+    .head p{color:#9a978f;max-width:600px;margin:16px auto 0;font-size:1.05rem}
+    .seo{margin:26px auto 0;max-width:680px;background:rgba(244,240,232,.04);border:1px solid rgba(244,240,232,.1);border-radius:10px;padding:16px 20px;font-size:.82rem;color:#bdbab2;text-align:left}
+    .seo b{color:#f4f0e8}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#141417;border:1px solid rgba(244,240,232,.1);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,border-color .3s,box-shadow .3s}
+    .card:hover{transform:translateY(-7px);border-color:rgba(210,39,48,.5);box-shadow:0 26px 60px rgba(0,0,0,.5)}
+    .sw{height:140px;position:relative;display:flex;align-items:flex-end;padding:16px}
+    .sw b{font-family:"Archivo";font-weight:800;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;background:rgba(0,0,0,.4);padding:6px 12px;border-radius:50px;backdrop-filter:blur(4px)}
+    .sw1{background:linear-gradient(135deg,#16173c,#23264f 60%,#bd9450 170%)}
+    .sw2{background:linear-gradient(135deg,#0a1428,#16294e 55%,#c8a24a 175%)}
+    .sw3{background:linear-gradient(135deg,#0b0b0d,#1b1b1f 50%,#d22730 175%)}
+    .body{padding:24px 24px 28px;flex:1;display:flex;flex-direction:column}
+    .body h2{font-family:"Archivo";font-weight:800;font-size:1.32rem;margin-bottom:8px}
+    .body .sub{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:#d22730;font-weight:700;margin-bottom:12px}
+    .body p{color:#9a978f;font-size:.93rem;flex:1;margin-bottom:18px}
+    .meta{font-size:.78rem;color:#7a776f;margin-bottom:18px;border-top:1px solid rgba(244,240,232,.08);padding-top:14px}
+    .meta b{color:#bdbab2;font-weight:600}
+    .open{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#d22730;color:#fff;font-family:"Archivo";font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:13px 20px;border-radius:4px;transition:transform .2s,background .2s}
+    .open:hover{background:#ec3b44;transform:translateY(-2px)}
+    a{text-decoration:none;color:inherit}
+    .note{text-align:center;margin-top:46px;color:#7a776f;font-size:.88rem}
+    @media(max-width:860px){.grid{grid-template-columns:1fr;max-width:440px;margin:0 auto}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <img class="logo" src="./assets/logo.png" alt="Kohnen Law" />
+      <span class="badge">Kohnen Law &middot; Website Redesign</span>
+      <h1>Three Design Directions</h1>
+      <p>Three homepage concepts for Marc S. Kohnen, all built with the real content and assets from msklawyer.com.</p>
+      <div class="seo"><b>SEO preserved across all three:</b> identical <b>&lt;title&gt;</b>, meta description, Open Graph / Twitter tags, <b>robots: follow, index</b>, canonical to msklawyer.com, the original H1 and all section headings, and the existing practice-area link structure. Only the look &amp; feel changes.</div>
+    </div>
+
+    <div class="grid">
+      <a class="card" href="./design-1/index.html">
+        <div class="sw sw1"><b>Design 1</b></div>
+        <div class="body">
+          <div class="sub">Professional &amp; Sleek</div>
+          <h2>The Refined Firm</h2>
+          <p>Ivory, deep navy and brass with an editorial serif. Calm, premium and authoritative — sleek and confident without shouting. Built for trust.</p>
+          <div class="meta"><b>Type:</b> Fraunces + Mulish &nbsp;·&nbsp; <b>Mood:</b> Editorial / luxury</div>
+          <span class="open">Preview Design 1 &rarr;</span>
+        </div>
+      </a>
+
+      <a class="card" href="./design-2/index.html">
+        <div class="sw sw2"><b>Design 2</b></div>
+        <div class="body">
+          <div class="sub">Modernized Original</div>
+          <h2>The Upgrade</h2>
+          <p>The current msklawyer.com — same navy &amp; gold identity and same section order, rebuilt clean, fast and fully mobile-first. Familiar, just better.</p>
+          <div class="meta"><b>Type:</b> Playfair Display + Figtree &nbsp;·&nbsp; <b>Mood:</b> Classic, modernized</div>
+          <span class="open">Preview Design 2 &rarr;</span>
+        </div>
+      </a>
+
+      <a class="card" href="./design-3/index.html">
+        <div class="sw sw3"><b>Design 3</b></div>
+        <div class="body">
+          <div class="sub">Bold &amp; Cinematic</div>
+          <h2>Not Guilty</h2>
+          <p>My best shot at winning clients — near-black, bone and crimson, oversized type and motion, with the front-page acquittal as the centerpiece. Unforgettable.</p>
+          <div class="meta"><b>Type:</b> Anton + Archivo + Manrope &nbsp;·&nbsp; <b>Mood:</b> Cinematic, high-impact</div>
+          <span class="open">Preview Design 3 &rarr;</span>
+        </div>
+      </a>
+    </div>
+
+    <p class="note">Real headings, bio &amp; copy from msklawyer.com throughout. Nav links point to the live msklawyer.com pages so internal link structure and SEO stay intact. Photos, logo, badges and reviews are pulled from Marc&rsquo;s current site.</p>
+  </div>
+</body>
+</html>
