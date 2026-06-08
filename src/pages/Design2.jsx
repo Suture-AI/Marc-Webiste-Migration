@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { usePageMeta } from "../hooks/usePageMeta.js";
 import { useScrollReveal } from "../hooks/useScrollReveal.js";
-import BackToGallery from "../components/BackToGallery.jsx";
 import "../styles/design2.css";
 
 export default function Design2() {
@@ -19,8 +18,6 @@ export default function Design2() {
 
   return (
     <div className="d2" ref={root}>
-      <BackToGallery />
-
       <div className="util">
         <div className="wrap">
           <span className="left">Innocent until proven guilty — serving all of San Diego County</span>
