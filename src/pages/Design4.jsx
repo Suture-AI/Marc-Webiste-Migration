@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { usePageMeta } from "../hooks/usePageMeta.js";
 import { useScrollReveal } from "../hooks/useScrollReveal.js";
-import BackToGallery from "../components/BackToGallery.jsx";
 import "../styles/design4.css";
 
 const VERDICTS = ["NOT GUILTY", "DISMISSED", "ACQUITTED", "CHARGES DROPPED", "CASE CLOSED"];
@@ -113,8 +112,6 @@ export default function Design4() {
 
   return (
     <div className="d4" ref={root}>
-      <BackToGallery />
-
       {/* fixed parallax newsprint backdrop */}
       <div className="paperbg" aria-hidden="true" />
       <img className="clip-float a" src="/assets/group-70.png" alt="" aria-hidden="true" />
