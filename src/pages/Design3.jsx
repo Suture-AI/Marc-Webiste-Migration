@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { usePageMeta } from "../hooks/usePageMeta.js";
 import { useScrollReveal } from "../hooks/useScrollReveal.js";
-import BackToGallery from "../components/BackToGallery.jsx";
 import "../styles/design3.css";
 
 const MARQUEE = [
@@ -48,8 +47,6 @@ export default function Design3() {
 
   return (
     <div className="d3" ref={root}>
-      <BackToGallery />
-
       <div className="callbar">
         Arrested in San Diego? Call now — <a href="tel:6193982500">(619) 398-2500</a> · Free,
         confidential consultation, 24/7
