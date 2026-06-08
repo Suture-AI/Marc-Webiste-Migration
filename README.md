@@ -2,7 +2,7 @@
 
 Four homepage design concepts for **The Law Office of Marc S. Kohnen** (criminal defense attorney, San Diego, CA), built in **React + Vite** from the content and assets of [msklawyer.com](https://msklawyer.com).
 
-## Designs
+## Designs 
 
 The app is a single React project. A gallery at `/` links to all four homepages, each on its own route:
 
