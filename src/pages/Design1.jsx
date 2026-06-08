@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { usePageMeta } from "../hooks/usePageMeta.js";
 import { useScrollReveal } from "../hooks/useScrollReveal.js";
-import BackToGallery from "../components/BackToGallery.jsx";
 import "../styles/design1.css";
 
 export default function Design1() {
@@ -19,8 +18,6 @@ export default function Design1() {
 
   return (
     <div className="d1" ref={root}>
-      <BackToGallery />
-
       <div className="topbar">
         <div className="wrap">
           <span className="hideSm">The Law Office of Marc S. Kohnen · San Diego, CA</span>
