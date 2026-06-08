@@ -67,7 +67,7 @@ export default function Design2() {
             </p>
             <div className="hero-cta">
               <a className="btn btn-gold" href="tel:6193982500">Call (619) 398-2500</a>
-              <a className="btn btn-white" href="https://msklawyer.com/contact-marc/">Free Consultation</a>
+              <a className="btn btn-white" href="https://msklawyer.com/contact-marc/">Schedule Consultation</a>
             </div>
             <div className="stats">
               <div className="s"><b>13+</b><span>Years Experience</span></div>

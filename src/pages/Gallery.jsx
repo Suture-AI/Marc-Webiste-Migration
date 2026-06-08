@@ -36,11 +36,11 @@ const DESIGNS = [
   {
     to: "/design-4",
     n: "Design 4",
-    sub: "The Kinetic Edition",
-    title: "Front Page",
+    sub: "The Splash",
+    title: "The Right Defense",
     blurb:
-      "A living newspaper. Parallax newsprint, a kinetic word-swapping headline and counter-scrolling tickers — Design 3's DNA pushed as far as it goes.",
-    meta: "Bebas Neue + Archivo + Space Grotesk · Kinetic, editorial",
+      "A cinematic full-bleed splash: a real San Diego dusk-skyline photograph graded to brand navy, a framed portrait of Marc, an elegant serif headline and a center-crest top menu. Premium and unforgettable.",
+    meta: "Playfair Display + Archivo + Mulish · Cinematic splash",
     sw: "sw4",
   },
 ];

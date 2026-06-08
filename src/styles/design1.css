@@ -83,7 +83,7 @@
     align-items: center;
     justify-content: space-between;
     height: 78px;
-    gap: 24px;
+    gap: 18px;
   }
   & .brand {
     display: flex;
@@ -112,7 +112,7 @@
   }
   & .menu {
     display: flex;
-    gap: 30px;
+    gap: 22px;
     align-items: center;
     font-size: 0.82rem;
     font-weight: 600;
@@ -174,6 +174,78 @@
   & .btn-ghost:hover {
     background: var(--ink);
     color: #fff;
+  }
+
+  /* ===== header CTA buttons (refined) ===== */
+  & .btn svg {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  & .btn-call svg path {
+    fill: currentColor;
+    stroke: none;
+  }
+  /* shared CTA label treatment so both buttons read as a matched pair */
+  & .btn-call,
+  & .btn-cta {
+    text-transform: uppercase;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    flex: none;
+  }
+  /* secondary: outlined "Call Marc Now" */
+  & .btn-call {
+    background: transparent;
+    color: var(--ink);
+    border: 1.5px solid rgba(22, 23, 60, 0.28);
+    padding: 11px 20px;
+  }
+  & .btn-call::after { content: none; } /* cancel the .menu link underline */
+  & .btn-call:hover {
+    border-color: var(--ink);
+    background: var(--ink);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  /* primary: gold-filled "Schedule Consultation" */
+  & .btn-cta {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(135deg, var(--brass-2) 0%, var(--brass) 55%, #835f29 100%);
+    box-shadow: 0 10px 24px -12px rgba(155, 115, 51, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    padding: 12px 24px;
+  }
+  /* sweep of light on hover */
+  & .btn-cta::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-18deg);
+    transition: left 0.6s ease;
+  }
+  & .btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px -12px rgba(155, 115, 51, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  }
+  & .btn-cta:hover::after {
+    left: 130%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    & .btn-cta::after { display: none; }
   }
   & .burger {
     display: none;
