@@ -1,224 +1,165 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { usePageMeta } from "../hooks/usePageMeta.js";
 import { useScrollReveal } from "../hooks/useScrollReveal.js";
-import BackToGallery from "../components/BackToGallery.jsx";
 import "../styles/design4.css";
 
-const VERDICTS = ["NOT GUILTY", "DISMISSED", "ACQUITTED", "CHARGES DROPPED", "CASE CLOSED"];
-
-const CRAWL_TOP = [
-  "DUI & DWI Defense", "Drug Crimes", "Homicide", "Sex Crimes", "White Collar",
-  "Domestic Violence", "Federal Defense", "Assault", "Theft", "Weapons Charges", "Juvenile Crimes",
+const PRACTICE = [
+  ["01", "DUI & DWI", "Field-sobriety challenges, license hearings and hard negotiation to limit the impact on your life.", "https://msklawyer.com/san-diego-dui-attorney/"],
+  ["02", "Drug Crimes", "Possession to trafficking — a strategy built to protect your record and your future.", "https://msklawyer.com/san-diego-criminal-defense-lawyer/drug-crime-attorney/"],
+  ["03", "White Collar", "Fraud, embezzlement and federal exposure, handled with discretion and precision.", "https://msklawyer.com/white-collar/"],
+  ["04", "Assault & Violence", "Aggressive defense against assault and violent-crime allegations.", "https://msklawyer.com/assault/"],
+  ["05", "Homicide", "The highest stakes demand the most relentless, meticulous defense.", "https://msklawyer.com/homicide/"],
+  ["06", "Sex Crimes", "Sensitive, private and tenacious representation when your reputation is on the line.", "https://msklawyer.com/sex-crimes/"],
+  ["07", "Domestic Violence", "Protecting your rights, your family and your freedom.", "https://msklawyer.com/areas-of-practice/"],
+  ["08", "Juvenile Crimes", "Protecting young clients — and the futures ahead of them.", "https://msklawyer.com/juvenile-crimes/"],
 ];
-const CRAWL_BOTTOM = [
-  "Front-Page Acquittals", "13+ Years in San Diego Courts", "5.0★ Yelp & Google",
-  "Available 24 / 7", "Free Confidential Consultation", "Innocent Until Proven Guilty",
-  "Thousands of Cases Defended",
-];
-
-function CrawlTrack({ items, kind }) {
-  const row = (
-    <span className="crawl-track" aria-hidden="false">
-      {items.map((t, i) => (
-        <span key={i}>
-          <span className="star">{kind === "top" ? "■" : "★"}</span> {t}
-        </span>
-      ))}
-    </span>
-  );
-  // duplicate the track so the -50% / 0% loop is seamless
-  return (
-    <>
-      {row}
-      <span className="crawl-track" aria-hidden="true">
-        {items.map((t, i) => (
-          <span key={i}>
-            <span className="star">{kind === "top" ? "■" : "★"}</span> {t}
-          </span>
-        ))}
-      </span>
-    </>
-  );
-}
 
 export default function Design4() {
   const root = useRef(null);
   const [open, setOpen] = useState(false);
-  const [vIdx, setVIdx] = useState(0);
-  useScrollReveal(root, { groups: 3, stagger: 90 });
+  useScrollReveal(root, { groups: 4, stagger: 80 });
   usePageMeta({
     title: "Criminal Defense Attorney In San Diego, CA - Marc S. Kohnen",
     description:
       "Looking for a trusted criminal defense attorney in San Diego, CA? Marc Kohnen, an experienced criminal defense lawyer in San Diego, fights to protect your rights.",
-    themeColor: "#060c19",
-    bodyBg: "#0a1428",
+    themeColor: "#05080f",
+    bodyBg: "#05080f",
   });
-
-  // Rotating verdict headline
-  useEffect(() => {
-    const id = setInterval(() => setVIdx((i) => (i + 1) % VERDICTS.length), 2400);
-    return () => clearInterval(id);
-  }, []);
-
-  // Mouse-driven parallax on the newsprint layers
-  useEffect(() => {
-    const el = root.current;
-    if (!el || window.matchMedia("(pointer: coarse)").matches) return;
-    let raf = 0;
-    const onMove = (e) => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const mx = e.clientX / window.innerWidth - 0.5;
-        const my = e.clientY / window.innerHeight - 0.5;
-        el.style.setProperty("--mx", mx.toFixed(3));
-        el.style.setProperty("--my", my.toFixed(3));
-      });
-    };
-    window.addEventListener("mousemove", onMove, { passive: true });
-    return () => {
-      window.removeEventListener("mousemove", onMove);
-      cancelAnimationFrame(raf);
-    };
-  }, []);
-
-  // Scroll-velocity skew on the breaking-news crawls
-  useEffect(() => {
-    const el = root.current;
-    if (!el) return;
-    let current = 0,
-      target = 0,
-      last = window.scrollY,
-      raf = 0;
-    const onScroll = () => {
-      const y = window.scrollY;
-      const d = y - last;
-      last = y;
-      target = Math.max(-7, Math.min(7, d * 0.4));
-    };
-    const loop = () => {
-      target *= 0.9;
-      current += (target - current) * 0.2;
-      el.style.setProperty("--vskew", `${current.toFixed(2)}deg`);
-      raf = requestAnimationFrame(loop);
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    raf = requestAnimationFrame(loop);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(raf);
-    };
-  }, []);
-
   const close = () => setOpen(false);
 
   return (
     <div className="d4" ref={root}>
-      <BackToGallery />
-
-      {/* fixed parallax newsprint backdrop */}
-      <div className="paperbg" aria-hidden="true" />
-      <img className="clip-float a" src="/assets/group-70.png" alt="" aria-hidden="true" />
-      <img className="clip-float b" src="/assets/untitled33.png" alt="" aria-hidden="true" />
+      <div className="citybg" aria-hidden="true" />
 
       <div className="shell">
+        {/* ===== top bar with center crest ===== */}
         <header className="bar">
-          <div className="wrap nav">
-            <a className="brand" href="https://msklawyer.com/">
-              <img src="/assets/logo.png" alt="Kohnen Law logo" />
-              <b>KOHNEN<small>LAW</small></b>
-            </a>
-            <nav className={`menu${open ? " open" : ""}`} onClick={close}>
-              <a href="https://msklawyer.com/">Home</a>
-              <a href="https://msklawyer.com/areas-of-practice/">Practice Areas</a>
-              <a href="https://msklawyer.com/meet-marc/">Meet Marc</a>
-              <a href="https://msklawyer.com/result/">Results</a>
-              <a href="https://msklawyer.com/blog/">Media</a>
-              <a href="https://msklawyer.com/faq/">FAQ</a>
-              <a href="https://msklawyer.com/contact-marc/">Contact</a>
-            </nav>
-            <a className="btn btn-gold desktop" href="tel:6193982500">Call Marc Now</a>
+          <div className="wrap navrow">
             <button className="burger" aria-label="Menu" onClick={() => setOpen((v) => !v)}>
               <span></span><span></span><span></span>
             </button>
+
+            <div className={`menu${open ? " open" : ""}`} onClick={close}>
+              <nav className="nav left">
+                <a href="https://msklawyer.com/meet-marc/">About</a>
+                <a href="https://msklawyer.com/areas-of-practice/">Practice Areas</a>
+                <a href="https://msklawyer.com/result/">Case Results</a>
+                <a href="https://msklawyer.com/blog/">Media</a>
+              </nav>
+              <div className="right">
+                <nav className="nav right">
+                  <a href="https://msklawyer.com/faq/">FAQ</a>
+                  <a href="https://msklawyer.com/contact-marc/">Contact</a>
+                </nav>
+                <a className="callus" href="tel:6193982500">
+                  Call us today<b>(619) 398-2500</b>
+                </a>
+              </div>
+            </div>
+
+            <a className="crest" href="https://msklawyer.com/">
+              <img src="/assets/logo.png" alt="Kohnen Law logo" />
+              <b>KOHNEN</b>
+              <small>LAW</small>
+            </a>
+
+            <a className="callbtn" href="tel:6193982500">Call</a>
           </div>
         </header>
 
-        {/* masthead nameplate */}
-        <div className="wrap">
-          <div className="masthead">
-            <div className="meta">
-              <span>San Diego, California</span>
-              <span>Vol. XIII · The People&rsquo;s Defense</span>
-              <span>Free Consultation · 24/7</span>
-            </div>
-            <div className="nameplate">The Kohnen <em>Tribune</em></div>
-            <div className="sub">San Diego Criminal Defense · Est. Putting Your Freedom First</div>
-          </div>
-        </div>
-
-        {/* HERO */}
+        {/* ===== HERO SPLASH (full-bleed San Diego dusk skyline) ===== */}
         <section className="hero">
-          <div className="wrap">
-            <div className="reveal">
-              <span className="kicker"><span className="blink" /> Breaking · The headline every client wants</span>
-            </div>
-            <div className="headline reveal" aria-hidden="true">
-              <span className="static">The verdict:</span>
-              <span className="rotator">
-                <span className={`word${vIdx % 2 === 1 ? " solid" : ""}`} key={vIdx}>
-                  {VERDICTS[vIdx]}
-                </span>
-              </span>
-            </div>
-            <div className="lead reveal">
+          <div className="heroshot" aria-hidden="true">
+            <div className="photo" />
+            <div className="grade" />
+            <div className="vignette" />
+          </div>
+
+          <div className="wrap herogrid">
+            <figure className="figure reveal">
+              <div className="frame">
+                <img
+                  src="/assets/marc-portrait.jpg"
+                  alt="San Diego criminal defense attorney Marc S. Kohnen reviewing a case with a client"
+                />
+              </div>
+              <figcaption className="nameplate">
+                <b>Marc S. Kohnen</b>
+                <span>Criminal Defense Attorney · San Diego, CA</span>
+              </figcaption>
+            </figure>
+
+            <div className="copy reveal">
+              <span className="eyebrow">San Diego Criminal Defense Attorney</span>
+              <div className="display" aria-hidden="true">
+                The Right Defense
+                <span className="line2">Makes all the difference</span>
+              </div>
               <h1 className="real">
                 Marc Kohnen — the leading <b>Criminal Defense Attorney</b> in San Diego, CA. Putting
                 your freedom, liberty and peace of mind first.
               </h1>
-              <p className="l">
-                Everyone deserves the right to defend themselves. Marc puts 13+ years of experience
-                into practice and prepares the best defense — saving you significant jail time and
-                thousands of dollars you might spend otherwise.
-              </p>
               <div className="hero-cta">
-                <a className="btn btn-gold" href="tel:6193982500">Call (619) 398-2500</a>
-                <a className="btn btn-ghost" href="https://msklawyer.com/contact-marc/">Free Case Review</a>
+                <a className="btn btn-gold" href="https://msklawyer.com/contact-marc/">Free Case Review</a>
+                <a className="btn btn-ghost" href="tel:6193982500">Call (619) 398-2500</a>
               </div>
-              <p className="asseen">
-                As seen on the <b>San Diego Union-Tribune</b> front page — a real acquittal.
-              </p>
+              <div className="trust">
+                <span className="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span><b>5.0</b> on Yelp &amp; Google</span>
+                <span className="dot">·</span>
+                <span><b>13+</b> Years Defending the Accused</span>
+              </div>
             </div>
           </div>
+
+          <a className="scrollcue" href="#defend" aria-label="Scroll to practice areas">
+            <span>Explore</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0l-6-6m6 6l6-6" /></svg>
+          </a>
         </section>
 
-        {/* KINETIC CRAWLS */}
-        <div className="crawl">
-          <div className="crawl-row solid"><CrawlTrack items={CRAWL_TOP} kind="top" /></div>
-          <div className="crawl-row outline"><CrawlTrack items={CRAWL_BOTTOM} kind="bottom" /></div>
-        </div>
-
-        {/* BY THE NUMBERS */}
-        <section className="block">
+        {/* ===== PRACTICE AREAS (services cards) ===== */}
+        <section className="block services" id="defend">
           <div className="wrap">
-            <div className="sec-label">By the numbers</div>
-            <div className="numbers">
-              <div className="n reveal"><b>13+</b><span>Years Defending</span></div>
-              <div className="n reveal"><b>5.0★</b><span>Yelp &amp; Google</span></div>
-              <div className="n reveal"><b>1000s</b><span>Cases Handled</span></div>
-              <div className="n reveal"><b>24/7</b><span>Available to You</span></div>
+            <div className="sec-head">
+              <span className="sec-rule">Comprehensive Criminal Defense</span>
+              <div className="sec-title">What we defend</div>
+              <p>From a first-time charge to the most serious felony, every case gets a meticulous, individually-built defense.</p>
+            </div>
+            <div className="cards">
+              {PRACTICE.map(([no, title, desc, href]) => (
+                <a className="card reveal" href={href} key={no}>
+                  <div className="no">{no}</div>
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
+                  <span className="more">Defend this &rarr;</span>
+                </a>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* FRONT-PAGE FEATURE */}
+        {/* ===== QUOTE BAND ===== */}
+        <section className="block quoteband">
+          <div className="wrap">
+            <div className="q">
+              &ldquo;The prosecutor was trying to pin 21 counts and 10 years on my brother. Marc got
+              it down to <span>3 counts and 3 years.</span> Thank you for the wonderful work you were
+              able to do.&rdquo;
+            </div>
+            <div className="who">Teena E. · Verified Review</div>
+          </div>
+        </section>
+
+        {/* ===== FRONT-PAGE FEATURE ===== */}
         <section className="block feature">
           <div className="wrap fgrid">
             <div className="reveal">
-              <div className="sec-label">The exhibit</div>
-              <h2>Ask any other attorney if they&rsquo;ve ever put a <span className="hi">NOT&nbsp;GUILTY</span> verdict on the front page.</h2>
-              <p className="pullquote">Most lawyers promise the world. Marc has the headlines to prove it.</p>
-              <p>Including a San Diego Union-Tribune front-page acquittal. When your freedom is on the line, experience and results are everything — and Marc helps you avoid a permanent record while keeping your reputation intact.</p>
-              <a className="btn btn-gold" href="https://msklawyer.com/result/" style={{ marginTop: 14 }}>See the Results</a>
+              <span className="sec-rule">Providing Legal Insight Like Never Before</span>
+              <h2>Ask any other attorney if they&rsquo;ve ever put a <span className="hi">not&nbsp;guilty</span> verdict on the front page.</h2>
+              <p>Most lawyers promise the world. Marc has the headlines to prove it — including a San Diego Union-Tribune front-page acquittal.</p>
+              <p>When your freedom is on the line, experience and results are everything. With Marc by your side, you avoid a permanent criminal record and keep your reputation intact.</p>
+              <a className="btn btn-gold" href="https://msklawyer.com/result/" style={{ marginTop: 8 }}>See the Results</a>
             </div>
             <div className="clip reveal">
               <span className="tape">Front Page</span>
@@ -227,64 +168,40 @@ export default function Design4() {
           </div>
         </section>
 
-        {/* SECTIONS INDEX (practice areas) */}
-        <section className="block index">
+        {/* ===== BY THE NUMBERS ===== */}
+        <section className="block">
           <div className="wrap">
-            <div className="sec-label">Inside this edition</div>
-            <div className="sec-title">What we defend.</div>
-            <div className="list" style={{ marginTop: 40 }}>
-              {[
-                ["Section A", "DUI & DWI", "pg. A1", "https://msklawyer.com/san-diego-dui-attorney/"],
-                ["Section B", "Drug Crimes", "pg. B2", "https://msklawyer.com/san-diego-criminal-defense-lawyer/drug-crime-attorney/"],
-                ["Section C", "White Collar", "pg. C1", "https://msklawyer.com/white-collar/"],
-                ["Section D", "Assault & Violent Crimes", "pg. D3", "https://msklawyer.com/assault/"],
-                ["Section E", "Homicide", "pg. E1", "https://msklawyer.com/homicide/"],
-                ["Section F", "Sex Crimes", "pg. F2", "https://msklawyer.com/sex-crimes/"],
-                ["Section G", "Juvenile Crimes", "pg. G1", "https://msklawyer.com/juvenile-crimes/"],
-                ["Section H", "And more →", "All areas", "https://msklawyer.com/areas-of-practice/"],
-              ].map(([sec, title, pg, href]) => (
-                <a className="irow reveal" href={href} key={sec}>
-                  <div className="sec">{sec}</div>
-                  <h3>{title}</h3>
-                  <div className="leader" />
-                  <div className="pg">{pg}</div>
-                </a>
-              ))}
+            <div className="sec-head">
+              <span className="sec-rule">By the Numbers</span>
+              <div className="sec-title">A record that speaks</div>
+            </div>
+            <div className="numbers">
+              <div className="n reveal"><b>13+</b><span>Years Defending</span></div>
+              <div className="n reveal"><b>5.0&#9733;</b><span>Yelp &amp; Google</span></div>
+              <div className="n reveal"><b>1000s</b><span>Cases Handled</span></div>
+              <div className="n reveal"><b>24/7</b><span>Available to You</span></div>
             </div>
           </div>
         </section>
 
-        {/* LETTERS / TESTIMONY */}
-        <section className="block letters">
-          <div className="wrap">
-            <div className="sec-label">Letters to the editor</div>
-            <div className="sec-title">In their words.</div>
-            <div className="lgrid" style={{ marginTop: 40 }}>
-              <div className="letter reveal"><div className="stars">★★★★★</div><p>&ldquo;Amazing lawyer! He saved my case after another incompetent lawyer almost ruined it. He is very diligent, has great attention to detail! Thank you Marc!&rdquo;</p><div className="who">Aston O.<small>Yelp Review</small></div></div>
-              <div className="letter reveal"><div className="stars">★★★★★</div><p>&ldquo;The prosecutor was trying to pin 21 counts and 10 years on my brother. Marc got it down to 3 counts and 3 years. Thank you thank you thank you for the wonderful work.&rdquo;</p><div className="who">Teena E.<small>Verified Review</small></div></div>
-              <div className="letter reveal"><div className="stars">★★★★★</div><p>&ldquo;Please don&rsquo;t go anywhere else, call Marc Kohnen. He gets right back to you and is so efficient! As of now — my son is sober, completed his education, and is flourishing.&rdquo;</p><div className="who">Patti M.<small>Google Review</small></div></div>
-            </div>
-          </div>
-        </section>
-
-        {/* BYLINE / MEET MARC */}
-        <section className="block byline">
+        {/* ===== MEET MARC ===== */}
+        <section className="block meet">
           <div className="wrap fgrid">
             <div className="ph reveal">
               <img src="/assets/untitled33.png" alt="Marc S. Kohnen working at his San Diego criminal defense law office" />
-              <div className="cap">Marc S. Kohnen · The Law Office of Marc S. Kohnen</div>
+              <div className="badge"><b>13+</b>Years in San Diego courts</div>
             </div>
             <div className="reveal">
-              <div className="sec-label">The byline</div>
+              <span className="sec-rule">Meet Marc</span>
               <h2>A relentless advocate who actually reads your file.</h2>
               <p>As a highly-acclaimed criminal defense attorney in San Diego, Marc has defended highly complex criminal cases over the years — even representing Hollywood celebrities. He believes everyone deserves the right to defend themselves.</p>
               <p>Carrying glowing recommendations and 5-star Yelp reviews, Marc understands the emotionally rattling experience you&rsquo;re going through, and is here to deliver the high-quality results that earned his reputation.</p>
-              <a className="btn btn-gold" href="https://msklawyer.com/meet-marc/" style={{ marginTop: 8 }}>Meet Marc Kohnen</a>
+              <a className="btn btn-ghost" href="https://msklawyer.com/meet-marc/" style={{ marginTop: 8 }}>Meet Marc Kohnen</a>
             </div>
           </div>
         </section>
 
-        {/* BADGES */}
+        {/* ===== BADGES ===== */}
         <div className="creds">
           <div className="wrap">
             <img src="/assets/badge-71.png" alt="Super Lawyers" />
@@ -296,20 +213,20 @@ export default function Design4() {
           </div>
         </div>
 
-        {/* BIG CTA */}
+        {/* ===== BIG CTA ===== */}
         <section className="block bigcta">
           <div className="wrap">
-            <div className="big reveal">Don&rsquo;t wait. <em>Make headlines.</em></div>
-            <p className="reveal">The sooner Marc is on your side, the more he can do. Get a free, confidential consultation today and let Marc become your voice in the court.</p>
-            <div className="hero-cta reveal" style={{ justifyContent: "center" }}>
+            <div className="sec-title reveal">Don&rsquo;t wait. <em>Get Marc on your side.</em></div>
+            <p className="reveal">The sooner Marc is on your case, the more he can do. Get a free, confidential consultation today and let Marc become your voice in the court.</p>
+            <div className="hero-cta reveal">
               <a className="btn btn-gold" href="tel:6193982500">Call (619) 398-2500</a>
               <a className="btn btn-ghost" href="https://msklawyer.com/contact-marc/">Contact Marc</a>
             </div>
           </div>
         </section>
 
-        {/* COLOPHON */}
-        <footer className="colophon">
+        {/* ===== FOOTER ===== */}
+        <footer className="site">
           <div className="wrap">
             <div className="fgridf">
               <div>
@@ -355,6 +272,11 @@ export default function Design4() {
               be deemed or considered legal advice. None of the information on this website, nor the
               access of this website shall create an attorney client relationship. If you have
               questions about a case, please contact our law office directly.
+            </p>
+            <p className="credit">
+              San Diego skyline photograph by{" "}
+              <a href="https://www.flickr.com/photos/russellstreet/32963587492/" rel="nofollow">russellstreet</a>,{" "}
+              <a href="https://creativecommons.org/licenses/by-sa/2.0" rel="nofollow license">CC BY-SA 2.0</a>.
             </p>
           </div>
         </footer>
