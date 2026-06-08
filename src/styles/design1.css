@@ -112,6 +112,7 @@
   }
   & .menu {
     display: flex;
+    flex-wrap: nowrap;
     gap: 22px;
     align-items: center;
     font-size: 0.82rem;
@@ -123,6 +124,7 @@
     position: relative;
     padding: 6px 0;
     color: var(--ink-2);
+    white-space: nowrap;
   }
   & .menu a::after {
     content: "";
