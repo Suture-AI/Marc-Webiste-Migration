@@ -1,6 +1,22 @@
 # Dependencies
 node_modules/
 
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Vite cache
+.vite/
+
+# Screenshots / verification artifacts
+.shots/
+
+# Environment
+.env
+.env.*
+!.env.example
+
 # Local tooling / editor
 .claude/
 .vscode/
