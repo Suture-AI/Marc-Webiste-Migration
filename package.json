@@ -1,0 +1,23 @@
+{
+  "name": "kohnen-law",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The Law Office of Marc S. Kohnen — four homepage design directions, built in React.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5173"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "postcss": "^8.4.49",
+    "postcss-nested": "^7.0.2",
+    "vite": "^5.4.11"
+  }
+}
