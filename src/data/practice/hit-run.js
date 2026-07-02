@@ -1,0 +1,156 @@
+/* Copy migrated verbatim (lightly proofed) from msklawyer.com/hit-run/ */
+export default {
+  key: "hit-run",
+  metaTitle: "Hit-and-Run Defense Lawyer in San Diego | MSK Lawyer",
+  metaDescription:
+    "Need a hit-and-run defense lawyer in San Diego? Marc Kohnen has a proven record defending hit‑and‑run criminal cases—call today for a fierce, skilled defense.",
+  h1: "Hit and Run Defense Lawyer in San Diego",
+  sub: "Accused of leaving the scene? Act fast — the right defense can protect your license, your record and your freedom.",
+  sections: [
+    {
+      paras: [
+        "If you're facing hit and run charges in San Diego, it's crucial to understand the legal implications and options for your defense. A hit and run conviction in California can lead to severe penalties, from fines and jail time to license suspension.",
+        "Hiring an experienced hit and run defense lawyer in San Diego can significantly impact the outcome of your case, helping you navigate the complexities of the legal system and protecting your rights.",
+      ],
+      image: {
+        src: "/assets/photos/marc-kohnen-courthouse-hallway-not-guilty.jpg",
+        alt: "San Diego criminal defense attorney Marc Kohnen leaving court after winning a not-guilty verdict",
+        caption: "Marc Kohnen leaving court after a NOT GUILTY verdict",
+      },
+    },
+    {
+      h2: "Understanding Hit and Run Laws in California",
+      paras: [
+        "California law requires all drivers involved in an accident to remain at the scene, provide personal information, and offer aid to the injured. Fleeing the accident scene without fulfilling these obligations is a serious offense under California Vehicle Code sections VC 20001 (for injury-related accidents) and VC 20002 (for property damage only). Depending on the nature of the incident, hit and run charges may be classified as either a misdemeanor or a felony, with different penalties associated with each.",
+      ],
+    },
+    { h2: "Frequently Asked Questions" },
+    {
+      h3: "What should I do if I'm accused of a hit and run in San Diego?",
+      paras: [
+        "If you're accused of a hit and run, avoid discussing the incident with anyone except your attorney. Contacting an experienced hit and run defense lawyer in San Diego immediately is crucial, as they can guide you on the best course of action to protect your rights.",
+      ],
+    },
+    {
+      h3: "What's the difference between misdemeanor and felony hit and run charges?",
+      paras: [
+        "In California, hit and run charges involving only property damage are generally classified as misdemeanors, with penalties including fines, potential jail time, and restitution. However, if the incident involved bodily injury or death, it can be charged as a felony, which carries harsher penalties, including prison time and larger fines.",
+      ],
+    },
+    {
+      h3: "Can I still be charged with a hit and run if I wasn't at fault in the accident?",
+      paras: [
+        "Yes. In California, leaving the scene of an accident without providing your information or assisting the injured can lead to hit and run charges, regardless of fault. This is why it's essential to remain at the scene, exchange information, and provide aid if needed.",
+      ],
+    },
+    {
+      h3: "What are the penalties for a misdemeanor hit and run in San Diego?",
+      paras: [
+        "Penalties for a misdemeanor hit and run can include up to 6 months in jail, fines of up to $1,000, potential loss of your driver's license, and restitution for any property damage. A skilled defense attorney may be able to reduce these penalties or negotiate alternative sentencing options.",
+      ],
+    },
+    {
+      h3: "How can a hit and run defense lawyer help me with my case?",
+      paras: [
+        "A hit and run defense attorney in San Diego can help in many ways, from gathering evidence and interviewing witnesses to negotiating with prosecutors on your behalf. They can also build a strong defense strategy, such as proving mistaken identity, lack of awareness, or legal exceptions like seeking medical help.",
+      ],
+    },
+    {
+      h3: "Can I fight a hit and run charge if I wasn't aware I caused damage?",
+      paras: [
+        "Yes, lack of awareness is a valid defense in some cases. If you genuinely did not know you were involved in an accident or caused damage, your attorney can work to prove this, which may help to reduce or dismiss charges.",
+      ],
+    },
+    {
+      h3: "What happens if I'm convicted of a felony hit and run?",
+      paras: [
+        "A felony hit and run conviction can result in up to 4 years in prison, fines up to $10,000, and other penalties such as probation, restitution payments, and loss of driving privileges. Convictions can also make you liable for civil lawsuits from injured parties.",
+      ],
+    },
+    {
+      h3: "Is it possible to get a hit and run charge dismissed?",
+      paras: [
+        "In some cases, hit and run charges can be dismissed, especially if you have a strong defense, such as evidence of stopping to help, mistaken identity, or paying restitution. An experienced defense lawyer will evaluate the specifics of your case to determine the best strategy.",
+      ],
+    },
+    {
+      h3: "Can I be charged with a hit and run if I left to get medical help?",
+      paras: [
+        "Yes, but California law provides an exception allowing you to leave the scene temporarily to seek medical assistance if needed. A defense attorney can help demonstrate that your actions were legally justified.",
+      ],
+    },
+    {
+      h3: "How soon should I contact a lawyer after a hit and run incident?",
+      paras: [
+        "It's best to contact a hit and run lawyer in San Diego as soon as possible after the incident. Early legal guidance can make a substantial difference, helping you avoid missteps that could negatively impact your case.",
+      ],
+    },
+    {
+      h2: "Types of Hit and Run Charges",
+      h3: "Hit and Run Involving Bodily Injury or Fatality (VC 20001)",
+      paras: [
+        "Under VC 20001, if an accident results in injury or death, leaving the scene can result in severe felony charges. This carries the potential for lengthy prison time, substantial fines, and loss of driving privileges. Even if you were not at fault for the accident, failing to remain at the scene and assist the injured can lead to criminal prosecution.",
+      ],
+    },
+    {
+      h3: "Hit and Run Involving Property Damage (VC 20002)",
+      paras: [
+        "Accidents that involve property damage only, such as damage to another vehicle or property, are generally charged as misdemeanors. Drivers are still legally required to share their name, license, and insurance details with the other party and to report the incident to law enforcement. In cases of misdemeanor hit and run, penalties can include jail time, fines, and possible restitution payments.",
+      ],
+    },
+    {
+      h2: "Accidents Related to Property Damage vs. Bodily Injury",
+      h3: "Potential Penalties for Hit and Run Convictions",
+      paras: [
+        "The severity of hit and run penalties depends on factors such as injury extent, awareness of the accident, and past driving history. A hit and run defense attorney in San Diego can help reduce or avoid penalties by building a robust defense strategy.",
+      ],
+      list: [
+        "Misdemeanor Hit and Run Penalties: Up to 6 months in county jail, fines up to $1,000, potential restitution payments, and possible loss of driving privileges.",
+        "Felony Hit and Run Penalties: Up to 4 years in state prison, fines up to $10,000, prolonged probation, restitution payments, and loss of driving privileges. Additionally, felony convictions may increase the likelihood of civil lawsuits from injured parties or family members of victims.",
+      ],
+    },
+    {
+      h2: "Effective Defense Strategies for Hit and Run Charges",
+      paras: [
+        "Defending a hit and run case effectively requires thorough legal knowledge and strategy. At The Law Office of Marc S. Kohnen, we understand each case is unique and develop personalized defense plans. Here are common defenses we use:",
+      ],
+      list: [
+        "Proof of Assistance: If you stopped to help or called emergency services, we'll present this evidence to counter claims of fleeing the scene.",
+        "Mistaken Identity: We address false accusations and cases of mistaken identity, showing evidence that you were not the driver involved.",
+        "Medical Emergency Exception: California law allows leaving the scene temporarily to seek medical help. If this was the case, we build our defense around this legal obligation.",
+        "Restitution for Property Damage: For cases involving property damage, making restitution payments can sometimes lead to dismissed charges. We present evidence of your efforts to make amends, which can positively impact your case.",
+      ],
+    },
+    {
+      h2: "Penalties for Hit and Run Crimes",
+      paras: [
+        "Several factors affect how the judges hand out penalties for a hit-and-run charge.",
+        "Mainly, it depends upon the injuries or property damage, whether you were aware of the damage, and other case specifications.",
+        "Above all, the legal counsel you hire to defend your case can make all the visible difference.",
+        "If you've been accused of a misdemeanor hit and run, then you can face up to six months of jail time and a fine of up to $1,000. The jury can also ask you to pay restitution.",
+        "The worst possible scenario is ending up losing your driving privilege along with losing your driver's license if found guilty.",
+        "If convicted of a felony hit and run, you can face a 4-year prison sentence and a fine of up to $10,000.",
+        "It can also lead to longer probation periods with strict rules to follow. Additional restitution payments and loss of driving freedom also outline felony hit and run charge penalties.",
+        "All in all, a conviction can also increase your chances of facing a lawsuit. The lawsuit can be filed either by the injured party or family members of those killed in the accident.",
+      ],
+    },
+    {
+      h2: "What Defenses Are Available for a Hit and Run Charge?",
+      paras: [
+        "If you've been thinking of defending your case alone, make no mistake: the stakes are higher than simply understanding how the California Vehicle Code works. Here, hiring the best hit-and-run lawyers in San Diego can provide suitable results.",
+        "At The Law Office of Marc S. Kohnen, we realize each case is unique. That's why we don't adopt a one-size-fits-all approach. Instead, we explore each option that can help build a strong defense. These options can include proving you stopped and rendered assistance following an accident.",
+        "Since false accusations are frequently coupled with hit and run cases, we also demonstrate cases of mistaken identities to prove your innocence.",
+        "Besides that, it's allowed to leave the accident scene to acquire help in case of medical assistance. So, we build our defense around the fact that it was a legal obligation for you to leave the crime scene.",
+        "In cases where a compromise is possible through repayment for property damage, we ensure providing the court evidence that you did pay the restitution amount. In turn, this can lead to dismissing the criminal charges.",
+      ],
+    },
+    {
+      h2: "Book an Initial Consultation with a Hit and Run Defense Attorney",
+      paras: [
+        "The social stigma involved and the fear of losing driving benefits are enough to render anyone into making rash decisions. But it's always advisable to contact a reliable hit-and-run lawyer in San Diego without delay.",
+        "Meeting an experienced defense attorney doesn't only help in evaluating your case options, but it also helps relieve you with the feeling of guilt. We'll assess your case specifics in great detail and help you navigate through the complicated legal technicalities.",
+        "Contact us today for an initial, no-obligation consultation.",
+      ],
+    },
+  ],
+};

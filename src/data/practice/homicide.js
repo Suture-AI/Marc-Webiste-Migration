@@ -1,0 +1,67 @@
+/* Copy migrated verbatim (lightly proofed) from msklawyer.com/homicide/ */
+export default {
+  key: "homicide",
+  metaTitle: "Homicide Defense Attorney - Marc Kohnen",
+  metaDescription:
+    "Marc Kohnen is an experienced Homicide Defense Attorney in San Diego. Get the best criminal defense for your case right here.",
+  h1: "Homicide Defense Lawyer in San Diego",
+  sub: "No charge carries higher stakes — and no case gets more of Marc's focus, preparation and fight.",
+  sections: [
+    {
+      paras: [
+        "There's nothing more frightening and intimidating than being accused of killing someone. That's what makes homicide one of the gravest offenses you can be charged with.",
+        "Even if you are innocent, it's not advisable to talk with someone else about what happened — you need to understand the gravity of the situation. Under California law, it's your right to remain silent. But there's one crucial thing to consider before attending court: a homicide lawyer who can evaluate the circumstances and negotiate on your behalf. That's where Marc Kohnen can step in.",
+        "No matter the homicide category you're charged with, we can prepare the best defense safely and securely at the Law Office of Marc S. Kohnen.",
+      ],
+    },
+    {
+      h2: "Professional Homicide Lawyer with 5-Star Google Rating",
+      paras: [
+        "If you are facing homicide charges and fear arrest, your freedom and future are at stake. Here, retaining an expert homicide defense attorney is the best chance to reclaim your independence.",
+        "As a highly distinguished homicide lawyer, Marc has dealt with several murder and manslaughter cases previously. Knowing what the law entails, Marc follows a meticulous approach to protect his clients' rights. That's one of the reasons why Marc has sustained a reputable stance over the past 10 years.",
+      ],
+      image: {
+        src: "/assets/press/marc-kohnen-nbc7-millete-murder-trial.jpg",
+        alt: "San Diego homicide defense attorney Marc Kohnen providing legal commentary on NBC 7 during the Millete murder trial",
+        caption: "Marc Kohnen on NBC 7 San Diego during the Millete murder trial",
+      },
+    },
+    {
+      h2: "What Do Homicide Charges Involve?",
+      paras: [
+        "Being charged with homicide is complicated and confusing in itself, let alone dealing with the different types.",
+        "The type of homicide offense you have been charged with greatly impacts how the prosecution and jury see your case. Homicide involves murder in the first and second degree, manslaughter, felony murder, and vehicular manslaughter. According to California law, a person can be subjected to life in prison if found guilty of killing another person unlawfully.",
+        "Your intent is often cast aside in such scenarios, whether you intended to kill or not or planned the offense.",
+        "In case of a felony murder charge, you can be charged with first-degree murder if the killing occurs during a felony, such as rape, kidnapping, or arson.",
+        "Under California law, vehicular manslaughter is judged based on your negligence while driving. Often, vehicular manslaughter is coupled with DUI offenses, too.",
+        "Since the law hands out severe punishments to the accused, it can be challenging to evade your way out of prison alone. That's why it's best to have a skilled homicide defense lawyer in San Diego who can work to protect your rights and reputation.",
+      ],
+    },
+    {
+      h2: "Penalties for Homicide",
+      paras: [
+        "California law is straightforward when it's about prison sentences for homicide. But the duration of prison time you'll have to face depends on the type of offense you've committed.",
+        "For example, a first-degree murder charge carries a 25-year life sentence in state prison, whereas a second-degree murder charge can make you lose 15 vital years of your life. However, if you're found guilty of involuntary manslaughter, the state can sentence you to jail time of one year or up to four years with fines and victim restitution.",
+        "We realize it's tough to go through the consequences and risk losing your reputation or your loved ones' trust. That's why we are always one call away to assist you at the Law Office of Marc S. Kohnen.",
+      ],
+    },
+    {
+      h2: "Homicide Charges Require Strong Defense",
+      paras: [
+        "Criminal cases require significant proof beyond doubt to hand out a guilty verdict. This job lies with the prosecution.",
+        "Each type of homicide, whether first-degree murder or involuntary manslaughter, requires a different set of elements to prove guilt. That's why it places a heavy duty on the prosecutors to do their job thoroughly and provide evidence that counts.",
+        "Here, Marc's years of training as a homicide defense lawyer can save you from the worst. When it comes to building a solid defense, Marc evaluates several factors including whether you were maltreated or underwent illegal search and seizure.",
+        "Self-defense and killing in defense of others also account for lesser sentences — all of which Marc carefully analyzes to save you from a traumatic outcome.",
+      ],
+    },
+    {
+      h2: "Book a Confidential Homicide Consultation in San Diego",
+      paras: [
+        "Since it can transcend into a life-altering situation, losing track of the chain of events can lead you to voice your thoughts irrationally.",
+        "But no matter the homicide charges you're facing, it's significant to understand one thing: do not speak about the case with anyone else, even your family members. That's because your words can be taken against you as evidence in court.",
+        "At the Law Office of Marc S. Kohnen, we hold your confidentiality in high regard. So, if you or a loved one have been charged with homicide, your best bet is to consult with a skilled homicide lawyer in San Diego as soon as possible. We'll discuss your case from every aspect, keeping confidentiality in check.",
+        "You get one chance to defend yourself in court. So, having an experienced homicide defense attorney fighting for your rights can improve your chances of obtaining favorable results.",
+      ],
+    },
+  ],
+};

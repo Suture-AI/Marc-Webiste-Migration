@@ -1,0 +1,190 @@
+/* Master registry of every practice area migrated from msklawyer.com.
+   Paths preserve the original WordPress slugs so inbound links and SEO carry
+   over. `parent` nests sub-practices under their taxonomy parent; top-level
+   areas (no parent) drive the nav rail and the Areas of Practice grid. */
+export const AREAS = [
+  {
+    key: "criminal-defense",
+    path: "/san-diego-criminal-defense-lawyer/",
+    title: "Criminal Defense",
+    blurb: "Every charge, misdemeanor to felony — a defense built around your case, your record and your future.",
+  },
+  {
+    key: "dui",
+    path: "/san-diego-dui-attorney/",
+    title: "DUI & DWI",
+    blurb: "Field-sobriety challenges, DMV license hearings and hard negotiation to limit the impact on your life.",
+  },
+  {
+    key: "drug-crimes",
+    path: "/san-diego-criminal-defense-lawyer/drug-crime-attorney/",
+    title: "Drug Crimes",
+    blurb: "Possession to trafficking — a strategy built to protect your record and your future.",
+  },
+  {
+    key: "drug-distribution",
+    parent: "drug-crimes",
+    path: "/san-diego-criminal-defense-lawyer/drug-crime-attorney/drug-distribution-attorney/",
+    title: "Drug Distribution",
+    blurb: "Sales, transportation and trafficking allegations, state and federal.",
+  },
+  {
+    key: "drug-possession",
+    parent: "drug-crimes",
+    path: "/san-diego-criminal-defense-lawyer/drug-possession-attorney/",
+    title: "Drug Possession",
+    blurb: "Simple possession through possession-for-sale — fighting the charge and the record.",
+  },
+  {
+    key: "warrants",
+    parent: "criminal-defense",
+    path: "/san-diego-criminal-defense-lawyer/outstanding-warrants-attorney/",
+    title: "Outstanding Warrants",
+    blurb: "Clearing bench and arrest warrants before they clear you out of a job or a home.",
+  },
+  {
+    key: "federal",
+    path: "/san-diego-federal-criminal-defense-attorney/",
+    title: "Federal Crimes",
+    blurb: "Federal exposure demands federal experience — indictments, grand juries and U.S. Attorney negotiations.",
+  },
+  {
+    key: "white-collar",
+    path: "/white-collar/",
+    title: "White Collar",
+    blurb: "Fraud, embezzlement and federal exposure, handled with discretion and precision.",
+  },
+  {
+    key: "identity-theft",
+    parent: "white-collar",
+    path: "/white-collar/identity-theft/",
+    title: "Identity Theft",
+    blurb: "PC §530.5 allegations — from mistaken identity to complex fraud cases.",
+  },
+  {
+    key: "homicide",
+    path: "/homicide/",
+    title: "Homicide",
+    blurb: "The highest stakes demand the most relentless, meticulous defense.",
+  },
+  {
+    key: "murder",
+    parent: "homicide",
+    path: "/homicide/murder/",
+    title: "Murder",
+    blurb: "First and second degree murder defense — including a NOT GUILTY verdict at trial.",
+  },
+  {
+    key: "manslaughter",
+    parent: "homicide",
+    path: "/homicide/manslaughter/",
+    title: "Manslaughter",
+    blurb: "Voluntary and involuntary manslaughter charges defended aggressively.",
+  },
+  {
+    key: "vehicular-manslaughter",
+    parent: "homicide",
+    path: "/homicide/vehicular-manslaughter/",
+    title: "Vehicular Manslaughter",
+    blurb: "Accidents charged as crimes — reconstructing what really happened.",
+  },
+  {
+    key: "sex-crimes",
+    path: "/sex-crimes/",
+    title: "Sex Crimes",
+    blurb: "Sensitive, private and tenacious representation when your reputation is on the line.",
+  },
+  {
+    key: "child-molestation",
+    parent: "sex-crimes",
+    path: "/sex-crimes/child-molestation/",
+    title: "Child Molestation",
+    blurb: "False accusations destroy lives — a defense that protects yours.",
+  },
+  {
+    key: "child-pornography",
+    parent: "sex-crimes",
+    path: "/sex-crimes/child-pornography/",
+    title: "Child Pornography",
+    blurb: "State and federal charges with severe exposure — discreet, technical defense.",
+  },
+  {
+    key: "indecent-exposure",
+    parent: "sex-crimes",
+    path: "/sex-crimes/indecent-exposure/",
+    title: "Indecent Exposure",
+    blurb: "PC §314 charges and the registration consequences that follow them.",
+  },
+  {
+    key: "assault",
+    path: "/assault/",
+    title: "Assault",
+    blurb: "Aggressive defense against assault and battery allegations, simple to aggravated.",
+  },
+  {
+    key: "domestic-violence",
+    path: "/domestic-violence/",
+    title: "Domestic Violence",
+    blurb: "Protecting your rights, your family and your freedom.",
+  },
+  {
+    key: "violent-crimes",
+    path: "/violent-crimes/",
+    title: "Violent Crimes",
+    blurb: "Robbery, weapons allegations and strike offenses — defense for the hardest cases.",
+  },
+  {
+    key: "theft",
+    path: "/theft/",
+    title: "Theft Crimes",
+    blurb: "Petty theft to grand theft — hundreds of dismissals won.",
+  },
+  {
+    key: "grand-theft",
+    parent: "theft",
+    path: "/theft/grand-theft/",
+    title: "Grand Theft",
+    blurb: "PC §487 felony theft allegations, negotiated down or dismissed.",
+  },
+  {
+    key: "robbery",
+    parent: "theft",
+    path: "/theft/robbery/",
+    title: "Robbery",
+    blurb: "PC §211 strike offenses defended with everything on the line.",
+  },
+  {
+    key: "weapons",
+    path: "/weapons-crimes/",
+    title: "Weapons Crimes",
+    blurb: "Firearms and weapons allegations in a state with unforgiving gun laws.",
+  },
+  {
+    key: "child-abuse",
+    path: "/child-abuse/",
+    title: "Child Abuse",
+    blurb: "Emotionally-charged allegations that demand a careful, meticulous defense.",
+  },
+  {
+    key: "child-endangerment",
+    path: "/child-endangerment/",
+    title: "Child Endangerment",
+    blurb: "PC §273a charges — protecting parents from prosecution overreach.",
+  },
+  {
+    key: "juvenile",
+    path: "/juvenile-crimes/",
+    title: "Juvenile Crimes",
+    blurb: "Protecting young clients — and the futures ahead of them.",
+  },
+  {
+    key: "hit-run",
+    path: "/hit-run/",
+    title: "Hit & Run",
+    blurb: "VC §20001/§20002 — including a NOT GUILTY verdict at trial.",
+  },
+];
+
+export const TOP_AREAS = AREAS.filter((a) => !a.parent);
+export const byKey = Object.fromEntries(AREAS.map((a) => [a.key, a]));
+export const subsOf = (key) => AREAS.filter((a) => a.parent === key);

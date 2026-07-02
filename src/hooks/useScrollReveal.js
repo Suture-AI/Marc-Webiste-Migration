@@ -5,7 +5,7 @@ import { useEffect } from "react";
  * `.in` when it enters the viewport, with a small staggered delay so groups
  * of cards cascade in. Mirrors the IntersectionObserver in the originals.
  */
-export function useScrollReveal(ref, { threshold = 0.12, stagger = 90, groups = 3 } = {}) {
+export function useScrollReveal(ref, { threshold = 0.12, stagger = 90, groups = 3, rescanKey } = {}) {
   useEffect(() => {
     const root = ref?.current;
     if (!root) return;
@@ -33,5 +33,5 @@ export function useScrollReveal(ref, { threshold = 0.12, stagger = 90, groups = 
     });
 
     return () => io.disconnect();
-  }, [ref, threshold, stagger, groups]);
+  }, [ref, threshold, stagger, groups, rescanKey]);
 }

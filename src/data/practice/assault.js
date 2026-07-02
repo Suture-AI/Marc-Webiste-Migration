@@ -1,0 +1,67 @@
+/* Copy migrated verbatim (lightly proofed) from msklawyer.com/assault/ */
+export default {
+  key: "assault",
+  metaTitle: "Criminal Defense Attorney For Assault Charge - Marc Kohnen",
+  metaDescription:
+    "When you are charged with an assault charge in California, you may need a Criminal Defense Attorney. Located in San Diego, we are ready to defend you.",
+  h1: "Assault Lawyer",
+  sub: "Charged with assault in San Diego? Marc Kohnen has fought assault allegations all the way to a NOT GUILTY verdict — and he's ready to fight for you.",
+  sections: [
+    {
+      paras: [
+        "Any attempt to cause a violent injury to another is defined as assault. Since it's a broad terminology, it often applies to several criminal cases, such as domestic violence, violent crimes, etc.",
+        "Keeping the legal issues in mind, it can be tough to defend your case by yourself, let alone face the prosecution without hiring a dependable San Diego assault attorney first. And if convicted, it can lead to fines and jail time, and even probation for several years.",
+        "At the Law Office of Marc S. Kohnen, our focus remains on defending you to the best of our capability and reduce the assault as meticulously as we can.",
+      ],
+    },
+    {
+      h2: "What Is the Difference Between Assault and Battery?",
+      paras: [
+        "It's common to confuse between assault and battery, but they are two separate crimes in reality. The confusion comes because they are often charged together. That means if you are facing assault charges, there is a strong likelihood that you'll have to face battery charges, too.",
+        "So, what makes one different from the other? According to California Penal Code 240, assault is an unlawful attempt to commit a violent injury on a human being, coupled with the ability to cause harm.",
+        "Simply put, assault is attempting to touch another person offensively without actually doing it.",
+        "California Penal Code 242 defines battery as any willful and unlawful use of force or violence upon another human being. So, it makes battery the completion crime to assault.",
+        "Even if you don't actually cause harm, your intent is enough to charge you for assault and battery. And if the victim receives bodily injury, then the accused must face separate charges related to serious violent crimes.",
+        "In turn, this can lead to severe penalties. If the violence is committed on a spouse or partner, it comes under domestic violence. Here again, the penalties are harsh and difficult to navigate without a skilled assault attorney.",
+      ],
+    },
+    {
+      h2: "Fearing Arrest? Let the Best San Diego Assault Lawyer Be Your Voice",
+      paras: [
+        "It can be alarming to face assault charges, especially if you have no idea about the legal technicalities.",
+        "If you're facing possible arrest, the first thing you should do is connecting with a professional criminal defense attorney in San Diego who has experience dealing with Californian courtrooms. That's where Marc Kohnen can help you.",
+        "Carrying 5-star Google and AVVO ratings, Marc works to protect his clients' rights. From the initial meeting to the end, he keeps up an aggressive stance while negotiating on your behalf.",
+      ],
+      image: {
+        src: "/assets/news/robert-branch-not-guilty-headline.jpg",
+        alt: "San Diego Union-Tribune NOT GUILTY headline after San Diego criminal defense attorney Marc Kohnen won an assault acquittal for Robert Branch",
+        caption: "The Union-Tribune headline after Marc won a NOT GUILTY verdict in an assault trial",
+      },
+    },
+    {
+      h2: "Penalties for Assault in San Diego",
+      paras: [
+        "The penalties for assault in San Diego depend on several factors. For example, the severity of the assault and whether it's coupled with battery, any past criminal record, and other related offenses you might have committed all become a determining factor in increasing or reducing your penalty.",
+        "Since assault charges carry broad circumstances, you can be charged with a small fine of up to $1000 or several years in prison. That's where having an expert legal counsel can create all the difference between a conviction and freedom.",
+        "But given the courtroom expertise of Marc Kohnen, you can rest assured of getting back your reputation without facing grave consequences.",
+      ],
+    },
+    {
+      h2: "What Are the Possible Defenses to an Assault Charge?",
+      paras: [
+        "We understand that situations can escalate quickly. In the heat of the moment, it's easy to forget that anything you say to the police could be used against you in court. That's why we recommend remaining silent. You have the right to do so.",
+        "Until you have an experienced San Diego assault attorney defending your case, you don't need to speak about the case with anyone. This includes even close family members.",
+        "Remember, being accused of a crime doesn't mean you've committed one. Marc and his team will carefully evaluate your case to determine if you were provoked into assault or acted in self-defense. It's possible that you committed the act without intent.",
+        "By thoroughly analyzing the facts, we can build a strong defense. Our goal is to minimize your penalties or even achieve a dismissal of your case.",
+      ],
+    },
+    {
+      h2: "Book an Initial Consultation with a San Diego Assault Attorney",
+      paras: [
+        "Being charged with a crime you haven't even committed can be unavoidable but not undefendable. At the Law Office of Marc S. Kohnen, we've dealt with several cases in the past where the accused had to face severe charges.",
+        "Combined with Marc's excellent negotiation skills and a solid defense, we have successfully managed to dismiss and reduce the charges. All that's because of the efforts we put in right from the initial meeting.",
+        "We devise tailor-made defensive strategies to meet your unique case demands. Besides that, we also offer emotional support without adding to your financial strain. Eventually, our aggression and compassion can work their power to alleviate all your troubles.",
+      ],
+    },
+  ],
+};

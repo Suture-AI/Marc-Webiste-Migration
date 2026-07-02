@@ -1,0 +1,71 @@
+/* Copy migrated verbatim (lightly proofed) from msklawyer.com/san-diego-criminal-defense-lawyer/drug-possession-attorney/
+   Note: the live page showed a banner heading before the H1 that duplicated the
+   first sub-heading — folded into the opening section here. */
+export default {
+  key: "drug-possession",
+  metaTitle: "Drug Possession Attorney In San Diego - Marc Kohnen",
+  metaDescription:
+    "Marc Kohnen is the best attorney you could hire for your drug possession case. Get in touch today for a free consultation from a drug possession attorney.",
+  h1: "Drug Possession Attorney",
+  sub: "A possession charge doesn't have to become a criminal record — Marc moves fast to challenge the stop, the search and the case against you.",
+  sections: [
+    {
+      h2: "Experienced Drug Possession Attorney in San Diego",
+      paras: [
+        "Drug possession can get you on the receiving end of several charges at once. Even carrying less than an ounce of marijuana can lead to a possible misdemeanor. It might seem like a petty crime at the time, but it holds grave consequences.",
+        "Not only can it affect your reputation in the long run, but it can also snatch away the chance to acquire job positions at reputable organizations. And if you receive a second conviction, it can lead to even more severe penalties.",
+        "A criminal record for drug possession could follow you for years, impacting everything from your career to housing opportunities, so it's essential to act quickly and secure strong legal representation. So, what should you do when you first face drug possession charges?",
+        "First and foremost, contact a drug possession attorney who has the experience to deal with these types of criminal drug cases with skill and expertise. A reputable name that you can count on is Marc Kohnen. Marc holds extensive knowledge of California law and has gotten several clients out of visibly challenging situations in the past.",
+        "From the initial consultation to securing the 'not guilty' verdict, Marc stays by your side, assisting you in legal matters every step of the way.",
+        "With over a decade of experience, I've successfully defended clients facing various drug possession charges, from minor offenses to more complex cases involving multiple substances. Each case is unique, and I make sure to give your case the personal attention it deserves.",
+      ],
+    },
+    {
+      h2: "Worried About Getting Arrested for Marijuana Possession?",
+      paras: [
+        "Marijuana is considered a less serious drug to carry than cocaine and heroin. But don't let that give you a false sense of security. Even though California drug law defines marijuana as a legal substance, federal law still holds it as an illegal drug.",
+        "According to federal law, you can be charged with a penalty if you are found to be possessing 28.5 grams or more. The legal matters become complex here, with the prosecution depending on the amount involved, prior criminal history, and the purpose of possession.",
+        "In addition, transporting marijuana across state lines can lead to federal charges, which come with much harsher penalties. If you are facing this situation, it's crucial to have a defense attorney who understands both state and federal drug laws to build the most effective defense possible.",
+        "If you're found to be carrying a small amount, you can end up receiving lighter penalties with fines than a person who possesses enough to distribute or sell. But why carry the burden of paying a fine, especially since it can add to your criminal record?",
+        "Previously, Marc has dealt with several cases involving notable names who were charged with marijuana possession. Marc and his law office represented them in court with professionalism and proved their innocence by building a strong defense. The Law Office of Marc S. Kohnen would love to do the same for you.",
+      ],
+    },
+    {
+      h2: "Penalties for Drug Possession Charges",
+      paras: [
+        "Some state laws for possession are severe and include felony charges, too. Often drug possession also leads to an additional charge of drug trafficking and distribution. In turn, this adds heavier penalties with up to several years of prison time.",
+        "Penalties can vary depending on the type and quantity of the drug in possession. For example, possession of controlled substances like cocaine or heroin often results in harsher penalties than marijuana possession. If law enforcement suspects the intent to distribute, the consequences become even more severe.",
+        "If you are a first-time offender, you can avail yourself of alternative options to prevent harsh consequences. Depending on your criminal history, the grand jury can decide whether you are eligible to be let off. Here, having a professional drug possession attorney in San Diego by your side can work wonders. How? By building a solid defense that speaks in favor of your reputation as a person of conduct.",
+        "Marc is fully prepared to take up your case and eliminate all the worries. No matter the number of penalties you might be facing, Marc can get you out of these trying times.",
+        "We explore every legal avenue, including drug diversion programs or seeking reduced charges, to ensure the best possible outcome.",
+        "To prove illegal drug possession, the prosecution must prove the following elements:",
+      ],
+      list: [
+        "You possessed an object that can be used as a controlled substance",
+        "You knew about the object's presence",
+        "You knew the potential of the unlawful use of the object as a drug",
+      ],
+    },
+    {
+      h2: "Secure a Not Guilty Verdict with San Diego's Highly Rated Drug Possession Attorney",
+      paras: [
+        "After being charged with drug possession, the first thought that comes to mind is how much jail time you will have to serve. It can be troubling indeed to go through that dread alone. But not with a top-rated San Diego drug crimes law firm with Marc Kohnen leading from the front.",
+        "For Marc, dealing with criminal defense cases, especially drug charges, is an everyday thing to handle.",
+        "If you feel you were wrongly accused of drug possession and carry a valid prescription, let Marc become the voice of justice. Before long, you'll be cleared of all charges with a verdict in your favor.",
+      ],
+      image: {
+        src: "/assets/press/san-diego-criminal-lawyer-marc-kohnen.jpg",
+        alt: "San Diego drug possession attorney Marc Kohnen during a TV news appearance",
+        caption: "Marc Kohnen appearing on San Diego TV news",
+      },
+    },
+    {
+      h2: "Your All-in-One Top-Rated San Diego Drug Crimes Law Firm",
+      paras: [
+        "No matter the complexity of your situation, a skilled criminal defense lawyer in San Diego can disprove the prosecution's theories with expertise. Here, having a strong defense helps, but forensic evidence and witness testimony further prove your innocence.",
+        "But Marc doesn't stop at that. Knowing San Diego law like he does, Marc becomes the voice of the accused in court. Using his skillful persuasive expertise, he fights for your rights while negotiating with the prosecution on your behalf.",
+        "If you or a loved one find yourself accused of drug possession charges, now's the time to let a well-practiced hand take over. Consult Marc Kohnen today for a free consultation and take your life's control back into your hands.",
+      ],
+    },
+  ],
+};

@@ -1,0 +1,144 @@
+/* Copy migrated verbatim (lightly proofed) from msklawyer.com/juvenile-crimes/ */
+export default {
+  key: "juvenile",
+  metaTitle: "Juvenile Defense Attorney in San Diego | Marc Kohnen",
+  metaDescription:
+    "Facing juvenile charges in San Diego? Marc S. Kohnen is a top juvenile defense attorney focused on rehabilitation over punishment. Call for strong defense.",
+  h1: "Juvenile Defense Attorney San Diego",
+  sub: "When your child's future is on the line, Marc Kohnen fights for rehabilitation, second chances and a clean path forward.",
+  sections: [
+    {
+      h3: "Juvenile Defense Attorney in San Diego – Protecting Your Child's Future",
+      paras: [
+        "If your child has been arrested for a juvenile crime in California, finding the right juvenile defense attorney in San Diego is crucial. The juvenile justice system is unique, emphasizing rehabilitation over punishment, but without an experienced attorney, a minor can still face serious consequences, including detention, fines, or even being tried as an adult.",
+      ],
+      image: {
+        src: "/assets/press/marc-kohnen-press-conference.jpg",
+        alt: "San Diego juvenile defense attorney Marc Kohnen speaking to the press",
+        caption: "Marc Kohnen speaking to the press",
+      },
+    },
+    {
+      h2: "Types of Juvenile Crimes We Handle",
+      paras: [
+        "At The Law Office of Marc S. Kohnen, we handle a broad range of juvenile crimes with a deep understanding of the San Diego juvenile court system. Whether your child has been wrongly accused or made a mistake, our goal is to obtain the most favorable outcome possible.",
+        "Marc Kohnen's expertise extends to cases involving curfew violations, drug possession, theft, assault, underage drinking, and DUI charges. His negotiation skills are instrumental in securing rehabilitative alternatives to detention, allowing minors to avoid adult-style punishments and focus on a better future.",
+      ],
+    },
+    {
+      h3: "Why Choose a San Diego Juvenile Defense Attorney",
+      paras: [
+        "Navigating the juvenile court system requires specific knowledge of its unique procedures. Marc Kohnen, a skilled juvenile defense attorney in San Diego, brings years of experience in defending minors, focusing on options that prioritize rehabilitation and protect a young person's future.",
+        "He understands the high stakes involved and works tirelessly to secure the best possible outcomes, including probation, community service, or dismissal of charges.",
+      ],
+    },
+    {
+      h3: "Common Juvenile Crime Defense Strategies",
+      paras: [
+        "At The Law Office of Marc S. Kohnen, we believe in rehabilitation over punishment, crafting a personalized defense strategy for each client. Our team employs the following approaches to help minors avoid detention and support their development:",
+      ],
+      list: [
+        "Requesting Diversion Programs: San Diego offers programs that allow minors to avoid detention through education or counseling.",
+        "Negotiating for Probation: For minor offenses, probation is a favorable alternative to detention, allowing the child to remain with family under supervised conditions.",
+        "Emphasizing Rehabilitation: We often propose counseling, community service, and mentorship to replace incarceration, aiming to create a positive impact on the minor's future.",
+        "Reducing or Dismissing Charges: When evidence is minimal, we work to reduce or dismiss charges to avoid severe penalties.",
+      ],
+    },
+    {
+      paras: [
+        "These strategies have enabled us to support many minors in avoiding detention and building a path toward a better future.",
+      ],
+    },
+    {
+      h3: "Juvenile Court vs. Adult Court: Key Differences",
+      paras: [
+        "The juvenile court system in California operates differently than adult court, prioritizing correction and growth rather than punishment. However, these differences mean that minors have unique challenges and rights within the legal process:",
+      ],
+      list: [
+        "No Right to Jury Trial: In juvenile cases, the decision rests solely with a judge, underscoring the importance of having a skilled attorney to present a strong defense.",
+        "No Bail Option: Unlike in adult court, minors cannot post bail. They may be released to their parents or held in detention until their court date.",
+        "Limited Right to Confront Witnesses: Juveniles have restricted rights to cross-examine witnesses, making knowledgeable legal representation crucial.",
+      ],
+    },
+    {
+      h3: "Penalties for Juvenile Crimes in California",
+      paras: [
+        "Although the juvenile court emphasizes rehabilitation, penalties can still be impactful. Potential penalties include:",
+      ],
+      list: [
+        "Probation: Often paired with requirements like school attendance, counseling, and community service.",
+        "Juvenile Detention: Reserved for serious cases; however, severe offenses may lead to a transfer to adult court.",
+        "Fines and Restitution: The court may impose fines or require the juvenile to compensate victims.",
+      ],
+    },
+    {
+      paras: [
+        "In some cases, the court may also request a formal apology or completion of a diversion program. For serious crimes, being tried as an adult could result in years of imprisonment, underscoring the importance of a skilled juvenile defense attorney.",
+      ],
+    },
+    {
+      h3: "Personalized Defense Strategies for Juvenile Cases",
+      paras: [
+        "Every juvenile case is unique, and having an attorney who understands the distinct needs of minors is critical. At The Law Office of Marc S. Kohnen, we take a personalized approach, carefully reviewing the details of each case to identify the best defense options.",
+        "Whether advocating for alternative programs, negotiating with the prosecution, or working to expunge records where possible, our focus is on minimizing the long-term impact on your child's life. Marc Kohnen's dedication to juvenile defense in San Diego means that your family can rely on a compassionate and skilled advocate who will prioritize your child's future at every step.",
+      ],
+    },
+    {
+      h3: "Defense Strategies for Juvenile Crimes",
+      paras: [
+        "At The Law Office of Marc S. Kohnen, we believe in emphasizing rehabilitation over punishment. We work with each client to develop a defense strategy focused on securing the best possible outcome, which can include:",
+      ],
+      list: [
+        "Requesting Diversion Programs: San Diego offers various programs to help juveniles avoid detention by completing educational or counseling programs instead.",
+        "Negotiating for Probation: For minor offenses, probation is often a better alternative than detention, allowing the child to remain with their family while meeting specific requirements set by the court.",
+        "Seeking Rehabilitation over Incarceration: We frequently argue that rehabilitation is more beneficial than punishment for minors and work with the court to establish counseling, mentorship, or community service as alternatives.",
+        "Reducing or Dismissing Charges: If the charges are based on minimal evidence or the juvenile's actions don't warrant severe punishment, we'll work to have charges reduced or even dismissed.",
+      ],
+    },
+    {
+      paras: [
+        "By using these strategies, our team has been able to help many minors avoid detention and focus on building a better future.",
+      ],
+    },
+    {
+      h3: "Hire an Experienced Juvenile Defense Lawyer in San Diego",
+      paras: [
+        "Facing criminal charges as a minor is challenging and can have lasting effects on one's life. To ensure your child has the best defense possible, you need an experienced, compassionate, and skilled juvenile defense lawyer in San Diego.",
+        "At The Law Office of Marc S. Kohnen, we have helped countless families navigate the juvenile court system with positive results. Marc Kohnen's dedication to juvenile criminal defense in San Diego has helped minors and their families move past legal challenges with their futures intact.",
+      ],
+    },
+    {
+      h3: "Contact The Law Office of Marc S. Kohnen for a Free Consultation",
+      paras: [
+        "If your child has been arrested or charged with a juvenile crime, don't wait. The sooner you have a skilled attorney on your side, the better. Call us today to schedule a free, confidential consultation with a juvenile defense attorney in San Diego who will prioritize your child's well-being and fight for a second chance.",
+        "Get in touch now to protect your child's future and ensure they receive the best possible defense.",
+      ],
+    },
+    {
+      paras: [
+        "Like it happens in adult courts, the prosecution must provide enough evidence to convince the judge of a juvenile crime beyond a reasonable doubt. Since there is no bail system in juvenile courtrooms, the judge can either release the minor to his parents while pending an outcome or detain the juvenile in juvenile hall.",
+        "If a minor aged above 14 is accused of specific serious crimes, the prosecution can decide to try him as an adult. That's when it becomes critical to hire an expert juvenile defense attorney in San Diego.",
+        "Without an experienced juvenile lawyer by your side, it can be overwhelming to navigate the law and avoid serious implications.",
+        "The worst-case scenario can be facing adult consequences if tried in an adult court, resulting in several years of prison time.",
+        "Having a juvenile lawyer can help by preparing you for the detention hearing. Additionally, we can prove that you won't be a threat to the community by enrolling you in rehabilitation programs for your own benefit.",
+      ],
+    },
+    {
+      h2: "Defense Strategies for Juvenile Crimes",
+      paras: [
+        "There is no denying the value of rehabilitation over incarceration. And that's the defensive strategy we go for when we take up your case.",
+        "If you or your child fear the conviction of a crime, you can trust us to take every protective measure for your rights. Using our courtroom expertise, we'll negotiate with the court on your behalf to avoid juvenile detention. Instead, we suggest rehabilitative measures, such as counseling, diversionary programs, and monitoring during your probationary period.",
+        "Given the severity of your crime, the court can subject you to monetary fines and an apology letter to the victim, too.",
+      ],
+    },
+    {
+      h2: "Hire Experienced Juvenile Criminal Defense Lawyer in San Diego",
+      paras: [
+        "Being accused of a crime as an adult is hectic, let alone being charged with a crime as a minor. For all the right reasons, it's crucial to retain a juvenile lawyer in San Diego that you can trust. If you're also looking for a criminal defense lawyer in San Diego, our firm can help.",
+        "At The Law Office of Marc S. Kohnen, we've dealt with several juvenile cases in the past. Looking closely into the cases has given us deeper insight into using our knowledgeable prowess to pull you out of troubled times.",
+        "We believe in compassionate yet aggressive representation in court. For that, we have experienced juvenile defense lawyer Marc Kohnen leading from the front.",
+        "Contact our office today to book your free, initial, and confidential consultation.",
+      ],
+    },
+  ],
+};

@@ -1,0 +1,67 @@
+/* Copy migrated verbatim (lightly proofed) from msklawyer.com/san-diego-criminal-defense-lawyer/drug-crime-attorney/drug-distribution-attorney/
+   Note: the live page repeated the "Which Penalties Can You Face…" section — deduplicated here. */
+export default {
+  key: "drug-distribution",
+  metaTitle: "Drug Distribution Attorney For Your Defense - Marc Kohnen",
+  metaDescription:
+    "Get a drug distribution attorney for your criminal defense. Hire Marc Kohnen or call us for a free consultation on your criminal case.",
+  h1: "Drug Distribution Attorney",
+  sub: "Sales and distribution charges under HS 11352 carry years of exposure per incident — Marc attacks the search, the seizure and the state's case from day one.",
+  sections: [
+    {
+      h2: "Professional Drug Distribution Attorney in San Diego",
+      paras: [
+        "California laws deal ferociously with the sales and distribution of drugs. Since the drug trade follows potential violence and an increased crime rate, it's crucial to nip it in the bud early on. But this fact has also given rise to false accusations of drug possession and distribution. So, if you find yourself in a challenging situation like this, it's time to hire a top-rated criminal defense lawyer in San Diego. That's where Marc Kohnen comes in.",
+        "Marc takes a keen interest in protecting his client's reputation. Working alongside a team of professionals, Marc gives each case the required attention to detail without differentiating between race, gender, or religion.",
+        "As a professional drug distribution attorney in San Diego, Marc has developed a sound reputation with several cases dismissed from court. Carrying an esteemed 10/10 AVVO score further speaks of his accomplishments. Having saved several clients from a possible visit to jail, Marc can develop a strong defense for you, outlining misconduct and the probability of improperly seized evidence.",
+        "In addition to defending clients against drug distribution charges, Marc also provides valuable guidance on navigating the complexities of California's evolving drug laws. Whether it's understanding recent legislation changes, the legal distinction between state and federal drug charges, or strategizing around drug diversion programs, Marc ensures his clients have a clear understanding of their legal standing and the best course of action. His proactive approach includes not just defending you in court but also working to reduce or eliminate the long-term impact of the charges on your life and career.",
+        "Since punishment under HS 11352 can include a 9-year sentence per incident, you can be charged based on the following factors:",
+      ],
+      list: [
+        "The type of drug transferred",
+        "The geographic location of the drug distribution — state or federal",
+        "The amount of the drug",
+      ],
+    },
+    {
+      h2: "The Fear of Jail Time Is Real. Let an Expert Drug Distribution Attorney Handle It for You",
+      paras: [
+        "As a criminal defense attorney who holds your best interest at heart, Marc offers an initial consultation to prepare a strong defense. First, Marc evaluates and discusses the best options you have to avoid jail. Then, following a straightforward approach, the Law Office of Marc S. Kohnen develops a strategy on how best to represent you in court. This includes finding possible violations by the officer who seized evidence from you.",
+        "Since law enforcement needs to abide by strict constitutionally protected guidelines that outline the search of persons and property, they must carry a search warrant to obtain entry. Failing to do so can turn in your favor, with reduced jail time or even dropped charges given false evidence.",
+        "Here, Marc puts his best foot forward, dealing smartly with the loopholes to challenge law enforcement conduct.",
+      ],
+      image: {
+        src: "/assets/press/marc-kohnen-nbc7-developing-story.jpg",
+        alt: "San Diego drug distribution attorney Marc Kohnen interviewed on an NBC 7 developing story",
+        caption: "Marc Kohnen on NBC 7 San Diego",
+      },
+    },
+    {
+      h2: "Get Out of the Sticky Situation of Being Charged with Marijuana Distribution in San Diego",
+      paras: [
+        "Currently, marijuana distribution has been defined as legal by California laws. But it's still a federal crime. In turn, this has led to problems for marijuana cultivators and distributors who try to sell out of San Diego.",
+        "Even if you don't cultivate marijuana, you can find yourself in trouble with the law by being associated financially with a dispensary.",
+        "So, while you have California law by your side, you can still face the threat of incarceration and substantial fines without proper representation in court. That's where you can hire a drug distribution attorney such as Marc to fight for your legal rights.",
+        "Whether you're facing charges for distribution or sale, you can depend on Marc and his team to retain the powerful defense you need.",
+      ],
+    },
+    {
+      h2: "Which Penalties Can You Face for Drug Distribution in San Diego?",
+      paras: [
+        "Charges of drug distribution come with severe penalties. Not only will you have to serve significant prison time, but you can also end up paying heavy fines. Additionally, depending on the substance quantity, enhancements such as distributing to a minor can increase the penalties.",
+        "All of this can be avoided and dealt with if you hire a competent and committed San Diego drug distribution attorney on time.",
+        "Marc goes through each minor to major detail of your case, evaluating how each charge or enhancement adds up. Doing this helps isolate each charge and build a custom defense that can work in your favor.",
+        "San Diego drug law states that your penalties may be upwards of $20,000 in fines. But given separate enhancements, the fines also tend to increase.",
+        "Understanding all the charges and their level of complexity is crucial to avoiding them. That's why Marc works on reducing the total penalties you face while identifying the best possible outcome for the charges.",
+      ],
+    },
+    {
+      h2: "A Drug Distribution Attorney with Decade-Long Experience in Making Lives Better",
+      paras: [
+        "Expert legal guidance is your legal right. And reclaiming your previous, healthy state of mind requires apt action, which we are here to offer at the Law Office of Marc S. Kohnen.",
+        "Keeping your individual case in mind, Marc performs a thorough analysis of the situation you're in, devising and planning with his team to take you out of the tight spot.",
+        "Apart from dealing with the general population, Marc is also the top-rated San Diego criminal defense lawyer whom even Hollywood celebrities trust. This in itself serves as a distinguishing factor upholding Marc Kohnen's reputation over others.",
+      ],
+    },
+  ],
+};
