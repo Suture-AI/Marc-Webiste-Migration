@@ -40,37 +40,6 @@ export default function Results() {
         crumbs={[["Case Results", null]]}
       />
 
-      {/* wins with the TV footage to prove them */}
-      <section className="block" style={{ paddingTop: 64, paddingBottom: 0 }}>
-        <div className="wrap">
-          <div className="sec-head">
-            <span className="sec-rule">As Seen On TV</span>
-            <div className="sec-title">Verdicts that made the news</div>
-            <p>Some results speak for themselves — on the evening news. Watch the coverage of these victories.</p>
-          </div>
-          <div className="featwins">
-            {FEATURED.map((f) => (
-              <div className="featwin reveal" key={f.press.case}>
-                <video controls preload="none" poster={`${f.media.replace("/media/", "/media/posters/")}.jpg`} src={`${f.media}.mp4`} />
-                <div className="body">
-                  <div className="code">{f.code}</div>
-                  <h3>{f.charge}</h3>
-                  <div className="outcome">{f.outcome}</div>
-                  <div className="links">
-                    <Link className="presslink" to={`/in-the-news/?case=${f.press.case}`}>
-                      <b aria-hidden="true">&#9654;</b> All coverage of this case
-                    </Link>
-                    <Link className="presslink ghost" to={f.section.practicePath}>
-                      {f.section.practiceLabel} &rarr;
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="block" style={{ paddingTop: 64 }}>
         <div className="wrap">
           <div className="filterbar" role="tablist" aria-label="Filter results by charge type">
@@ -87,6 +56,37 @@ export default function Results() {
               </button>
             ))}
           </div>
+
+          {filter === "all" && (
+            <div className="rsec">
+              <h2>Verdicts That Made the News</h2>
+              <p className="note">Results with the TV coverage to prove them — tap a thumbnail to watch.</p>
+              <div className="rlist">
+                {FEATURED.map((f) => (
+                  <div className="rcase media" key={f.press.case}>
+                    <Link
+                      className="cover"
+                      to={f.section.practicePath}
+                      aria-label={`${f.charge} — ${f.outcome}. Learn about ${f.section.practiceLabel}.`}
+                    />
+                    <Link className="thumb" to={`/in-the-news/?case=${f.press.case}`} aria-label={f.press.label}>
+                      <img src={`${f.media.replace("/media/", "/media/posters/")}.jpg`} alt="" loading="lazy" />
+                      <span className="play" aria-hidden="true">&#9654;</span>
+                    </Link>
+                    <div>
+                      <div className="code">{f.code}</div>
+                      <div className="charge">{f.charge}</div>
+                      <span className="go">{f.section.practiceLabel} &rarr;</span>
+                      <Link className="presslink" to={`/in-the-news/?case=${f.press.case}`}>
+                        <b aria-hidden="true">&#9654;</b> {f.press.label}
+                      </Link>
+                    </div>
+                    <div className="outcome">{f.outcome}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {shown.map((s) => (
             <div className="rsec" key={s.key}>

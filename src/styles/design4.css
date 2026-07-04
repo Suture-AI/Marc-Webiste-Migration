@@ -1530,65 +1530,53 @@
     to { opacity: 1; transform: none; }
   }
 
-  /* featured wins with broadcast footage, atop the results archive */
-  & .featwins {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 22px;
+  /* media rows: results with news footage, pinned atop All Results */
+  & .rcase.media {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    border-color: rgba(200, 162, 74, 0.45);
   }
-  @media (max-width: 860px) { & .featwins { grid-template-columns: 1fr; } }
-  & .featwin {
-    border: 1px solid rgba(200, 162, 74, 0.45);
-    background: linear-gradient(180deg, var(--navy-2), var(--navy-deep));
-    overflow: hidden;
-  }
-  & .featwin video {
+  & .rcase .thumb {
+    position: relative;
+    z-index: 2;
     display: block;
-    width: 100%;
+    width: 172px;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
+    overflow: hidden;
+    border: 1px solid var(--line);
     background: #000;
   }
-  & .featwin .body { padding: 22px 24px 24px; }
-  & .featwin .code {
-    font-family: var(--head);
-    font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--muted);
+  & .rcase .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s, opacity 0.3s;
   }
-  & .featwin h3 {
-    font-family: var(--serif);
-    font-size: 1.3rem;
-    color: var(--bone);
-    margin-top: 6px;
-    line-height: 1.25;
-  }
-  & .featwin .outcome {
-    margin-top: 10px;
-    font-family: var(--head);
-    font-weight: 800;
-    font-size: 0.82rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gold-2);
-  }
-  & .featwin .links {
+  & .rcase .thumb:hover img { transform: scale(1.06); opacity: 0.85; }
+  & .rcase .thumb .play {
+    position: absolute;
+    inset: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 16px;
-  }
-  & .featwin .presslink { margin: 0; }
-  & .featwin .presslink.ghost {
-    border-color: var(--line);
-    color: var(--bone-2);
-  }
-  & .featwin .presslink.ghost:hover {
-    background: var(--bone);
+    align-items: center;
+    justify-content: center;
     color: var(--navy-deep);
-    border-color: var(--bone);
+    font-size: 0.7rem;
+  }
+  & .rcase .thumb .play::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+    transition: transform 0.25s;
+  }
+  & .rcase .thumb:hover .play::before { transform: scale(1.12); }
+  & .rcase .thumb .play { z-index: 1; }
+  & .rcase .thumb .play::after {
+    content: "\25B6";
+    position: relative;
+    margin-left: 2px;
   }
   @media (prefers-reduced-motion: reduce) {
     & .rcase { animation: none; }
