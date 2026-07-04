@@ -2231,25 +2231,8 @@
     & .sec-head { margin-bottom: 34px; }
     & .sec-head p { font-size: 0.98rem; }
 
-    /* hero: shorter — Marc is cropped at the hero's bottom edge instead of
-       standing full-height (the cutout is ~1:3, a whole screen of suit) */
-    & .herogrid { padding: 40px 0 52px; gap: 26px; }
-    & .herogrid:has(.figure.cutout) { gap: 26px; }
-    & .figure.cutout {
-      max-width: none;
-      width: 232px;
-      height: 380px;
-      overflow: hidden;
-      justify-self: center;
-      margin-bottom: -52px; /* cancel the grid padding so the crop line IS the hero edge */
-    }
-    & .figure.cutout img {
-      max-height: none;
-      height: 600px;
-      width: auto;
-      margin: 0 auto;
-    }
-    & .figure.cutout .nameplate { bottom: 16px; }
+    /* hero: layout stays exactly as originally designed (full cutout figure);
+       only the small trust-line details are tuned for phones */
     & .hero-cta { gap: 10px; }
     & .trust { font-size: 0.8rem; }
     & .trust .dot { display: none; } /* separator reads as a stray mark once the line wraps */
