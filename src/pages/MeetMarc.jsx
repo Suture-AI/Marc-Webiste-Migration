@@ -106,7 +106,7 @@ export default function MeetMarc() {
               </li>
               <li>
                 <a href="https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2" rel="noopener">
-                  Over 50 five-star client reviews on Yelp
+                  Dozens of five-star client reviews on Yelp
                 </a>
               </li>
             </ul>

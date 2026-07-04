@@ -2216,3 +2216,22 @@
     color: var(--bone-2);
   }
 }
+
+/* fractional star rating (e.g. 4.6 of 5 filled) */
+.d4 .stars.frac {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.d4 .stars.frac .base {
+  color: rgba(200, 162, 74, 0.28);
+}
+.d4 .stars.frac .fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--gold);
+}

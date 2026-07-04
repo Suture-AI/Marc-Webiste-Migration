@@ -6,6 +6,16 @@ import { TESTIMONIALS } from "../data/testimonials.js";
 
 const OUTLETS = ["CNN", "NBC", "ABC", "CBS 8", "FOX 5", "The Washington Post", "Wall Street Journal", "NY Post", "Union-Tribune", "TMZ", "HLN", "The Today Show"];
 
+/* Star row with fractional fill (e.g. 4.6 of 5). */
+function Stars({ value }) {
+  return (
+    <span className="stars frac" role="img" aria-label={`Rated ${value} out of 5 stars`}>
+      <span className="base" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span className="fill" aria-hidden="true" style={{ width: `${(value / 5) * 100}%` }}>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    </span>
+  );
+}
+
 const PRACTICE = [
   ["01", "DUI & DWI", "Field-sobriety challenges, license hearings and hard negotiation to limit the impact on your life.", "/san-diego-dui-attorney/"],
   ["02", "Drug Crimes", "Possession to trafficking — a strategy built to protect your record and your future.", "/san-diego-criminal-defense-lawyer/drug-crime-attorney/"],
@@ -84,8 +94,8 @@ export default function Home() {
               <a className="btn btn-ghost" href="tel:6193982500">Call (619) 398-2500</a>
             </div>
             <div className="trust">
-              <span className="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-              <span><b>5.0</b> on Yelp &amp; Google</span>
+              <Stars value={4.6} />
+              <span><b>Highly Rated Lawyer</b></span>
               <span className="dot">·</span>
               <span><b>13+</b> Years Defending the Accused</span>
             </div>
@@ -152,7 +162,7 @@ export default function Home() {
           </div>
           <p style={{ textAlign: "center", marginTop: 34 }}>
             <a className="btn btn-ghost" href="https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2" rel="noopener">
-              50+ Five-Star Reviews on Yelp &rarr;
+              Read Marc&rsquo;s Reviews on Yelp &rarr;
             </a>
           </p>
         </div>
@@ -212,7 +222,7 @@ export default function Home() {
           </div>
           <div className="numbers">
             <div className="n reveal"><b><CountUp value={13} suffix="+" /></b><span>Years Defending</span></div>
-            <div className="n reveal"><b><CountUp value={5} decimals={1} suffix="★" /></b><span>Yelp &amp; Google</span></div>
+            <div className="n reveal"><b><CountUp value={4.6} decimals={1} suffix="★" /></b><span>Rated on Yelp</span></div>
             <div className="n reveal"><b><CountUp value={1000} suffix="s" /></b><span>Cases Handled</span></div>
             <div className="n reveal"><b>24/7</b><span>Available to You</span></div>
           </div>
