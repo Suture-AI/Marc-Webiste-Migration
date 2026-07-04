@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { usePageMeta } from "../hooks/usePageMeta.js";
 import PageHero from "../components/PageHero.jsx";
 import BigCta from "../components/BigCta.jsx";
@@ -8,8 +9,14 @@ import { CASES, CLIPPINGS, VIDEOS, PHOTOS, videoSrc, videoPoster } from "../data
 /* Full press archive: national headlines, newspaper clippings and the
    broadcast footage Marc's cases generated over 15+ years. */
 export default function InTheNews() {
-  const [cse, setCse] = useState("all");
+  const [params, setParams] = useSearchParams();
+  const fromUrl = params.get("case");
+  const [cse, setCse] = useState(CASES.some((c) => c.key === fromUrl) ? fromUrl : "all");
   const [zoom, setZoom] = useState(null);
+  const pick = (key) => {
+    setCse(key);
+    setParams(key === "all" ? {} : { case: key }, { replace: true });
+  };
   usePageMeta({
     title: "In the News - San Diego Criminal Defense Attorney Marc S. Kohnen",
     description:
@@ -51,7 +58,7 @@ export default function InTheNews() {
           <div className="casetabs" role="tablist" aria-label="Filter coverage by case">
             <div className="filterbar" style={{ margin: 0 }}>
               {CASES.map((c) => (
-                <button key={c.key} className={cse === c.key ? "on" : ""} onClick={() => setCse(c.key)}>
+                <button key={c.key} className={cse === c.key ? "on" : ""} onClick={() => pick(c.key)}>
                   {c.label}
                 </button>
               ))}

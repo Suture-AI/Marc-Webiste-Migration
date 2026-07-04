@@ -5,6 +5,18 @@ import PageHero from "../components/PageHero.jsx";
 import BigCta from "../components/BigCta.jsx";
 import { RESULT_SECTIONS } from "../data/results.js";
 
+/* Results with verified news footage, featured above the archive.
+   Each maps a press-tagged case entry to its broadcast clip. */
+const FEATURED_VIDEO = {
+  branch: "/media/branch-verdict-cbs8-5pm",
+  mauling: "/media/dog-mauling-abc10",
+};
+const FEATURED = RESULT_SECTIONS.flatMap((s) =>
+  s.cases
+    .filter((c) => c.press && FEATURED_VIDEO[c.press.case])
+    .map((c) => ({ ...c, section: s, media: FEATURED_VIDEO[c.press.case] }))
+);
+
 /* Full actual-case-results archive, filterable by charge category. */
 export default function Results() {
   const [filter, setFilter] = useState("all");
@@ -27,6 +39,37 @@ export default function Results() {
         sub={`${total}+ documented outcomes — not-guilty verdicts at trial, outright dismissals and felonies reduced to infractions. These are real cases from the Law Office of Marc S. Kohnen.`}
         crumbs={[["Case Results", null]]}
       />
+
+      {/* wins with the TV footage to prove them */}
+      <section className="block" style={{ paddingTop: 64, paddingBottom: 0 }}>
+        <div className="wrap">
+          <div className="sec-head">
+            <span className="sec-rule">As Seen On TV</span>
+            <div className="sec-title">Verdicts that made the news</div>
+            <p>Some results speak for themselves — on the evening news. Watch the coverage of these victories.</p>
+          </div>
+          <div className="featwins">
+            {FEATURED.map((f) => (
+              <div className="featwin reveal" key={f.press.case}>
+                <video controls preload="none" poster={`${f.media.replace("/media/", "/media/posters/")}.jpg`} src={`${f.media}.mp4`} />
+                <div className="body">
+                  <div className="code">{f.code}</div>
+                  <h3>{f.charge}</h3>
+                  <div className="outcome">{f.outcome}</div>
+                  <div className="links">
+                    <Link className="presslink" to={`/in-the-news/?case=${f.press.case}`}>
+                      <b aria-hidden="true">&#9654;</b> All coverage of this case
+                    </Link>
+                    <Link className="presslink ghost" to={f.section.practicePath}>
+                      {f.section.practiceLabel} &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="block" style={{ paddingTop: 64 }}>
         <div className="wrap">
@@ -51,20 +94,24 @@ export default function Results() {
               {s.note && <p className="note">{s.note}</p>}
               <div className="rlist" key={filter /* replay entrance when the filter changes */}>
                 {s.cases.map((c, i) => (
-                  <Link
-                    className="rcase"
-                    to={s.practicePath}
-                    key={i}
-                    style={{ animationDelay: `${Math.min(i, 8) * 45}ms` }}
-                    aria-label={`${c.charge} — ${c.outcome}. Learn about ${s.practiceLabel}.`}
-                  >
+                  <div className="rcase" key={i} style={{ animationDelay: `${Math.min(i, 8) * 45}ms` }}>
+                    <Link
+                      className="cover"
+                      to={s.practicePath}
+                      aria-label={`${c.charge} — ${c.outcome}. Learn about ${s.practiceLabel}.`}
+                    />
                     <div>
                       <div className="code">{c.code}</div>
                       <div className="charge">{c.charge}</div>
                       <span className="go">{s.practiceLabel} &rarr;</span>
+                      {c.press && (
+                        <Link className="presslink" to={`/in-the-news/?case=${c.press.case}`}>
+                          <b aria-hidden="true">&#9654;</b> {c.press.label}
+                        </Link>
+                      )}
                     </div>
                     <div className="outcome">{c.outcome}</div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>

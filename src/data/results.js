@@ -75,7 +75,7 @@ export const RESULT_SECTIONS = [
     practiceLabel: "Child Endangerment Defense",
     title: "Child Endangerment",
     cases: [
-      { code: "Penal Code §273(a) and §12022.95", charge: "Child Endangerment Causing Death", outcome: "Probation — District Attorney argued for 8 years prison" },
+      { code: "Penal Code §273(a) and §12022.95", charge: "Child Endangerment Causing Death", outcome: "Probation — District Attorney argued for 8 years prison", press: { case: "mauling", label: "Watch the news coverage" } },
       { code: "Penal Code §273(a)", charge: "Felony Child Endangerment Arrest", outcome: "Prevented filing of criminal charges via negotiation with the District Attorney" },
     ],
   },
@@ -99,7 +99,7 @@ export const RESULT_SECTIONS = [
       { code: "Penal Code §187", charge: "Murder — First Degree", outcome: "NOT GUILTY verdict at trial" },
       { code: "Penal Code §187", charge: "Murder — First Degree", outcome: "Negotiated plea to accessory after the fact; credit for time served" },
       { code: "Penal Code §187", charge: "Murder — Second Degree", outcome: "Negotiated plea to involuntary manslaughter — probation" },
-      { code: "PC §245(a)(1) with §12022.7 allegation", charge: "Assault with a Deadly Weapon with Personal Infliction of Great Bodily Injury", outcome: "NOT GUILTY verdict at trial — self defense" },
+      { code: "PC §245(a)(1) with §12022.7 allegation", charge: "Assault with a Deadly Weapon with Personal Infliction of Great Bodily Injury", outcome: "NOT GUILTY verdict at trial — self defense", press: { case: "branch", label: "Watch the Branch verdict coverage" } },
       { code: "PC §69, §22810(g)(2), §148, §12022(b)(1)", charge: "Resisting an Executive Order, Use of Tear Gas Against a Peace Officer, Resisting Arrest", outcome: "NOT GUILTY verdict at trial — self defense" },
       { code: "Penal Code §245(a)(4)", charge: "Felony Assault with a Deadly Weapon", outcome: "Settled for PC §415 — misdemeanor disturbing the peace" },
       { code: "Penal Code §245(a)(1)", charge: "Felony Assault with a Deadly Weapon", outcome: "Settled for PC §415 — misdemeanor disturbing the peace" },
