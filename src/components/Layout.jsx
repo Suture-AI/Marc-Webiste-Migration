@@ -63,9 +63,7 @@ export default function Layout() {
             </div>
 
             <Link className="crest" to="/">
-              <img src="/assets/logo.png" alt="Kohnen Law logo" />
-              <b>KOHNEN</b>
-              <small>LAW</small>
+              <img src="/assets/kohnen-law-logo.png" alt="Kohnen Law logo" />
             </Link>
 
             <a className="callbtn" href="tel:6193982500">Call</a>

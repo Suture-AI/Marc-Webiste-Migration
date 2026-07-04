@@ -170,40 +170,25 @@
     color: var(--gold-2);
   }
 
-  /* the white pennant crest, dropping from the bar center */
+  /* the white pennant crest, dropping from the bar center — holds Marc's
+     original logo untouched; the tab is white so it blends with the mark */
   & .crest {
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    background: var(--bone);
-    color: var(--navy-deep);
-    padding: 12px 30px 16px;
+    display: block;
+    line-height: 0;
+    background: #fff;
+    padding: 14px 26px 18px;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 14px 36px rgba(0, 0, 0, 0.4);
     z-index: 3;
   }
   & .crest img {
-    height: 38px;
-    width: 38px;
-  }
-  & .crest b {
-    font-family: var(--serif);
-    font-weight: 800;
-    font-size: 1rem;
-    letter-spacing: 0.16em;
-    line-height: 1;
-  }
-  & .crest small {
-    font-family: var(--head);
-    font-size: 0.52rem;
-    font-weight: 700;
-    letter-spacing: 0.42em;
-    color: var(--gold-deep);
+    display: block;
+    height: 72px;
+    width: 72px;
   }
 
   /* labeled MENU button (small screens) */
@@ -269,10 +254,8 @@
     & .right { gap: 12px; }
     & .callus { font-size: 0; letter-spacing: 0; }
     & .callus b { font-size: 0.94rem; }
-    & .crest { padding: 9px 18px 12px; gap: 3px; }
-    & .crest img { height: 28px; width: 28px; }
-    & .crest b { font-size: 0.82rem; }
-    & .crest small { font-size: 0.44rem; }
+    & .crest { padding: 10px 20px 14px; }
+    & .crest img { height: 58px; width: 58px; }
   }
 
   @media (max-width: 940px) {
