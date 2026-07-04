@@ -49,15 +49,22 @@ export default function Results() {
             <div className="rsec" key={s.key}>
               <h2>{s.title}</h2>
               {s.note && <p className="note">{s.note}</p>}
-              <div className="rlist">
+              <div className="rlist" key={filter /* replay entrance when the filter changes */}>
                 {s.cases.map((c, i) => (
-                  <div className="rcase reveal" key={i}>
+                  <Link
+                    className="rcase"
+                    to={s.practicePath}
+                    key={i}
+                    style={{ animationDelay: `${Math.min(i, 8) * 45}ms` }}
+                    aria-label={`${c.charge} — ${c.outcome}. Learn about ${s.practiceLabel}.`}
+                  >
                     <div>
                       <div className="code">{c.code}</div>
                       <div className="charge">{c.charge}</div>
+                      <span className="go">{s.practiceLabel} &rarr;</span>
                     </div>
                     <div className="outcome">{c.outcome}</div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

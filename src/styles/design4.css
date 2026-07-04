@@ -1473,8 +1473,35 @@
     background: linear-gradient(90deg, rgba(15, 29, 51, 0.75), rgba(5, 8, 15, 0.6));
     padding: 18px 22px;
     transition: border-color 0.25s, transform 0.25s;
+    animation: rcaseIn 0.45s ease both; /* self-contained entrance — filter changes replay it */
   }
-  & .rcase:hover { transform: translateX(4px); }
+  & .rcase:hover {
+    transform: translateX(4px);
+    border-color: var(--gold);
+  }
+  & .rcase .go {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: var(--head);
+    font-weight: 800;
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-2);
+    opacity: 0.55;
+    transition: opacity 0.25s, transform 0.25s;
+  }
+  & .rcase:hover .go {
+    opacity: 1;
+    transform: translateX(4px);
+  }
+  @keyframes rcaseIn {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    & .rcase { animation: none; }
+  }
   & .rcase .code {
     font-family: var(--head);
     font-size: 0.68rem;

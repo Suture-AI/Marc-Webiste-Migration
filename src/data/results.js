@@ -4,6 +4,8 @@
 export const RESULT_SECTIONS = [
   {
     key: "drug",
+    practicePath: "/san-diego-criminal-defense-lawyer/drug-crime-attorney/",
+    practiceLabel: "Drug Crime Defense",
     title: "Drug Crimes",
     cases: [
       { code: "Title 21, U.S.C. §952 and §960", charge: "Importation of Methamphetamine and Cocaine to the United States", outcome: "All charges dismissed" },
@@ -22,6 +24,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "theft",
+    practicePath: "/theft/",
+    practiceLabel: "Theft Defense",
     title: "Theft Crimes",
     note: "Hundreds of Penal Code §484 misdemeanor petty-theft cases resulting in dismissal of all charges.",
     cases: [
@@ -36,6 +40,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "dui",
+    practicePath: "/san-diego-dui-attorney/",
+    practiceLabel: "DUI Defense",
     title: "DUI Offenses",
     cases: [
       { code: "VC §23152(a) and §23152(b)", charge: "Driving Under the Influence of Alcohol and/or Drugs", outcome: "Multiple NOT GUILTY verdicts at trial" },
@@ -52,6 +58,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "burglary",
+    practicePath: "/san-diego-criminal-defense-lawyer/",
+    practiceLabel: "Criminal Defense",
     title: "Burglary Crimes",
     cases: [
       { code: "Penal Code §460 — alleged strike", charge: "Residential Burglary", outcome: "No jail" },
@@ -63,6 +71,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "child-endangerment",
+    practicePath: "/child-endangerment/",
+    practiceLabel: "Child Endangerment Defense",
     title: "Child Endangerment",
     cases: [
       { code: "Penal Code §273(a) and §12022.95", charge: "Child Endangerment Causing Death", outcome: "Probation — District Attorney argued for 8 years prison" },
@@ -71,6 +81,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "vandalism",
+    practicePath: "/san-diego-criminal-defense-lawyer/",
+    practiceLabel: "Criminal Defense",
     title: "Vandalism Crimes",
     cases: [
       { code: "Penal Code §594(b)(1) and §647(f)", charge: "Felony Vandalism and Misdemeanor Public Intoxication", outcome: "Dismissed upon motion by the defense" },
@@ -80,6 +92,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "violent",
+    practicePath: "/violent-crimes/",
+    practiceLabel: "Violent Crime Defense",
     title: "Violent Crimes",
     cases: [
       { code: "Penal Code §187", charge: "Murder — First Degree", outcome: "NOT GUILTY verdict at trial" },
@@ -98,6 +112,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "sex",
+    practicePath: "/sex-crimes/",
+    practiceLabel: "Sex Crime Defense",
     title: "Sex Crimes",
     cases: [
       { code: "Penal Code §647(j)(2) — 88 counts", charge: "Unlawful Video Recording of Undressed Persons Without Their Knowledge", outcome: "No jail; no sex-offender registration required" },
@@ -109,6 +125,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "domestic-violence",
+    practicePath: "/domestic-violence/",
+    practiceLabel: "Domestic Violence Defense",
     title: "Domestic Violence",
     note: "Many Penal Code §273.5 and §243(e)(1) arrests resulting in no charges filed and/or no conviction.",
     cases: [
@@ -117,6 +135,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "hit-run",
+    practicePath: "/hit-run/",
+    practiceLabel: "Hit & Run Defense",
     title: "Hit & Run with Injury",
     cases: [
       { code: "Vehicle Code §20001(a)", charge: "Felony Hit and Run Causing Injury", outcome: "Case dismissed" },
@@ -125,6 +145,8 @@ export const RESULT_SECTIONS = [
   },
   {
     key: "other",
+    practicePath: "/san-diego-criminal-defense-lawyer/",
+    practiceLabel: "Criminal Defense",
     title: "Drunk in Public & Other Offenses",
     cases: [
       { code: "Penal Code §647(b)(1)", charge: "Solicitation of Prostitution", outcome: "Case dismissed" },
