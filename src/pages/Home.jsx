@@ -234,7 +234,7 @@ export default function Home() {
         <div className="wrap fgrid">
           <div className="ph reveal">
             <img src="/assets/untitled33.png" alt="Marc S. Kohnen working at his San Diego criminal defense law office" />
-            <div className="badge"><b>Since 2008</b>Defending San Diego</div>
+            <div className="badge"><b>2008</b>Defending San Diego since</div>
           </div>
           <div className="reveal">
             <span className="sec-rule">Meet Marc</span>
