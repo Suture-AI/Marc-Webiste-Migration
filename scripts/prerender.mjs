@@ -129,7 +129,7 @@ for (const r of routes) {
     <meta name="twitter:image" content="${SITE}/assets/og-card.jpg" />
     <script type="application/ld+json">${SCHEMA}</script>`;
 
-  const appHtml = render(r.path);
+  const appHtml = render((process.env.PAGES_BASE || "/").replace(/\/$/, "") + r.path);
   let html = template
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(r.title)}</title>`)
     .replace(/(<meta\s+name="description"\s+content=")[\s\S]*?("\s*\/>)/, `$1${esc(r.description)}$2`)

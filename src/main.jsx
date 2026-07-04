@@ -7,7 +7,7 @@ import "./styles/base.css";
 const container = document.getElementById("root");
 const app = (
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
       <App />
     </BrowserRouter>
   </React.StrictMode>

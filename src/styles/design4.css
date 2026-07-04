@@ -955,7 +955,8 @@
     line-height: 1;
     display: block;
   }
-  & .numbers .n span {
+  /* direct child only — CountUp renders its own span inside the <b> */
+  & .numbers .n > span {
     font-family: var(--head);
     font-size: 0.74rem;
     font-weight: 700;
@@ -2217,4 +2218,58 @@
   overflow: hidden;
   white-space: nowrap;
   color: var(--gold);
+}
+
+/* =========================================================================
+   MOBILE POLISH — phone-width refinements for the whole .d4 system.
+   Tighter section rhythm, swipeable testimonials, compact stats and cards.
+   ========================================================================= */
+.d4 {
+  @media (max-width: 700px) {
+    /* sections: cut the desktop-scale dead space between blocks */
+    & section.block { padding: 60px 0; }
+    & .sec-head { margin-bottom: 34px; }
+    & .sec-head p { font-size: 0.98rem; }
+
+    /* hero: shorter — smaller cutout, tighter grid */
+    & .herogrid { padding: 40px 0 52px; gap: 26px; }
+    & .herogrid:has(.figure.cutout) { gap: 26px; }
+    & .figure.cutout { max-width: 240px; margin-bottom: -48px; }
+    & .hero-cta { gap: 10px; }
+    & .trust { font-size: 0.8rem; }
+
+    /* testimonials: one row you swipe through instead of a nine-card stack */
+    & .testwall {
+      columns: auto;
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 16px;
+      scrollbar-width: none;
+    }
+    & .testwall::-webkit-scrollbar { display: none; }
+    & .testwall .tcard {
+      flex: 0 0 84%;
+      margin: 0;
+      scroll-snap-align: center;
+    }
+    /* cards enter the viewport from the side, not the scroll — no fade-wait */
+    & .testwall .reveal { opacity: 1; transform: none; transition: none; }
+
+    /* stats band: compact 2×2 tiles */
+    & .numbers .n { padding: 22px 12px; }
+    & .numbers .n b { font-size: 2.2rem; }
+    & .numbers .n > span { font-size: 0.6rem; letter-spacing: 0.12em; margin-top: 8px; }
+
+    /* practice cards: content-height, tighter frame */
+    & .cards { gap: 12px; }
+    & .card { min-height: 0; padding: 22px 20px; }
+    & .card .no { font-size: 1.9rem; top: 14px; right: 16px; }
+
+    /* meet-marc badge hugs the photo inside the wrap padding */
+    & .meet .fgrid { gap: 40px; }
+    & .meet .ph .badge { right: -10px; bottom: -14px; padding: 12px 16px; }
+  }
 }
