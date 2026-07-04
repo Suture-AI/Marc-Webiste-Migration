@@ -8,6 +8,7 @@ import Results from "./pages/Results.jsx";
 import InTheNews from "./pages/InTheNews.jsx";
 import Faq from "./pages/Faq.jsx";
 import Contact from "./pages/Contact.jsx";
+import BranchCase from "./pages/BranchCase.jsx";
 import { PRACTICE_CONTENT } from "./data/practice/index.js";
 import { byKey } from "./data/practiceAreas.js";
 
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/in-the-news/" element={<InTheNews />} />
         <Route path="/faq/" element={<Faq />} />
         <Route path="/contact-marc/" element={<Contact />} />
+        <Route path="/the-branch-case/" element={<BranchCase />} />
         {PRACTICE_CONTENT.map((content) => (
           <Route
             key={content.key}

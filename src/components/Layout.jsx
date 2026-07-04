@@ -92,7 +92,18 @@ export default function Layout() {
           </div>
         </div>
 
-        <Outlet />
+        <main className="pagefade" key={pathname}>
+          <Outlet />
+        </main>
+
+        {/* one-thumb call bar, phones only */}
+        <div className="callbar" role="complementary" aria-label="Quick contact">
+          <a className="cb-call" href="tel:6193982500">
+            <b>Call Now</b>
+            <span>(619) 398-2500 · 24/7</span>
+          </a>
+          <Link className="cb-msg" to="/contact-marc/">Free Case Review</Link>
+        </div>
 
         <footer className="site">
           <div className="wrap">

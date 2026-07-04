@@ -80,6 +80,11 @@ export default function Results() {
                       <Link className="presslink" to={`/in-the-news/?case=${f.press.case}`}>
                         <b aria-hidden="true">&#9654;</b> {f.press.label}
                       </Link>
+                      {f.press.case === "branch" && (
+                        <Link className="presslink" to="/the-branch-case/" style={{ marginLeft: 10 }}>
+                          The Full Story &rarr;
+                        </Link>
+                      )}
                     </div>
                     <div className="outcome">{f.outcome}</div>
                   </div>

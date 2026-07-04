@@ -3,6 +3,7 @@ import { usePageMeta } from "../hooks/usePageMeta.js";
 import PageHero from "../components/PageHero.jsx";
 import BigCta from "../components/BigCta.jsx";
 import { TOP_AREAS, byKey } from "../data/practiceAreas.js";
+import { testimonialFor } from "../data/testimonials.js";
 
 /* Data-driven template for all practice-area pages. `content` modules live
    in src/data/practice/ and carry the copy migrated from msklawyer.com. */
@@ -17,6 +18,7 @@ export default function PracticeArea({ content }) {
 
   const area = byKey[content.key] || {};
   const parent = area.parent ? byKey[area.parent] : null;
+  const review = testimonialFor(content.key, area.parent);
   const crumbs = [
     ["Practice Areas", "/areas-of-practice/"],
     ...(parent ? [[parent.title, parent.path]] : []),
@@ -82,6 +84,13 @@ export default function PracticeArea({ content }) {
               ))}
             </ul>
           </div>
+          {review && (
+            <figure className="sidecard tquote">
+              <div className="stars" aria-label="Five star review">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>&ldquo;{review.quote}&rdquo;</blockquote>
+              <figcaption>{review.name} · Verified Review</figcaption>
+            </figure>
+          )}
           <div className="sidecard">
             <h3>Proven Results</h3>
             <p>Not-guilty verdicts, dismissals and front-page acquittals — see what Marc has won for clients facing these exact charges.</p>

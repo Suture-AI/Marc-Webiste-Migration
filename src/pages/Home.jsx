@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { usePageMeta } from "../hooks/usePageMeta.js";
 import BigCta from "../components/BigCta.jsx";
+import CountUp from "../components/CountUp.jsx";
+import { TESTIMONIALS } from "../data/testimonials.js";
+
+const OUTLETS = ["CNN", "NBC", "ABC", "CBS 8", "FOX 5", "The Washington Post", "Wall Street Journal", "NY Post", "Union-Tribune", "TMZ", "HLN", "The Today Show"];
 
 const PRACTICE = [
   ["01", "DUI & DWI", "Field-sobriety challenges, license hearings and hard negotiation to limit the impact on your life.", "/san-diego-dui-attorney/"],
@@ -94,18 +98,15 @@ export default function Home() {
         </a>
       </section>
 
-      {/* ===== AS SEEN ON (national media) ===== */}
-      <div className="outlets" aria-label="Media outlets that have covered Marc Kohnen's cases">
-        <span>CNN</span>
-        <span>NBC</span>
-        <span>ABC</span>
-        <span>CBS 8</span>
-        <span>FOX 5</span>
-        <span>The Washington Post</span>
-        <span>Wall Street Journal</span>
-        <span>NY Post</span>
-        <span>Union-Tribune</span>
-        <span>TMZ</span>
+      {/* ===== AS SEEN ON (national media, slow marquee) ===== */}
+      <div className="outlets marquee" aria-label="Media outlets that have covered Marc Kohnen's cases">
+        <div className="track" aria-hidden="false">
+          {[0, 1].map((dup) => (
+            <div className="set" key={dup} aria-hidden={dup === 1}>
+              {OUTLETS.map((o) => <span key={o}>{o}</span>)}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* ===== PRACTICE AREAS (services cards) ===== */}
@@ -132,15 +133,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== QUOTE BAND ===== */}
-      <section className="block quoteband">
+      {/* ===== CLIENT TESTIMONIALS ===== */}
+      <section className="block quoteband" style={{ textAlign: "left" }}>
         <div className="wrap">
-          <div className="q">
-            &ldquo;The prosecutor was trying to pin 21 counts and 10 years on my brother. Marc got
-            it down to <span>3 counts and 3 years.</span> Thank you for the wonderful work you were
-            able to do.&rdquo;
+          <div className="sec-head">
+            <span className="sec-rule">Client Reviews</span>
+            <div className="sec-title">In their own words</div>
+            <p>Real reviews from real clients — the people who stood where you&rsquo;re standing now.</p>
           </div>
-          <div className="who">Teena E. · Verified Review</div>
+          <div className="testwall">
+            {TESTIMONIALS.map((t) => (
+              <figure className="tcard reveal" key={t.name}>
+                <div className="stars" aria-label="Five star review">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote>&ldquo;{t.quote}&rdquo;</blockquote>
+                <figcaption>{t.name} · Verified Review</figcaption>
+              </figure>
+            ))}
+          </div>
+          <p style={{ textAlign: "center", marginTop: 34 }}>
+            <a className="btn btn-ghost" href="https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2" rel="noopener">
+              50+ Five-Star Reviews on Yelp &rarr;
+            </a>
+          </p>
         </div>
       </section>
 
@@ -152,7 +166,10 @@ export default function Home() {
             <h2>Ask any other attorney if they&rsquo;ve ever put a <span className="hi">not&nbsp;guilty</span> verdict on the front page.</h2>
             <p>Most lawyers promise the world. Marc has the headlines to prove it — including a San Diego Union-Tribune front-page acquittal.</p>
             <p>When your freedom is on the line, experience and results are everything. With Marc by your side, you avoid a permanent criminal record and keep your reputation intact.</p>
-            <Link className="btn btn-gold" to="/result/" style={{ marginTop: 8 }}>See the Results</Link>
+            <div className="hero-cta" style={{ marginTop: 8 }}>
+              <Link className="btn btn-gold" to="/the-branch-case/">Read the Full Story</Link>
+              <Link className="btn btn-ghost" to="/result/">See All Results</Link>
+            </div>
           </div>
           <div className="clip reveal">
             <span className="tape">Front Page</span>
@@ -194,9 +211,9 @@ export default function Home() {
             <div className="sec-title">A record that speaks</div>
           </div>
           <div className="numbers">
-            <div className="n reveal"><b>13+</b><span>Years Defending</span></div>
-            <div className="n reveal"><b>5.0&#9733;</b><span>Yelp &amp; Google</span></div>
-            <div className="n reveal"><b>1000s</b><span>Cases Handled</span></div>
+            <div className="n reveal"><b><CountUp value={13} suffix="+" /></b><span>Years Defending</span></div>
+            <div className="n reveal"><b><CountUp value={5} decimals={1} suffix="★" /></b><span>Yelp &amp; Google</span></div>
+            <div className="n reveal"><b><CountUp value={1000} suffix="s" /></b><span>Cases Handled</span></div>
             <div className="n reveal"><b>24/7</b><span>Available to You</span></div>
           </div>
         </div>

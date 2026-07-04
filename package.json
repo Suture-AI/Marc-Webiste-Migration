@@ -3,10 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "The Law Office of Marc S. Kohnen — four homepage design directions, built in React.",
+  "description": "The Law Office of Marc S. Kohnen \u2014 four homepage design directions, built in React.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-server && node scripts/prerender.mjs",
     "preview": "vite preview --port 5173"
   },
   "dependencies": {
