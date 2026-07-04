@@ -197,19 +197,18 @@
     align-items: center;
     gap: 10px;
     background: none;
-    border: 1px solid rgba(244, 240, 232, 0.35);
-    border-radius: 3px;
+    border: none;
     color: var(--bone);
     font-family: var(--head);
     font-weight: 800;
     font-size: 0.74rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    padding: 11px 16px;
+    padding: 11px 4px;
     cursor: pointer;
-    transition: border-color 0.2s, color 0.2s;
+    transition: color 0.2s;
   }
-  & .menubtn:hover { border-color: var(--gold); color: var(--gold-2); }
+  & .menubtn:hover { color: var(--gold-2); }
   & .menubtn i {
     display: flex;
     flex-direction: column;
@@ -623,7 +622,8 @@
     box-shadow: 0 16px 34px rgba(200, 162, 74, 0.4);
   }
   & .btn-ghost {
-    border: 1.5px solid rgba(244, 240, 232, 0.5);
+    border: 1px solid rgba(244, 240, 232, 0.24);
+    background: rgba(244, 240, 232, 0.05);
     color: var(--bone);
   }
   & .btn-ghost:hover {
@@ -718,16 +718,32 @@
       justify-self: center;
       max-width: 320px;
     }
+    /* cutout hero keeps the desktop arrangement — Marc holds the left column,
+       the copy sits beside him, left-aligned like a magazine split */
     & .herogrid:has(.figure.cutout) {
-      grid-template-columns: minmax(0, 1fr); /* beat the desktop :has() rule's specificity */
-      gap: 40px;
+      grid-template-columns: minmax(96px, 0.72fr) minmax(0, 1.28fr);
+      gap: 18px;
+      align-items: end;
+      padding: 40px 0 0; /* the copy carries its own bottom spacing */
     }
     & .figure.cutout {
-      order: 3; /* on mobile he stands below the headline, on the hero's bottom edge */
-      max-width: 280px;
-      margin-bottom: -60px;
-      margin-top: 4px;
+      order: 1;
+      max-width: none;
+      margin: 0;
+      align-self: end; /* feet on the hero's bottom edge */
     }
+    & .figure.cutout img {
+      max-height: none;
+      width: 100%; /* the column, not the viewport, sets his size */
+    }
+    & .figure.cutout .nameplate { display: none; } /* no room in the narrow column */
+    & .herogrid:has(.figure.cutout) .copy { order: 2; text-align: left; padding-bottom: 44px; }
+    & .herogrid:has(.figure.cutout) .copy .eyebrow { justify-content: flex-start; }
+    & .herogrid:has(.figure.cutout) .hero-cta,
+    & .herogrid:has(.figure.cutout) .trust { justify-content: flex-start; }
+    & .herogrid:has(.figure.cutout) h1.real { margin-left: 0; }
+    & .herogrid:has(.figure.cutout) .display { font-size: clamp(1.5rem, 6.6vw, 2.5rem); }
+    & .herogrid:has(.figure.cutout) .btn { padding: 12px 18px; font-size: 0.72rem; }
     & .scrollcue { display: none; }
   }
   @media (prefers-reduced-motion: reduce) {
