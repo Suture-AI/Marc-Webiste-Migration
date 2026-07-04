@@ -101,12 +101,17 @@ export default function MeetMarc() {
               </li>
               <li>
                 <a href="https://www.avvo.com/attorneys/92101-ca-marc-kohnen-1754991.html" rel="noopener">
-                  10.0 AVVO criminal defense rating — state &amp; federal defense lawyer
+                  AVVO &ldquo;Superb&rdquo; rating (9.7+) with 11 five-star peer reviews — state &amp; federal defense lawyer
                 </a>
               </li>
               <li>
                 <a href="https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2" rel="noopener">
-                  Dozens of five-star client reviews on Yelp
+                  75+ client reviews on Yelp — dozens of them five-star
+                </a>
+              </li>
+              <li>
+                <a href="https://profiles.superlawyers.com/california/san-diego/lawyer/marc-kohnen/3aa5d94f-86d9-41de-894f-fe9066d2b1ac.html" rel="noopener">
+                  Super Lawyers selectee — top-rated San Diego criminal defense attorney
                 </a>
               </li>
             </ul>

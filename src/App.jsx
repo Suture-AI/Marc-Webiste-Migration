@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import PracticeArea from "./pages/PracticeArea.jsx";
@@ -9,6 +9,7 @@ import InTheNews from "./pages/InTheNews.jsx";
 import Faq from "./pages/Faq.jsx";
 import Contact from "./pages/Contact.jsx";
 import BranchCase from "./pages/BranchCase.jsx";
+import NotFound from "./pages/NotFound.jsx";
 import { PRACTICE_CONTENT } from "./data/practice/index.js";
 import { byKey } from "./data/practiceAreas.js";
 
@@ -31,7 +32,7 @@ export default function App() {
             element={<PracticeArea content={content} />}
           />
         ))}
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

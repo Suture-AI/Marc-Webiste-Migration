@@ -68,6 +68,17 @@ for (const area of AREAS) {
   routes.push({ path: area.path, title: mod.default.metaTitle, description: mod.default.metaDescription });
 }
 
+/* Baked to dist/404.html — Vercel serves it (with a real 404 status) for any
+   unknown URL, since every legitimate route above exists as a static file. */
+routes.push({
+  path: "/404/",
+  outFile: "404.html",
+  noindex: true,
+  title: "Page Not Found - Marc S. Kohnen, San Diego Criminal Defense",
+  description:
+    "The page you're looking for doesn't exist. Find San Diego criminal defense resources from the Law Office of Marc S. Kohnen.",
+});
+
 const SCHEMA = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Attorney",
@@ -93,6 +104,7 @@ const SCHEMA = JSON.stringify({
     "https://www.youtube.com/c/TheLawOfficeofMarcSKohnenSanDiego/videos",
     "https://www.avvo.com/attorneys/92101-ca-marc-kohnen-1754991.html",
     "https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2",
+    "https://profiles.superlawyers.com/california/san-diego/lawyer/marc-kohnen/3aa5d94f-86d9-41de-894f-fe9066d2b1ac.html",
   ],
 });
 
@@ -102,7 +114,7 @@ let count = 0;
 
 for (const r of routes) {
   const canonical = `${SITE}${r.path}`;
-  const head = `<link rel="canonical" href="${canonical}" />
+  const head = `${r.noindex ? '<meta name="robots" content="noindex" />' : `<link rel="canonical" href="${canonical}" />`}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Law Office of Marc S. Kohnen" />
     <meta property="og:title" content="${esc(r.title)}" />
@@ -124,9 +136,13 @@ for (const r of routes) {
     .replace("</head>", `    ${head}\n  </head>`)
     .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 
-  const outDir = path.join(root, "dist", r.path === "/" ? "" : r.path);
-  fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, "index.html"), html);
+  if (r.outFile) {
+    fs.writeFileSync(path.join(root, "dist", r.outFile), html);
+  } else {
+    const outDir = path.join(root, "dist", r.path === "/" ? "" : r.path);
+    fs.mkdirSync(outDir, { recursive: true });
+    fs.writeFileSync(path.join(outDir, "index.html"), html);
+  }
   count++;
 }
 

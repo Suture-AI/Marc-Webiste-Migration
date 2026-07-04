@@ -20,7 +20,7 @@ export default function Layout() {
   const root = useRef(null);
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
-  useScrollReveal(root, { groups: 4, stagger: 80, rescanKey: pathname });
+  useScrollReveal(root, { groups: 4, stagger: 55, rescanKey: pathname });
   useEffect(() => setOpen(false), [pathname]);
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";

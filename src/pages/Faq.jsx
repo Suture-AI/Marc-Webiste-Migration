@@ -52,6 +52,18 @@ const FAQS = [
   },
 ];
 
+/* FAQPage structured data — baked into the pre-rendered HTML so the page is
+   eligible for FAQ rich results. Content is the static FAQS array above. */
+const FAQ_SCHEMA = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a.join(" ") },
+  })),
+});
+
 export default function Faq() {
   usePageMeta({
     title: "FAQs - Criminal Defense Attorney",
@@ -63,6 +75,7 @@ export default function Faq() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: FAQ_SCHEMA }} />
       <PageHero
         eyebrow="Straight Answers"
         title="Frequently Asked Questions"

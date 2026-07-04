@@ -95,9 +95,9 @@ export default function Home() {
             </div>
             <div className="trust">
               <Stars value={4.6} />
-              <span><b>Highly Rated Lawyer</b></span>
+              <span><b>75+</b> Client Reviews on Yelp</span>
               <span className="dot">·</span>
-              <span><b>13+</b> Years Defending the Accused</span>
+              <span>Defending San Diego <b>Since 2008</b></span>
             </div>
           </div>
         </div>
@@ -221,9 +221,9 @@ export default function Home() {
             <div className="sec-title">A record that speaks</div>
           </div>
           <div className="numbers">
-            <div className="n reveal"><b><CountUp value={13} suffix="+" /></b><span>Years Defending</span></div>
-            <div className="n reveal"><b><CountUp value={4.6} decimals={1} suffix="★" /></b><span>Rated on Yelp</span></div>
-            <div className="n reveal"><b><CountUp value={1000} suffix="s" /></b><span>Cases Handled</span></div>
+            <div className="n reveal"><b><CountUp value={new Date().getFullYear() - 2008} /></b><span>Years Defending San Diego</span></div>
+            <div className="n reveal"><b><CountUp value={4.6} decimals={1} suffix="★" /></b><span>75+ Yelp Reviews</span></div>
+            <div className="n reveal"><b><CountUp value={9.7} decimals={1} suffix="+" /></b><span>AVVO &ldquo;Superb&rdquo; Rating</span></div>
             <div className="n reveal"><b>24/7</b><span>Available to You</span></div>
           </div>
         </div>
@@ -234,7 +234,7 @@ export default function Home() {
         <div className="wrap fgrid">
           <div className="ph reveal">
             <img src="/assets/untitled33.png" alt="Marc S. Kohnen working at his San Diego criminal defense law office" />
-            <div className="badge"><b>13+</b>Years in San Diego courts</div>
+            <div className="badge"><b>2008</b>Defending San Diego since</div>
           </div>
           <div className="reveal">
             <span className="sec-rule">Meet Marc</span>
