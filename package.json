@@ -6,7 +6,7 @@
   "description": "The Law Office of Marc S. Kohnen — four homepage design directions, built in React.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-server && node scripts/prerender.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-server && node scripts/prerender.mjs && node scripts/generate-seo.mjs",
     "preview": "vite preview --port 5173"
   },
   "dependencies": {

@@ -58,6 +58,11 @@ export default function PracticeArea({ content }) {
             </section>
           ))}
 
+          <p className="disclaimer reveal" style={{ borderTop: "1px solid var(--line)", paddingTop: 24 }}>
+            Legally reviewed by <Link to="/meet-marc/">Marc S. Kohnen</Link>, Attorney at Law —
+            State Bar of California #255303, defending San Diego since 2008.
+          </p>
+
           <div className="ctaband reveal">
             <b>Charged in San Diego? Talk to Marc first.</b>
             <p>Free, confidential case evaluation — available 24 hours at (619) 398-2500.</p>

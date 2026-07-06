@@ -3,8 +3,10 @@ import { usePageMeta } from "../hooks/usePageMeta.js";
 import BigCta from "../components/BigCta.jsx";
 import CountUp from "../components/CountUp.jsx";
 import { TESTIMONIALS } from "../data/testimonials.js";
+import { RESULT_SECTIONS } from "../data/results.js";
 
 const OUTLETS = ["CNN", "NBC", "ABC", "CBS 8", "FOX 5", "The Washington Post", "Wall Street Journal", "NY Post", "Union-Tribune", "TMZ", "HLN", "The Today Show"];
+const RESULT_TOTAL = RESULT_SECTIONS.reduce((n, s) => n + s.cases.length, 0);
 
 /* Star row with fractional fill (e.g. 4.6 of 5). */
 function Stars({ value }) {
@@ -223,7 +225,7 @@ export default function Home() {
           <div className="numbers">
             <div className="n reveal"><b><CountUp value={new Date().getFullYear() - 2008} /></b><span>Years Defending San Diego</span></div>
             <div className="n reveal"><b><CountUp value={4.6} decimals={1} suffix="★" /></b><span>75+ Yelp Reviews</span></div>
-            <div className="n reveal"><b><CountUp value={9.7} decimals={1} suffix="+" /></b><span>AVVO &ldquo;Superb&rdquo; Rating</span></div>
+            <div className="n reveal"><b><CountUp value={RESULT_TOTAL} suffix="+" /></b><span>Documented Case Results</span></div>
             <div className="n reveal"><b>24/7</b><span>Available to You</span></div>
           </div>
         </div>

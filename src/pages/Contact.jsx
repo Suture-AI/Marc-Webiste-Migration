@@ -98,7 +98,7 @@ export default function Contact() {
             <div>
               <b>Recognized Defense</b>
               <span style={{ fontSize: "1rem", fontFamily: "var(--body)", color: "var(--bone-2)" }}>
-                <a href="https://www.avvo.com/attorneys/92101-ca-marc-kohnen-1754991.html" rel="noopener" style={{ fontSize: "1rem" }}>AVVO &ldquo;Superb&rdquo; criminal defense rating</a>{" · "}
+                <a href="https://www.avvo.com/attorneys/92101-ca-marc-kohnen-1754991.html" rel="noopener" style={{ fontSize: "1rem" }}>Highly rated criminal defense attorney on Avvo</a>{" · "}
                 <a href="https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2" rel="noopener" style={{ fontSize: "1rem" }}>Highly rated on Yelp</a>{" · "}
                 <a href="https://www.google.com/search?q=Google+reviews+marc+kohnen" rel="noopener" style={{ fontSize: "1rem" }}>Google testimonials</a>
               </span>

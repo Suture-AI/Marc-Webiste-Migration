@@ -95,13 +95,16 @@ export default function MeetMarc() {
             <h2>Recognized by clients and peers</h2>
             <ul>
               <li>
+                Licensed by the State Bar of California since 2008 — license #255303
+              </li>
+              <li>
                 <a href="https://www.google.com/search?q=Google+reviews+marc+kohnen" rel="noopener">
                   Amazing Google reviews &amp; testimonials
                 </a>
               </li>
               <li>
                 <a href="https://www.avvo.com/attorneys/92101-ca-marc-kohnen-1754991.html" rel="noopener">
-                  AVVO &ldquo;Superb&rdquo; rating (9.7+) with 11 five-star peer reviews — state &amp; federal defense lawyer
+                  Highly rated on Avvo — five-star client reviews and peer endorsements, state &amp; federal defense
                 </a>
               </li>
               <li>
@@ -111,7 +114,7 @@ export default function MeetMarc() {
               </li>
               <li>
                 <a href="https://profiles.superlawyers.com/california/san-diego/lawyer/marc-kohnen/3aa5d94f-86d9-41de-894f-fe9066d2b1ac.html" rel="noopener">
-                  Super Lawyers selectee — top-rated San Diego criminal defense attorney
+                  Super Lawyers Rising Stars selectee (2017&ndash;2018) — San Diego criminal defense
                 </a>
               </li>
             </ul>
