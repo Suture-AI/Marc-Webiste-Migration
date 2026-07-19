@@ -1418,6 +1418,80 @@
   & .areacard .subs a:hover { background: var(--gold); color: var(--navy-deep); }
   & .areacard > a.cover { position: absolute; inset: 0; }
 
+  /* ===== practice-area category rows (expandable) ===== */
+  & .arearows { display: flex; flex-direction: column; gap: 14px; }
+  & .arearow {
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, var(--navy-2), var(--navy-deep));
+    transition: border-color 0.3s;
+  }
+  & .arearow:hover, & .arearow[open] { border-color: var(--gold); }
+  & .arearow summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 20px 24px;
+  }
+  & .arearow summary::-webkit-details-marker { display: none; }
+  & .ar-head { display: flex; flex-direction: column; gap: 4px; }
+  & .ar-title {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--bone);
+    width: fit-content;
+    transition: color 0.2s;
+  }
+  & .ar-title:hover { color: var(--gold-2); }
+  & .ar-blurb { color: var(--muted); font-size: 0.9rem; }
+  & .ar-toggle {
+    font-family: var(--head);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-2);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+  }
+  & .ar-toggle i {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.3s;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  & .arearow[open] .ar-toggle i { transform: rotate(225deg) translateY(-2px); }
+  & .arearow .subs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 0 24px 22px;
+  }
+  & .arearow .subs a {
+    font-family: var(--head);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-2);
+    border: 1px solid rgba(200, 162, 74, 0.4);
+    padding: 5px 10px;
+    border-radius: 2px;
+    transition: 0.2s;
+  }
+  & .arearow .subs a:hover { background: var(--gold); color: var(--navy-deep); }
+  @media (max-width: 640px) {
+    & .arearow summary { flex-direction: column; align-items: flex-start; gap: 8px; }
+  }
+
   /* ===== case results ===== */
   & .filterbar {
     display: flex;

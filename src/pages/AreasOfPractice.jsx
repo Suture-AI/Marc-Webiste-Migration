@@ -96,21 +96,32 @@ export default function AreasOfPractice() {
             </p>
           </div>
 
-          <div className="areagrid">
+          {/* Expandable category rows: the title navigates to the category's
+              main page; clicking anywhere else on the row opens the list of
+              specific charges. Native <details> — works without JS, and every
+              link stays in the prerendered HTML for crawlers. */}
+          <div className="arearows">
             {CATEGORIES.map((cat) => {
               const areas = cat.keys.map((k) => byKey[k]).filter(Boolean);
               if (!areas.length) return null;
               return (
-                <div className="areacard reveal" key={cat.label}>
-                  <Link className="cover" to={areas[0].path} aria-label={cat.label} />
-                  <h3>{cat.label}</h3>
-                  <p>{cat.blurb}</p>
-                  <div className="subs" style={{ position: "relative" }}>
+                <details className="arearow reveal" key={cat.label}>
+                  <summary>
+                    <span className="ar-head">
+                      <Link className="ar-title" to={areas[0].path}>{cat.label}</Link>
+                      <span className="ar-blurb">{cat.blurb}</span>
+                    </span>
+                    <span className="ar-toggle">
+                      {areas.length} {areas.length === 1 ? "page" : "pages"}
+                      <i aria-hidden="true" />
+                    </span>
+                  </summary>
+                  <div className="subs">
                     {areas.map((a) => (
                       <Link key={a.key} to={a.path}>{a.title}</Link>
                     ))}
                   </div>
-                </div>
+                </details>
               );
             })}
           </div>
