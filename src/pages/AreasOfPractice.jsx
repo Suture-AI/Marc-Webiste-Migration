@@ -27,13 +27,12 @@ export default function AreasOfPractice() {
         <div className="wrap">
           <div className="sec-head">
             <span className="sec-rule">Recognized. Reviewed. Proven.</span>
-            <div className="sec-title">28 practice areas</div>
+            <div className="sec-title">Criminal defense practice areas</div>
             <p>
-              Mr. Kohnen is licensed in state and federal courts, recognized by AVVO as a top-rated
-              criminal defense attorney in San Diego, and chosen by the Yelp community as the
-              top-ranked criminal defense lawyer in San Diego with the most 5-star ratings. Marc has
-              also appeared on national television for the many high-profile cases he has handled.
-              Call today for a free consultation.
+              Mr. Kohnen is licensed in California state and federal courts, highly rated by clients
+              on Avvo, Yelp and Google, and has appeared on national television for the many
+              high-profile cases he has handled. Whatever the charge — from a first misdemeanor to a
+              federal indictment — call today for a free consultation.
             </p>
           </div>
 

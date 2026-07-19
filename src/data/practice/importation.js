@@ -1,0 +1,68 @@
+/* New content module — Importation of a Controlled Substance (21 U.S.C. §952/§960).
+   Child of the Federal Crimes hub. */
+export default {
+  key: "importation",
+  metaTitle: "San Diego Drug Importation Attorney - Marc Kohnen",
+  metaDescription:
+    "Charged with importing a controlled substance at San Ysidro or Otay Mesa? San Diego federal defense attorney Marc Kohnen fights 21 U.S.C. §952 cases.",
+  h1: "San Diego Importation of a Controlled Substance Attorney",
+  sub: "Stopped at the border with drugs hidden in your vehicle? A federal importation charge moves fast — and your defense needs to move faster.",
+  sections: [
+    {
+      paras: [
+        "It usually starts the same way. You are crossing into the United States at San Ysidro or Otay Mesa. An officer sends you to secondary inspection. A dog alerts, or an X-ray shows something dense inside a panel of the car. Agents pull packages out of the gas tank, the quarter panels, or the spare tire. Hours later you are in handcuffs, being questioned by federal agents about drugs you may never have seen.",
+        "Bringing a controlled substance across the border is a federal crime under 21 U.S.C. §952, and the penalties are set by 21 U.S.C. §960. These cases are not handled in state court. They are prosecuted by the U.S. Attorney's Office in the Southern District of California, one of the busiest federal districts in the country for border drug cases. The rules, the judges, and the stakes are completely different from a state drug charge.",
+        "Marc Kohnen defends importation cases in San Diego's federal court, and his office sits minutes from the federal courthouse downtown. He has handled importation charges under §952 and §960 — including a methamphetamine and cocaine importation case in which all charges were dismissed. If you or a family member was arrested at the border, call now for a confidential consultation.",
+      ],
+    },
+    {
+      h2: "How a Border Stop Becomes a Federal Case",
+      paras: [
+        "The San Ysidro Port of Entry is the busiest land border crossing in the western hemisphere, and Otay Mesa handles a huge share of commercial and passenger traffic beside it. Customs and Border Protection (CBP) officers screen every vehicle at primary inspection. If anything seems off — a nervous driver, an inconsistent story, a K-9 alert, a density reading on a door panel — the car goes to secondary inspection, where officers can search it thoroughly.",
+        "When drugs are found, Homeland Security Investigations (HSI) typically takes over. Agents will read you your rights and try to interview you on the spot, while you are exhausted and scared. What you say in that room often becomes the centerpiece of the government's case. You have the right to remain silent and the right to a lawyer, and you should use both. From there, you are charged by federal complaint and brought before a magistrate judge in downtown San Diego, usually within a day or two.",
+      ],
+    },
+    {
+      h2: "Mandatory Minimums Under §960: Why Drug Quantity Drives Everything",
+      paras: [
+        "Federal importation penalties are built around the type and weight of the drug. Under 21 U.S.C. §960, larger quantities trigger mandatory minimum prison sentences that a judge generally cannot go below. For example, importing one kilogram or more of heroin, five kilograms or more of cocaine, 400 grams or more of a fentanyl mixture, or 50 grams or more of actual methamphetamine carries a ten-year mandatory minimum. Smaller — but still significant — quantities of those same drugs carry a five-year mandatory minimum.",
+        "That is why the lab report and the exact weight matter so much in these cases. The difference of a few hundred grams can mean years of your life. A careful defense looks hard at how the drugs were weighed, what was mixture versus pure substance, and whether the quantity the government alleges actually holds up. It also looks at every legal path around the minimums — and there are real ones.",
+      ],
+    },
+    {
+      h2: "The Blind Mule Defense: When You Truly Didn't Know",
+      paras: [
+        "Here is the single most important fact about importation cases: the government must prove, beyond a reasonable doubt, that you knew the drugs were in the vehicle. Knowledge is the heart of the charge. And at the San Diego border, the \"blind mule\" scenario is real — trafficking organizations hide drugs in the cars of daily commuters, borrow vehicles from unsuspecting friends or employees, and recruit drivers who are told they are carrying nothing at all.",
+        "Prosecutors will argue that no organization would trust a load worth hundreds of thousands of dollars to someone who didn't know about it. The defense answers that argument with evidence: your phone records, your border-crossing history, who had access to the car and when, whether your fingerprints appear on the packages, whether you were paid anything, and how you actually behaved at the port. Marc digs into all of it, because in a blind mule case the details are the defense.",
+      ],
+    },
+    {
+      h2: "The Safety Valve and Fast-Track Dispositions",
+      paras: [
+        "Even when the evidence of knowledge is strong, the mandatory minimum is not always the end of the story. The federal \"safety valve,\" 18 U.S.C. §3553(f), lets a judge sentence below the mandatory minimum for defendants who meet its conditions — a limited criminal history, no violence or weapons in the offense, no leadership role in the trafficking, and a truthful, complete statement to the government about the offense. Many first-time couriers qualify, and qualifying can cut years off a sentence.",
+        "The Southern District of California also uses fast-track (early disposition) procedures in many border cases. In broad terms, a defendant who resolves the case early can receive a meaningful sentencing reduction in exchange. Whether to take that path — and when — is a strategic decision that depends on the strength of the government's knowledge evidence. Marc walks every client through the real numbers before any decision gets made.",
+      ],
+    },
+    {
+      h2: "Federal Importation vs. a State Drug Charge",
+      paras: [
+        "People often assume a drug case is a drug case. It isn't. A state possession or transportation charge is handled in San Diego Superior Court, where California diversion and treatment options may apply. An importation case is prosecuted by federal prosecutors under federal law, sentenced under the federal guidelines, and served in federal custody. There is no bail schedule — release is decided at a detention hearing, and the government often argues that border defendants are flight risks because of ties to Mexico.",
+        "That is why you want a lawyer who regularly works in the federal courthouse, knows the prosecutors and the magistrate judges, and understands both the guidelines math and the border-case defenses. Marc's office is minutes from the federal courthouse, and he appears there regularly.",
+      ],
+      list: [
+        "Importation of methamphetamine, cocaine, heroin, and fentanyl (21 U.S.C. §952/§960)",
+        "Blind mule and lack-of-knowledge defenses",
+        "Detention hearings and pretrial release arguments",
+        "Safety-valve (§3553(f)) and fast-track negotiations",
+        "Related federal charges: possession with intent to distribute and conspiracy",
+      ],
+    },
+    {
+      h2: "Arrested at the Border? What to Do Right Now",
+      paras: [
+        "Move quickly. The first days of a federal case shape everything that follows — the detention hearing, the preservation of port-of-entry video, the chance to interview witnesses before memories fade, and the early conversations with the prosecutor that can steer a case toward dismissal, a reduced charge, or a below-minimum sentence. Do not give a statement, do not consent to searches of your phone, and do not wait to get counsel involved.",
+        "Marc Kohnen personally handles every case he takes, from the first call through the last hearing. If you or someone you love is facing an importation charge in San Diego federal court, call today for a free, confidential consultation.",
+      ],
+    },
+  ],
+};

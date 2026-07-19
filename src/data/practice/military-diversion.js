@@ -1,0 +1,77 @@
+/* Military diversion under Penal Code section 1001.80. */
+export default {
+  key: "military-diversion",
+  metaTitle: "Military Diversion Attorney San Diego | PC 1001.80",
+  metaDescription:
+    "Military diversion under PC 1001.80 lets San Diego service members and veterans earn a dismissal through treatment — including misdemeanor DUI. Learn how.",
+  h1: "San Diego Military Diversion Attorney",
+  sub: "Penal Code 1001.80 lets active-duty service members and veterans with service-related trauma resolve misdemeanor charges — including DUI — through treatment that ends in dismissal and a sealed record.",
+  sections: [
+    {
+      paras: [
+        "San Diego is a military town in a way few American cities are. Naval Base San Diego, Marine Corps Base Camp Pendleton, and Marine Corps Air Station Miramar anchor one of the largest concentrations of active-duty personnel and veterans in the country. When service members and veterans end up in criminal court here, the conduct charged often traces back to what the service did to them — PTSD from deployment, a traumatic brain injury, military sexual trauma, or substance abuse that started as self-medication.",
+        "California built a specific answer for those cases. Military diversion under Penal Code section 1001.80 lets a judge pause a misdemeanor case and order treatment instead of prosecution. Finish the program, and the charge is dismissed, the arrest is sealed, and the statute adds protections for your employment and benefits. Marc Kohnen has defended service members and veterans in San Diego courts since 2008 and knows how to put a military diversion motion together.",
+      ],
+    },
+    {
+      h2: "What Is Military Diversion Under PC 1001.80?",
+      paras: [
+        "PC 1001.80 is a pretrial diversion statute for misdemeanor cases. When the court grants it, criminal proceedings are postponed — before any plea — while you complete a treatment program addressing the service-related condition. The diversion period can last up to two years, with the court receiving progress reports along the way.",
+        "Because diversion happens before a plea, you are never convicted. If treatment is not completed, the case simply resumes where it left off; if it is completed satisfactorily, the court dismisses the charge. For a service member, that difference can decide a security clearance, a reenlistment, or a career.",
+      ],
+    },
+    {
+      h2: "Who Qualifies for Military Diversion?",
+      paras: [
+        "The statute covers both current and former members of the United States military — active duty, reserves, and veterans, regardless of discharge status in most cases. To qualify, you must show that as a result of your service you may be suffering from one or more of the conditions the statute lists:",
+      ],
+      list: [
+        "Post-traumatic stress disorder (PTSD)",
+        "Traumatic brain injury (TBI)",
+        "Sexual trauma connected to military service",
+        "Substance abuse",
+        "Other mental health problems stemming from service",
+      ],
+    },
+    {
+      paras: [
+        "Notice the language: the statute asks whether you may be suffering from a service-related condition. Proof usually comes from VA records, DD-214 and service records, command statements, and clinical assessments. Many veterans have never had their condition formally evaluated — part of building the motion is getting that assessment done.",
+      ],
+    },
+    {
+      h2: "Misdemeanor DUI Qualifies — Unlike Other Diversion Programs",
+      paras: [
+        "This is the point that surprises people, including some lawyers. Under California's general misdemeanor diversion statute, PC 1001.95, DUI charges are off the table — appellate courts have held that Vehicle Code 23640 bars diversion in DUI cases under that law. Military diversion is different. After a court of appeal held in Hopkins v. Superior Court that DUI could be diverted under PC 1001.80, the Legislature amended the statute to say so expressly. A misdemeanor DUI is eligible for military diversion.",
+        "For San Diego's military population, that matters. DUI is one of the most common charges filed against service members and veterans, and PC 1001.80 is the one diversion path that can end a misdemeanor DUI in a dismissal rather than a conviction. Keep in mind that the DMV's administrative license process runs on its own separate track, so you still need to act quickly after a DUI arrest to request a DMV hearing.",
+      ],
+    },
+    {
+      h2: "Treatment Through the VA or Community Programs",
+      paras: [
+        "The court can order treatment through federal programs — the VA health care system and veterans service organizations — or through community-based programs, depending on what fits your condition and your eligibility. The statute directs the court to consider treatment programs with a track record of successfully treating people who suffer from service-related trauma. Progress reports go back to the court and the prosecution while the case sits on hold.",
+        "In San Diego, that infrastructure is unusually strong. The VA San Diego Healthcare System, Vet Centers, and county behavioral health programs all operate here, and the San Diego courts run a veterans treatment court that supervises justice-involved veterans through coordinated treatment, mentorship, and accountability. Local judges see these programs work, which shapes how they receive a well-supported diversion motion.",
+      ],
+    },
+    {
+      h2: "What Completing Military Diversion Means for Your Record",
+      paras: [
+        "Satisfactory completion ends the case. The court dismisses the charge, and the arrest upon which the diversion was based is deemed to have never occurred. The record is sealed, and for most purposes you may respond to questions as though the arrest did not happen. The statute also adds protections aimed at the things veterans worry about most: the diverted arrest and dismissal cannot, without your consent, be used to deny you employment, a benefit, a license, or a certificate. Narrow exceptions remain, such as applications to become a peace officer.",
+        "For active-duty members, resolving a case without a conviction can be the difference between an administrative headache and a career-ending mark. Marc coordinates with clients' concerns about command notification and clearance issues when planning how and when to file.",
+      ],
+    },
+    {
+      h2: "How San Diego Courts Handle Military Diversion Motions",
+      paras: [
+        "Judges in San Diego County see more military diversion motions than judges almost anywhere else in California, for the obvious reason: the population they serve includes tens of thousands of active-duty personnel and one of the nation's largest veteran communities. That experience cuts in your favor when the motion is done right. Courts here understand deployment trauma, know the local treatment providers, and are familiar with the veterans treatment court model.",
+        "What the court needs from the defense is a documented link between your service and the condition, a specific treatment plan naming the program and provider, and a candid account of the offense. A motion that shows the court exactly what the next 12 to 24 months of treatment look like is far more persuasive than one that recites the statute and asks for grace.",
+      ],
+    },
+    {
+      h2: "Talk to a San Diego Attorney Who Handles Military Diversion",
+      paras: [
+        "If you are active duty, a reservist, or a veteran facing a misdemeanor charge anywhere in San Diego County — including a misdemeanor DUI — military diversion may resolve the case without a conviction and without a record. The earlier the motion is raised, the more room there is to line up the evaluation and treatment plan before critical hearings.",
+        "Call Marc Kohnen at (619) 398-2500 for a free, confidential consultation. Bring your service records and any VA paperwork you have. Marc will review the charge, the evidence of a service-related condition, and the treatment options, and give you a straight answer about whether PC 1001.80 fits your case.",
+      ],
+    },
+  ],
+};

@@ -5,17 +5,47 @@ import PageHero from "../components/PageHero.jsx";
 import BigCta from "../components/BigCta.jsx";
 import Lightbox from "../components/Lightbox.jsx";
 
-/* Attorney bio migrated from msklawyer.com/meet-marc/, expanded with the
-   press-conference photo series Marc supplied. */
-const GALLERY = Array.from({ length: 15 }, (_, i) => {
-  const n = String(i + 1).padStart(2, "0");
-  return {
-    src: `/assets/photos/marc-kohnen-courthouse-press-conference-${n}.jpg`,
+/* Attorney bio migrated from msklawyer.com/meet-marc/. Gallery is a curated
+   set of DISTINCT moments (press conference, counsel table, verdict day) —
+   Marc asked that it not repeat near-identical frames of the same scene. */
+const GALLERY = [
+  {
+    src: "/assets/photos/marc-kohnen-courthouse-press-conference-08.jpg",
     title: "Addressing the press — San Diego Superior Court",
-    outlet: "Robert Branch case, 2016",
-    alt: `San Diego criminal defense attorney Marc Kohnen speaking with reporters outside the downtown San Diego courthouse (photo ${i + 1} of 15)`,
-  };
-});
+    outlet: "Robert Branch case",
+    alt: "San Diego criminal defense attorney Marc Kohnen answering reporters' questions outside the downtown San Diego courthouse",
+  },
+  {
+    src: "/assets/photos/marc-kohnen-robert-branch-courtroom.jpg",
+    title: "At the counsel table with his client",
+    outlet: "Robert Branch trial",
+    alt: "Marc Kohnen conferring with client Robert Branch at the counsel table during trial",
+  },
+  {
+    src: "/assets/photos/robert-branch-not-guilty-celebration.jpg",
+    title: "Verdict day — NOT GUILTY on all counts",
+    outlet: "San Diego Superior Court",
+    alt: "Marc Kohnen and Robert Branch in the courthouse hallway after the not-guilty verdict",
+  },
+  {
+    src: "/assets/photos/not-guilty-press-conference-post-trial.jpg",
+    title: "Post-trial press conference",
+    outlet: "Robert Branch acquittal",
+    alt: "Marc Kohnen speaking at the press conference following the Robert Branch acquittal",
+  },
+  {
+    src: "/assets/photos/robert-branch-courthouse-steps-rally-highlight.jpg",
+    title: "Courthouse-steps rally",
+    outlet: "Robert Branch case",
+    alt: "Supporters rally with Marc Kohnen on the San Diego courthouse steps during the Robert Branch case",
+  },
+  {
+    src: "/assets/photos/peter-robbins-press-conference.jpg",
+    title: "Peter Robbins press conference",
+    outlet: "The Charlie Brown case, 2013",
+    alt: "Marc Kohnen addressing cameras at the Peter Robbins press conference",
+  },
+];
 
 export default function MeetMarc() {
   const [zoom, setZoom] = useState(null);
@@ -149,7 +179,7 @@ export default function MeetMarc() {
           <div className="sec-head">
             <span className="sec-rule">On the Courthouse Steps</span>
             <div className="sec-title">Where the work happens</div>
-            <p>Marc addressing the press outside San Diego Superior Court during the Robert Branch trial — the case that put a NOT GUILTY verdict on the front page.</p>
+            <p>From the counsel table to the courthouse steps — moments from the cases that made headlines, including the Robert Branch trial that put a NOT GUILTY verdict on the front page.</p>
           </div>
           <div className="photogrid">
             {GALLERY.map((g) => (

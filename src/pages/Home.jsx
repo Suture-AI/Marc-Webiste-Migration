@@ -143,7 +143,7 @@ export default function Home() {
             ))}
           </div>
           <p style={{ textAlign: "center", marginTop: 28 }}>
-            <Link className="btn btn-ghost" to="/areas-of-practice/">All 28 Practice Areas</Link>
+            <Link className="btn btn-ghost" to="/areas-of-practice/">All Criminal Defense Practice Areas</Link>
           </p>
         </div>
       </section>
@@ -247,7 +247,7 @@ export default function Home() {
           </div>
           <div className="reveal">
             <span className="sec-rule">Meet Marc</span>
-            <h2>A relentless advocate who actually reads your file.</h2>
+            <h2>A relentless advocate who prepares every case like it&rsquo;s going to trial.</h2>
             <p>As a highly-acclaimed criminal defense attorney in San Diego, Marc has defended highly complex criminal cases over the years — even representing Hollywood celebrities. He believes everyone deserves the right to defend themselves.</p>
             <p>Carrying glowing recommendations and 5-star Yelp reviews, Marc understands the emotionally rattling experience you&rsquo;re going through, and is here to deliver the high-quality results that earned his reputation.</p>
             <Link className="btn btn-ghost" to="/meet-marc/" style={{ marginTop: 8 }}>Meet Marc Kohnen</Link>
