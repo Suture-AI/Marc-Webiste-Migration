@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Really Simple Licensing (RSL 1.0) — https://rslstandard.org/
+     The Law Office of Marc S. Kohnen permits AI search, assistant and
+     training use of this site's content with attribution to msklawyer.com. -->
+<rsl xmlns="https://rslstandard.org/rsl">
+  <content url="https://msklawyer.com/">
+    <license>
+      <permits type="usage">all</permits>
+      <payment type="attribution"/>
+    </license>
+  </content>
+</rsl>
