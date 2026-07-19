@@ -41,6 +41,28 @@ export const CLIPPINGS = [
   { case: "commentary", outlet: "San Diego CityBeat", title: "CityBeat profiles Marc Kohnen's work", src: "/assets/news/san-diego-citybeat-marc-kohnen-article.jpg" },
 ];
 
+
+/* Live, verified links to the original reporting (checked 2026-07-19).
+   Only entries confirmed to exist and concern these cases are listed —
+   verifiable citations for readers, search engines and AI assistants. */
+export const ARTICLES = [
+  { case: "branch", outlet: "San Diego Union-Tribune", title: "Security guard acquitted in 'chokehold' case involving sheriff's detective", url: "https://www.sandiegouniontribune.com/news/courts/sd-me-branch-verdict-20170623-story.html", date: "2017-06-23" },
+  { case: "branch", outlet: "ABC 10News", title: "Driver found not guilty in resisting arrest case", url: "https://www.10news.com/news/verdict-reached-in-resisting-arrest-case-062317", date: "2017-06-23" },
+  { case: "branch", outlet: "NBC 7 San Diego", title: "Man in controversial chokehold case found not guilty", url: "https://www.nbcsandiego.com/news/local/man-in-controversial-chokehold-case-found-not-guilty/18818/", date: "2017-06-23" },
+  { case: "branch", outlet: "Thomas Jefferson School of Law", title: "Marc Kohnen '06 wins \"chokehold\" case", url: "https://www.tjsl.edu/news-media/2017/15950", date: "2017-06-23" },
+  { case: "robbins", outlet: "Today (NBC)", title: "Charlie Brown voice actor Peter Robbins pleads not guilty to threats", url: "https://www.today.com/news/charlie-brown-voice-actor-peter-robbins-pleads-not-guilty-threats-1C8095569", date: "2013-01-24" },
+  { case: "robbins", outlet: "San Diego Union-Tribune", title: "Voice actor for Charlie Brown arrested in Calif.", url: "https://www.sandiegouniontribune.com/2013/01/23/voice-actor-for-charlie-brown-arrested-in-calif-2/", date: "2013-01-23" },
+  { case: "robbins", outlet: "CNN", title: "Good grief! Charlie Brown voice actor charged", url: "https://www.cnn.com/2013/01/23/showbiz/charlie-brown-actor-arrested/index.html", date: "2013-01-23" },
+  { case: "robbins", outlet: "ABC News", title: "Charlie Brown voice actor accused of stalking", url: "https://abcnews.go.com/Entertainment/charlie-brown-voice-actor-accused-stalking/story?id=18293177", date: "2013-01-23" },
+  { case: "robbins", outlet: "TMZ", title: "Charlie Brown voice actor Peter Robbins arrested", url: "https://www.tmz.com/2013/01/23/a-charlie-brown-arrest-voice-actor-accused-of-stalking-peter-robbins/", date: "2013-01-23" },
+  { case: "trayers", outlet: "CNN / HLN", title: "Jane Velez-Mitchell — Trayers murder trial segment (Marc Kohnen live on air)", url: "https://transcripts.cnn.com/show/ijvm/date/2012-01-30/segment/01", date: "2012-01-30" },
+  { case: "trayers", outlet: "NBC 7 San Diego", title: "Navy wife guilty of second-degree murder", url: "https://www.nbcsandiego.com/news/local/verdict-navy-doctor-love-triangle-trial-trayers/1945550/", date: "2012-02-08" },
+  { case: "trayers", outlet: "KPBS", title: "Navy wife found guilty of murdering husband", url: "https://www.kpbs.org/news/military/2012/02/09/navy-wife-found-guilty-of-murdering-husband-video", date: "2012-02-09" },
+  { case: "commentary", outlet: "NBC 7 San Diego", title: "Hells Angels member sentenced for attack in Ocean Beach (Kohnen for the defense)", url: "https://www.nbcsandiego.com/news/local/hells-angels-member-sentenced-ocean-beach-attack/3842545/", date: "2025-06-06" },
+  { case: "commentary", outlet: "Times of San Diego", title: "Hells Angel sentenced to 21 years to life in Ocean Beach hate crime", url: "https://timesofsandiego.com/crime/2025/06/06/hells-angel-sentenced-to-21-years-to-life-in-ocean-beach-hate-crime/", date: "2025-06-06" },
+  { case: "commentary", outlet: "San Diego Union-Tribune", title: "Hells Angels member sentenced for hate-crime attack in OB", url: "https://www.sandiegouniontribune.com/2025/06/09/hells-angels-member-sentenced-to-prison-for-hate-crime-attack-in-ocean-beach/", date: "2025-06-09" },
+];
+
 export const VIDEOS = [
   /* --- Robert Branch verdict, June 2017 --- */
   { case: "branch", outlet: "CBS 8 San Diego", title: "Robert Branch NOT GUILTY verdict — 5pm report", slug: "branch-verdict-cbs8-5pm" },

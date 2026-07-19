@@ -1,7 +1,7 @@
 /* Copy migrated verbatim (lightly proofed) from msklawyer.com/homicide/ */
 export default {
   key: "homicide",
-  metaTitle: "Homicide Defense Attorney - Marc Kohnen",
+  metaTitle: "San Diego Homicide Defense Attorney - Marc Kohnen",
   metaDescription:
     "Marc Kohnen is an experienced Homicide Defense Attorney in San Diego. Get the best criminal defense for your case right here.",
   h1: "Homicide Defense Lawyer in San Diego",

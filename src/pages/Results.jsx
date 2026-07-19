@@ -21,7 +21,7 @@ const FEATURED = RESULT_SECTIONS.flatMap((s) =>
 export default function Results() {
   const [filter, setFilter] = useState("all");
   usePageMeta({
-    title: "Criminal Defense Attorney | Proven Results at MSK Lawyer",
+    title: "Case Results - San Diego Criminal Defense Attorney Marc Kohnen",
     description:
       "Actual case results from the Law Office of Marc S. Kohnen — not-guilty verdicts, dismissals and reduced charges across DUI, drug, violent-crime, theft and sex-crime cases in San Diego.",
     themeColor: "#05080f",

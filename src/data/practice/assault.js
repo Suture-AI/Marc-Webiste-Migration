@@ -1,10 +1,10 @@
 /* Copy migrated verbatim (lightly proofed) from msklawyer.com/assault/ */
 export default {
   key: "assault",
-  metaTitle: "Criminal Defense Attorney For Assault Charge - Marc Kohnen",
+  metaTitle: "San Diego Assault Defense Attorney - Marc Kohnen",
   metaDescription:
     "When you are charged with an assault charge in California, you may need a Criminal Defense Attorney. Located in San Diego, we are ready to defend you.",
-  h1: "Assault Lawyer",
+  h1: "San Diego Assault Lawyer",
   sub: "Charged with assault in San Diego? Marc Kohnen has fought assault allegations all the way to a NOT GUILTY verdict — and he's ready to fight for you.",
   sections: [
     {

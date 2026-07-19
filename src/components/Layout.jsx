@@ -140,6 +140,7 @@ export default function Layout() {
                   <li><a href="mailto:marc@msklawyer.com">marc@msklawyer.com</a></li>
                   <li>425 Tenth Ave, San Diego, CA 92101</li>
                   <li><Link to="/contact-marc/">Contact Us</Link></li>
+                  <li><Link to="/privacy-policy/">Privacy Policy</Link></li>
                 </ul>
               </div>
             </div>
@@ -148,7 +149,9 @@ export default function Layout() {
               marketing and advertising purposes, per California Marketing Laws, this site shall not
               be deemed or considered legal advice. None of the information on this website, nor the
               access of this website shall create an attorney client relationship. If you have
-              questions about a case, please contact our law office directly.
+              questions about a case, please contact our law office directly. Testimonials and
+              case results describe past matters; every case is different, and prior results do
+              not guarantee a similar outcome.
             </p>
             <p className="credit">
               San Diego skyline photograph by{" "}

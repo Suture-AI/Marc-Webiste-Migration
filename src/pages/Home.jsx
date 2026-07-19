@@ -72,8 +72,11 @@ export default function Home() {
         <div className="wrap herogrid">
           <figure className="figure cutout reveal">
             <img
-              src="/assets/marc-kohnen-attorney-cutout.png"
+              src="/assets/marc-kohnen-attorney-cutout.webp"
               alt="San Diego criminal defense attorney Marc S. Kohnen standing against the San Diego skyline"
+              width="467"
+              height="1500"
+              fetchpriority="high"
             />
             <figcaption className="nameplate">
               <b>Marc S. Kohnen</b>
@@ -158,10 +161,14 @@ export default function Home() {
               <figure className="tcard reveal" key={t.name}>
                 <div className="stars" aria-label="Five star review">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <blockquote>&ldquo;{t.quote}&rdquo;</blockquote>
-                <figcaption>{t.name} · Verified Review</figcaption>
+                <figcaption>{t.name} · Client Review</figcaption>
               </figure>
             ))}
           </div>
+          <p className="disclaimer" style={{ textAlign: "center", marginTop: 20, opacity: 0.65 }}>
+            Reviews migrated from clients&rsquo; public postings. Every case is different — prior
+            results do not guarantee a similar outcome.
+          </p>
           <p style={{ textAlign: "center", marginTop: 34 }}>
             <a className="btn btn-ghost" href="https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2" rel="noopener">
               Read Marc&rsquo;s Reviews on Yelp &rarr;
@@ -185,7 +192,7 @@ export default function Home() {
           </div>
           <div className="clip reveal">
             <span className="tape">Front Page</span>
-            <img src="/assets/group-70.png" alt="San Diego Union-Tribune front page: Acquittal in chokehold case won by Marc Kohnen" />
+            <img src="/assets/group-70.webp" alt="San Diego Union-Tribune front page: Acquittal in chokehold case won by Marc Kohnen" width="1162" height="1034" loading="lazy" />
           </div>
         </div>
       </section>
@@ -235,7 +242,7 @@ export default function Home() {
       <section className="block meet">
         <div className="wrap fgrid">
           <div className="ph reveal">
-            <img src="/assets/untitled33.png" alt="Marc S. Kohnen working at his San Diego criminal defense law office" />
+            <img src="/assets/untitled33.webp" alt="Marc S. Kohnen working at his San Diego criminal defense law office" width="442" height="325" loading="lazy" />
             <div className="badge"><b>2008</b>Defending San Diego since</div>
           </div>
           <div className="reveal">
@@ -251,12 +258,12 @@ export default function Home() {
       {/* ===== BADGES ===== */}
       <div className="creds">
         <div className="wrap">
-          <img src="/assets/badge-71.png" alt="Super Lawyers" />
-          <img src="/assets/badge-72.png" alt="AVVO Excellent Top Attorney" />
-          <img src="/assets/badge-70.png" alt="National Association of Criminal Defense Lawyers" />
-          <img src="/assets/badge-73.png" alt="National College for DUI Defense" />
-          <img src="/assets/badge-74.png" alt="People Love Us on Yelp" />
-          <img src="/assets/badge-69.png" alt="Review us on Google" />
+          <img src="/assets/badge-71.png" alt="Super Lawyers" loading="lazy" />
+          <img src="/assets/badge-72.png" alt="AVVO Excellent Top Attorney" loading="lazy" />
+          <img src="/assets/badge-70.png" alt="National Association of Criminal Defense Lawyers" loading="lazy" />
+          <img src="/assets/badge-73.png" alt="National College for DUI Defense" loading="lazy" />
+          <img src="/assets/badge-74.png" alt="People Love Us on Yelp" loading="lazy" />
+          <img src="/assets/badge-69.png" alt="Review us on Google" loading="lazy" />
         </div>
       </div>
 

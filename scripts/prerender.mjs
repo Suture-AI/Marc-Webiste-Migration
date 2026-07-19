@@ -4,6 +4,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import url from "node:url";
+import { execSync } from "node:child_process";
 
 import { SITE, CORE_ROUTES } from "./site-meta.mjs";
 
@@ -31,10 +32,31 @@ routes.push({
    per-page LegalService nodes reference the firm without repeating it. */
 const FIRM_ID = `${SITE}/#firm`;
 const MARC_ID = `${SITE}/#marc`;
+const WEBSITE_ID = `${SITE}/#website`;
+
+/* Last-commit date per source file — the same freshness signal the sitemap
+   carries, surfaced in the schema layer as WebPage.dateModified. */
+const buildDate = new Date().toISOString().slice(0, 10);
+const gitDate = (file) => {
+  try {
+    const d = execSync(`git log -1 --format=%cs -- "${file}"`, { cwd: root }).toString().trim();
+    return d || buildDate;
+  } catch {
+    return buildDate;
+  }
+};
 
 const SCHEMA = JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": WEBSITE_ID,
+      url: `${SITE}/`,
+      name: "Law Office of Marc S. Kohnen",
+      publisher: { "@id": FIRM_ID },
+      inLanguage: "en-US",
+    },
     {
       "@type": "LegalService",
       "@id": FIRM_ID,
@@ -63,6 +85,21 @@ const SCHEMA = JSON.stringify({
         { "@type": "City", name: "San Diego" },
       ],
       openingHours: "Mo-Su 00:00-24:00",
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          opens: "00:00",
+          closes: "23:59",
+        },
+      ],
+      makesOffer: {
+        "@type": "Offer",
+        name: "Free confidential criminal defense consultation",
+        description: "Free, confidential case evaluation with attorney Marc S. Kohnen — available 24/7.",
+        price: "0",
+        priceCurrency: "USD",
+      },
       knowsAbout: AREAS.map((a) => `${a.title} defense`),
       sameAs: [
         "https://www.instagram.com/sandiegocriminallawyer/",
@@ -71,6 +108,7 @@ const SCHEMA = JSON.stringify({
         "https://www.avvo.com/attorneys/92101-ca-marc-kohnen-1754991.html",
         "https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2",
         "https://profiles.superlawyers.com/california/san-diego/lawyer/marc-kohnen/3aa5d94f-86d9-41de-894f-fe9066d2b1ac.html",
+        "https://www.linkedin.com/in/attorneymarckohnen/",
       ],
     },
     {
@@ -117,6 +155,8 @@ const SCHEMA = JSON.stringify({
         "https://www.linkedin.com/in/attorneymarckohnen/",
         "https://www.instagram.com/sandiegocriminallawyer/",
         "https://twitter.com/marcskohnen",
+        "https://www.youtube.com/c/TheLawOfficeofMarcSKohnenSanDiego/videos",
+        "https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2",
       ],
     },
   ],
@@ -187,18 +227,67 @@ for (const area of AREAS) {
     path: area.path,
     title: mod.default.metaTitle,
     description: mod.default.metaDescription,
+    srcFile: `src/data/practice/${area.key}.js`,
     extraSchemas: practiceSchemas(area),
   });
 }
 routes.find((r) => r.path === "/in-the-news/").extraSchemas = newsSchemas;
 
+/* Every indexable route gets a WebPage node carrying git-derived dateModified
+   (same freshness source as the sitemap) plus, for core routes, the
+   BreadcrumbList that practice pages already have. Typed pages: /meet-marc/
+   is Marc's ProfilePage, /contact-marc/ the firm's ContactPage. */
+const PAGE_TYPES = { "/meet-marc/": "ProfilePage", "/contact-marc/": "ContactPage" };
+for (const r of routes) {
+  if (r.noindex) continue;
+  const canonical = `${SITE}${r.path}`;
+  const webPage = {
+    "@context": "https://schema.org",
+    "@type": PAGE_TYPES[r.path] || "WebPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: r.title,
+    description: r.description,
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": FIRM_ID },
+    dateModified: gitDate(r.srcFile || r.page),
+    inLanguage: "en-US",
+  };
+  if (r.path === "/meet-marc/") webPage.mainEntity = { "@id": MARC_ID };
+  r.extraSchemas = [...(r.extraSchemas || []), webPage];
+  if (r.crumb && r.path !== "/") {
+    r.extraSchemas.push({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+        { "@type": "ListItem", position: 2, name: r.crumb, item: canonical },
+      ],
+    });
+  }
+}
+
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 const template = fs.readFileSync(path.join(root, "dist/index.html"), "utf8");
 let count = 0;
 
+/* Staging builds (PAGES_BASE set, e.g. GitHub Pages previews) self-noindex on
+   every page. The cross-domain canonical to production is only a hint — this
+   is the directive backstop that keeps the preview host out of indexes. */
+const STAGING = Boolean(process.env.PAGES_BASE);
+
+/* The homepage hero is the LCP element; preload both pieces so the browser
+   doesn't discover the CSS background image late. Raw /assets/ URLs get the
+   same base-path rewrite as the rest of the build during gh-pages publishes. */
+const HOME_PRELOADS = `<link rel="preload" as="image" href="/assets/marc-kohnen-attorney-cutout.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/san-diego-skyline-1920.webp" media="(min-width: 641px)" />
+    <link rel="preload" as="image" href="/assets/san-diego-skyline-960.webp" media="(max-width: 640px)" />`;
+
 for (const r of routes) {
   const canonical = `${SITE}${r.path}`;
-  const head = `${r.noindex ? '<meta name="robots" content="noindex" />' : `<link rel="canonical" href="${canonical}" />`}
+  const head = `${r.noindex ? '<meta name="robots" content="noindex" />' : `<link rel="canonical" href="${canonical}" />`}${
+    STAGING && !r.noindex ? '\n    <meta name="robots" content="noindex, nofollow" />' : ""
+  }${r.path === "/" ? `\n    ${HOME_PRELOADS}` : ""}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Law Office of Marc S. Kohnen" />
     <meta property="og:title" content="${esc(r.title)}" />

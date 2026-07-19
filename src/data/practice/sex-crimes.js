@@ -1,7 +1,7 @@
 /* Copy migrated verbatim (lightly proofed) from msklawyer.com/sex-crimes/ */
 export default {
   key: "sex-crimes",
-  metaTitle: "Sex Crimes Criminal Defense Attorney - Marc Kohnen",
+  metaTitle: "San Diego Sex Crimes Defense Attorney - Marc Kohnen",
   metaDescription:
     "Sex Crimes that are serious can carry a lifetime of consequences for you. Give Marc S. Kohnen a call for a free evaluation on your case issues.",
   h1: "Sex Crime Defense Lawyer in San Diego",

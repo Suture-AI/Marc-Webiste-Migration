@@ -10,9 +10,8 @@ export function useScrollReveal(ref, { threshold = 0, stagger = 55, groups = 3, 
     const root = ref?.current;
     if (!root) return;
 
-    const els = Array.from(root.querySelectorAll(".reveal"));
-    if (!("IntersectionObserver" in window) || !els.length) {
-      els.forEach((el) => el.classList.add("in"));
+    if (!("IntersectionObserver" in window)) {
+      root.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
       return;
     }
 
@@ -29,11 +28,26 @@ export function useScrollReveal(ref, { threshold = 0, stagger = 55, groups = 3, 
       { threshold, rootMargin: "0px 0px 120px 0px" }
     );
 
-    els.forEach((el, i) => {
-      el.style.transitionDelay = `${(i % groups) * stagger}ms`;
-      io.observe(el);
-    });
+    /* Route chunks are code-split, so a page's .reveal elements can mount
+       after this effect runs. Scan now, then let a MutationObserver pick up
+       late arrivals — the WeakSet keeps delays/observation idempotent. */
+    const seen = new WeakSet();
+    let count = 0;
+    const scan = () => {
+      root.querySelectorAll(".reveal").forEach((el) => {
+        if (seen.has(el)) return;
+        seen.add(el);
+        el.style.transitionDelay = `${(count++ % groups) * stagger}ms`;
+        io.observe(el);
+      });
+    };
+    scan();
+    const mo = new MutationObserver(scan);
+    mo.observe(root, { childList: true, subtree: true });
 
-    return () => io.disconnect();
+    return () => {
+      io.disconnect();
+      mo.disconnect();
+    };
   }, [ref, threshold, stagger, groups, rescanKey]);
 }

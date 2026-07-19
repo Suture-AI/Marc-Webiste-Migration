@@ -1,10 +1,11 @@
-/* Copy migrated verbatim (lightly proofed) from msklawyer.com/san-diego-criminal-defense-lawyer/outstanding-warrants-attorney/ */
+/* Copy migrated verbatim (lightly proofed) from msklawyer.com/san-diego-criminal-defense-lawyer/outstanding-warrants-attorney/
+   Expanded 2026 with California statute, penalty and San Diego procedure sections. */
 export default {
   key: "warrants",
-  metaTitle: "Outstanding Warrants Attorney Service By Marc Kohnen",
+  metaTitle: "San Diego Warrants Attorney - Recall a Warrant Fast",
   metaDescription:
-    "Find out if you have a warrant out for your arrest when you give us a call. We have staff ready to help you with your outstanding warrants attorney request.",
-  h1: "Outstanding Warrants Attorney",
+    "Have an outstanding warrant in San Diego? Marc Kohnen moves to recall or quash bench and arrest warrants before they cost you your job or your freedom.",
+  h1: "San Diego Outstanding Warrants Attorney",
   sub: "An outstanding warrant doesn't go away on its own — Marc can address it before it costs you your job, your home or your freedom.",
   sections: [
     {
@@ -25,6 +26,21 @@ export default {
       ],
     },
     {
+      h2: "Arrest Warrants vs. Bench Warrants in California",
+      paras: [
+        "California law recognizes two main types of warrants, and knowing which one you have changes how your case gets handled. An arrest warrant, issued under Penal Code section 813, means a judge found probable cause to believe you committed a crime — usually after a detective presented a sworn declaration or a grand jury returned an indictment. You may have no idea the warrant exists until officers show up at your door or pull you over.",
+        "A bench warrant is different. Under Penal Code section 978.5, a judge can issue a bench warrant when you fail to appear in court, fail to pay a fine, or violate a term of probation. Bench warrants are far more common, and many people in San Diego are walking around with one over a missed court date they forgot about years ago.",
+        "Missing court can also be a brand-new crime on top of the warrant itself. Failing to appear on a misdemeanor is a misdemeanor under Penal Code section 1320, punishable by up to six months in jail. Failing to appear on a felony while released on your own recognizance is a felony under Penal Code section 1320.5, punishable by up to three years — and if you were out on bail, the court can forfeit the entire bail amount. Even a missed traffic ticket can trigger a failure-to-appear charge under Vehicle Code section 40508 and a hold on your driver's license.",
+      ],
+    },
+    {
+      h2: "What an Outstanding Warrant Can Cost You",
+      paras: [
+        "A warrant is not just a piece of paper sitting in a courthouse file. It is entered into statewide and national law-enforcement databases, which means any routine contact with police — a traffic stop, a TSA checkpoint, even being the witness to someone else's accident — can end with you in handcuffs. Warrants do not expire, and they follow you across county and state lines.",
+        "The collateral damage can be just as serious as the arrest. Outstanding warrants show up on many background checks, which can cost you a job offer, a professional license, an apartment application or a security clearance. If you are not a U.S. citizen, an unresolved warrant can create immigration complications. And when you are finally arrested on an old warrant, judges often set higher bail because you now look like a flight risk — the opposite of what you want walking into court.",
+      ],
+    },
+    {
       h2: "Don't Address a San Diego Arrest Warrant Alone",
       paras: [
         "Many individuals make the mistake of turning themselves in and attending court hearings without proper representation. But the judge has already heard every possible excuse from defendants and is relatively unsympathetic to your situation. That's why you can have a hard time defending yourself in court by yourself.",
@@ -38,7 +54,22 @@ export default {
       },
     },
     {
-      h2: "Contact the Best San Diego Criminal Defense Law Firm",
+      h2: "How Marc Clears Warrants in San Diego County Courts",
+      paras: [
+        "The good news: most warrants can be dealt with proactively, on your terms, instead of waiting for a 2 a.m. knock on the door. The first step is confirming exactly what is out there. Marc's office can check San Diego County court records to identify the warrant, the underlying charge, the courthouse that issued it and any bail amount attached to it.",
+        "For many misdemeanor bench warrants, California Penal Code section 977 allows your attorney to appear in court for you — meaning Marc can often get a misdemeanor warrant recalled and a new court date set without you ever standing in front of the judge. That matters if you live out of state, can't miss work, or simply cannot risk being taken into custody.",
+        "Felony warrants require your personal appearance, but that does not mean you walk in unprotected. Marc arranges the appearance in advance, adds the case to the court's calendar, and walks in with you — whether that's the downtown San Diego Superior Court on West Broadway or the branch courts in Vista, El Cajon or Chula Vista. Arriving voluntarily, with counsel, and with a plan is one of the strongest arguments for release on your own recognizance or reduced bail. Marc has resolved these situations before: in one case, our office had a felony failure-to-appear charge dismissed entirely along with the client's underlying charges.",
+      ],
+    },
+    {
+      h2: "Defenses and Options After a Warrant Is Issued",
+      paras: [
+        "Not every warrant is valid, and not every warrant has to end in a conviction. Sometimes the person named in the warrant isn't you — identity mix-ups and clerical errors happen more often than people think. Sometimes you were never properly notified of the court date you supposedly skipped, or the notice went to an old address. If you missed court because of a hospitalization, a family emergency or military service, the judge needs to hear that from an advocate who can document it.",
+        "Beyond attacking the warrant itself, Marc looks at the underlying case. If the warrant stems from an old unresolved charge, the passage of time may have weakened the prosecution's evidence — witnesses move, memories fade, and officers retire. In the right case, clearing the warrant becomes the first step toward getting the entire matter reduced or dismissed.",
+      ],
+    },
+    {
+      h2: "Talk to a San Diego Warrants Lawyer Today",
       paras: [
         "You might have a legitimate reason to violate a court order, but doing that can add to your burden. The Law Office of Marc S. Kohnen holds experience in dealing with all types of cases.",
         "Whether it's an outstanding bench warrant or arrest warrant, Marc can become your legal voice before the court.",

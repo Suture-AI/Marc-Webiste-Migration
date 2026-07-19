@@ -4,7 +4,7 @@ import { usePageMeta } from "../hooks/usePageMeta.js";
 import PageHero from "../components/PageHero.jsx";
 import BigCta from "../components/BigCta.jsx";
 import Lightbox from "../components/Lightbox.jsx";
-import { CASES, CLIPPINGS, VIDEOS, PHOTOS, videoSrc, videoPoster } from "../data/news.js";
+import { CASES, CLIPPINGS, VIDEOS, PHOTOS, ARTICLES, videoSrc, videoPoster } from "../data/news.js";
 
 /* Full press archive: national headlines, newspaper clippings and the
    broadcast footage Marc's cases generated over 15+ years. */
@@ -28,6 +28,7 @@ export default function InTheNews() {
   const clippings = CLIPPINGS.filter((c) => cse === "all" || c.case === cse);
   const videos = VIDEOS.filter((v) => cse === "all" || v.case === cse);
   const photos = PHOTOS.filter((p) => cse === "all" || p.case === cse);
+  const articles = ARTICLES.filter((a) => cse === "all" || a.case === cse);
 
   return (
     <>
@@ -104,6 +105,23 @@ export default function InTheNews() {
               </button>
             ))}
           </div>
+          {articles.length > 0 && (
+            <>
+              <div className="sec-head" style={{ marginTop: 90 }}>
+                <span className="sec-rule">Original Reporting</span>
+                <div className="sec-title">Read the coverage at the source</div>
+                <p>Live links to the original articles and transcripts, verified July 2026.</p>
+              </div>
+              <ul className="prose reveal" style={{ maxWidth: 760, margin: "0 auto" }}>
+                {articles.map((a) => (
+                  <li key={a.url} style={{ marginBottom: 10 }}>
+                    <a href={a.url} rel="noopener">{a.outlet}: {a.title}</a>{" "}
+                    <span style={{ opacity: 0.6 }}>({a.date.slice(0, 4)})</span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
           {photos.length > 0 && (
             <>
               <div className="sec-head" style={{ marginTop: 90 }}>

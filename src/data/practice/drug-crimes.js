@@ -1,7 +1,7 @@
 /* Copy migrated verbatim (lightly proofed) from msklawyer.com/san-diego-criminal-defense-lawyer/drug-crime-attorney/ */
 export default {
   key: "drug-crimes",
-  metaTitle: "Drug Crime Attorney For Criminal Defense - Marc Kohnen",
+  metaTitle: "San Diego Drug Crime Defense Attorney - Marc Kohnen",
   metaDescription:
     "Get a professional drug crime attorney when you hire Marc Kohnen. With a wide variety of experience in this area, we have the tools and expertise to help you.",
   h1: "San Diego Top-Rated Drug Crime Attorney",

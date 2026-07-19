@@ -13,6 +13,7 @@ export const CORE_ROUTES = [
   },
   {
     path: "/meet-marc/",
+    crumb: "Meet Marc",
     page: "src/pages/MeetMarc.jsx",
     title: "Marc S. Kohnen - San Diego Criminal Defense Attorney",
     description:
@@ -20,6 +21,7 @@ export const CORE_ROUTES = [
   },
   {
     path: "/areas-of-practice/",
+    crumb: "Areas of Practice",
     page: "src/pages/AreasOfPractice.jsx",
     title: "San Diego Criminal Defense Attorney Services - Marc Kohnen",
     description:
@@ -27,13 +29,15 @@ export const CORE_ROUTES = [
   },
   {
     path: "/result/",
+    crumb: "Case Results",
     page: "src/pages/Results.jsx",
-    title: "Criminal Defense Attorney | Proven Results at MSK Lawyer",
+    title: "Case Results - San Diego Criminal Defense Attorney Marc Kohnen",
     description:
       "Actual case results from the Law Office of Marc S. Kohnen — not-guilty verdicts, dismissals and reduced charges across DUI, drug, violent-crime, theft and sex-crime cases in San Diego.",
   },
   {
     path: "/in-the-news/",
+    crumb: "In the News",
     page: "src/pages/InTheNews.jsx",
     title: "In the News - San Diego Criminal Defense Attorney Marc S. Kohnen",
     description:
@@ -41,13 +45,15 @@ export const CORE_ROUTES = [
   },
   {
     path: "/faq/",
+    crumb: "FAQs",
     page: "src/pages/Faq.jsx",
-    title: "FAQs - Criminal Defense Attorney",
+    title: "Criminal Defense FAQs - San Diego Attorney Marc S. Kohnen",
     description:
-      "Even if you are innocent, the state government has several resources to use against you in court. That's why it's essential to have an expert criminal defense",
+      "Plain-language answers from a San Diego criminal defense attorney: felony vs. misdemeanor charges, warrantless searches, what a defense lawyer costs and more.",
   },
   {
     path: "/contact-marc/",
+    crumb: "Contact",
     page: "src/pages/Contact.jsx",
     title: "Contact Marc Kohnen For San Diego Criminal Defense",
     description:
@@ -55,9 +61,18 @@ export const CORE_ROUTES = [
   },
   {
     path: "/the-branch-case/",
+    crumb: "The Branch Case",
     page: "src/pages/BranchCase.jsx",
     title: "The Robert Branch Acquittal — Anatomy of a NOT GUILTY Verdict | Marc S. Kohnen",
     description:
       "How San Diego criminal defense attorney Marc Kohnen took a felony assault case the whole city was watching to a NOT GUILTY verdict — and the front page of the Union-Tribune.",
+  },
+  {
+    path: "/privacy-policy/",
+    crumb: "Privacy Policy",
+    page: "src/pages/PrivacyPolicy.jsx",
+    title: "Privacy Policy - Law Office of Marc S. Kohnen",
+    description:
+      "How the Law Office of Marc S. Kohnen collects, uses and protects the information you share through this website, including your rights under California law.",
   },
 ];

@@ -1,7 +1,7 @@
 /* Copy migrated verbatim (lightly proofed) from msklawyer.com/white-collar/ */
 export default {
   key: "white-collar",
-  metaTitle: "White Collar Criminal Defense Attorney - Marc Kohnen",
+  metaTitle: "San Diego White Collar Defense Attorney - Marc Kohnen",
   metaDescription:
     "Get the top rated White Collar Criminal Defense Attorney in San Diego when you hire Marc Kohnen. Schedule your free confidential case evaluation today.",
   h1: "White-Collar Crime Attorney in San Diego",

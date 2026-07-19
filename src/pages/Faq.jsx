@@ -18,9 +18,9 @@ const FAQ_SCHEMA = JSON.stringify({
 
 export default function Faq() {
   usePageMeta({
-    title: "FAQs - Criminal Defense Attorney",
+    title: "Criminal Defense FAQs - San Diego Attorney Marc S. Kohnen",
     description:
-      "Even if you are innocent, the state government has several resources to use against you in court. That's why it's essential to have an expert criminal defense",
+      "Plain-language answers from a San Diego criminal defense attorney: felony vs. misdemeanor charges, warrantless searches, what a defense lawyer costs and more.",
     themeColor: "#05080f",
     bodyBg: "#05080f",
   });

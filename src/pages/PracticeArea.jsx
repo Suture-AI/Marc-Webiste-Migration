@@ -93,7 +93,10 @@ export default function PracticeArea({ content }) {
             <figure className="sidecard tquote">
               <div className="stars" aria-label="Five star review">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
               <blockquote>&ldquo;{review.quote}&rdquo;</blockquote>
-              <figcaption>{review.name} · Verified Review</figcaption>
+              <figcaption>{review.name} · Client Review</figcaption>
+              <small style={{ display: "block", marginTop: 8, opacity: 0.65 }}>
+                Every case is different — prior results do not guarantee a similar outcome.
+              </small>
             </figure>
           )}
           <div className="sidecard">

@@ -35,3 +35,6 @@ Sitemap: https://msklawyer.com/sitemap.xml
 
 # AI-readable site guides: https://msklawyer.com/llms.txt
 #                          https://msklawyer.com/llms-full.txt
+
+# Content licensing for AI systems (RSL 1.0)
+License: https://msklawyer.com/.well-known/rsl.xml

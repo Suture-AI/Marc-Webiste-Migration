@@ -1,7 +1,7 @@
 /* Copy migrated verbatim (lightly proofed) from msklawyer.com/violent-crimes/ */
 export default {
   key: "violent-crimes",
-  metaTitle: "Criminal Defense Attorney For Violent Crimes - Marc Kohnen",
+  metaTitle: "San Diego Violent Crimes Attorney - Marc Kohnen",
   metaDescription:
     "Marc Kohnen is your trusted defense attorney for violent crimes, providing aggressive representation & personalized strategies to protect your rights & future.",
   h1: "San Diego Violent Crimes Lawyer",

@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 
-/* Animates a number from 0 when it scrolls into view. Respects
-   prefers-reduced-motion by snapping straight to the final value. */
+/* Animates a number up to its final value when it scrolls into view. Respects
+   prefers-reduced-motion by snapping straight to the final value.
+   State starts at `value` (not 0) so prerendered HTML carries the real number —
+   non-JS readers (AI crawlers, text extractors) must never see "0 years". */
 export default function CountUp({ value, decimals = 0, prefix = "", suffix = "", duration = 1400 }) {
   const el = useRef(null);
-  const [shown, setShown] = useState(0);
+  const [shown, setShown] = useState(value);
 
   useEffect(() => {
     const node = el.current;

@@ -159,29 +159,35 @@ const gitDate = (file) => {
 };
 
 const urls = [
-  ...CORE_ROUTES.map((r) => ({
-    loc: abs(r.path),
-    lastmod: gitDate(r.page),
-    priority: r.path === "/" ? "1.0" : "0.8",
-  })),
+  ...CORE_ROUTES.map((r) => ({ loc: abs(r.path), lastmod: gitDate(r.page) })),
   ...AREAS.map((a) => ({
     loc: abs(a.path),
     lastmod: gitDate(`src/data/practice/${a.key}.js`),
-    priority: a.parent ? "0.6" : "0.8",
   })),
 ];
 
+/* No <priority>/<changefreq> — Google ignores both; lastmod is the signal. */
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls
-  .map((u) => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod><priority>${u.priority}</priority></url>`)
-  .join("\n")}
+${urls.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod></url>`).join("\n")}
 </urlset>
 `;
 
 fs.writeFileSync(path.join(dist, "llms.txt"), llms);
 fs.writeFileSync(path.join(dist, "llms-full.txt"), llmsFull);
 fs.writeFileSync(path.join(dist, "sitemap.xml"), sitemap);
+
+/* Staging builds get their own robots.txt: crawling stays ALLOWED so engines
+   can see the per-page noindex that prerender.mjs bakes in (a Disallow would
+   hide the noindex directive — the classic staging anti-pattern), but the
+   production sitemap pointer is dropped so nothing invites bulk discovery. */
+if (process.env.PAGES_BASE) {
+  fs.writeFileSync(
+    path.join(dist, "robots.txt"),
+    "# Staging preview of https://msklawyer.com/ — every page carries noindex.\nUser-agent: *\nAllow: /\n",
+  );
+  console.log("staging build: noindex robots meta on every page; robots.txt sitemap pointer dropped");
+}
 console.log(
   `generated llms.txt (${(llms.length / 1024).toFixed(1)} KB), llms-full.txt (${(llmsFull.length / 1024).toFixed(1)} KB), sitemap.xml (${urls.length} URLs with lastmod)`,
 );

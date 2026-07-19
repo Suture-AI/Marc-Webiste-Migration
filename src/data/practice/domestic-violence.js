@@ -1,9 +1,12 @@
-/* Copy migrated verbatim (lightly proofed) from msklawyer.com/domestic-violence/ */
+/* Copy migrated verbatim (lightly proofed) from msklawyer.com/domestic-violence/
+   Expanded 2026 with California statute, penalty and San Diego procedure sections;
+   corrected statute citations (PC 273.6 restraining orders, PC 273a/273d child abuse)
+   and the firearm-ban rule (federal lifetime ban for qualifying DV misdemeanors). */
 export default {
   key: "domestic-violence",
-  metaTitle: "Domestic Violence Attorney For Criminal Defense, Marc Kohnen",
+  metaTitle: "San Diego Domestic Violence Attorney - Marc Kohnen",
   metaDescription:
-    "Marc Kohnen has experience defending people accused of domestic violence. Get the best criminal defense attorney for your DV case.",
+    "Arrested for domestic violence in San Diego? Marc Kohnen defends PC 273.5 and 243(e)(1) charges — many client arrests have ended with no charges filed.",
   h1: "San Diego Domestic Violence Attorney",
   sub: "A domestic violence charge can upend your family, your firearm rights and your freedom — Marc Kohnen builds the defense that protects all three.",
   sections: [
@@ -15,52 +18,77 @@ export default {
       ],
     },
     {
-      h2: "Hire the Best Domestic Law Firm in San Diego",
+      h2: "Domestic Violence Charges Marc Defends in San Diego",
       paras: [
         "Domestic violence can occur between a spouse, roommate, family member, domestic partner, cohabitant, boyfriend, or girlfriend. But even if the victim is reluctant to press charges, the state can. And without proper representation in court, you can find yourself in trouble with the jurisdiction.",
-        "As a 5-star rated domestic violence lawyer in San Diego, Marc can defend you in the following cases:",
+        "As a highly rated domestic violence lawyer in San Diego, Marc can defend you in the following cases:",
       ],
       list: [
-        "Battery against spouse, cohabitant, or parents: Penal Code 243 (e)",
-        "Injury on spouse: Penal Code 273.5",
-        "Child abuse/neglect: Penal Code 273",
+        "Battery against a spouse, cohabitant, or co-parent: Penal Code 243(e)(1)",
+        "Corporal injury to a spouse or partner: Penal Code 273.5",
+        "Child endangerment and child abuse: Penal Code 273a and 273d",
         "Stalking: Penal Code 646.9",
-        "Restraining order violation: Penal Code 168",
+        "Restraining order violation: Penal Code 273.6",
         "Criminal threats: Penal Code 422",
-        "Elderly abuse: Penal Code 368",
+        "Elder abuse: Penal Code 368",
+      ],
+    },
+    {
+      h2: "PC 273.5 vs. PC 243(e)(1): How California Files These Cases",
+      paras: [
+        "Most San Diego domestic violence arrests come down to one of two statutes, and the difference between them is enormous. Penal Code section 243(e)(1), domestic battery, applies when force or violence is used against an intimate partner but there is no visible injury. It is always a misdemeanor, punishable by up to one year in county jail and a fine of up to $2,000.",
+        "Penal Code section 273.5, corporal injury to a spouse or partner, requires a \"traumatic condition\" — any physical injury, even a minor one like a bruise or swelling. PC 273.5 is a wobbler, meaning the District Attorney can file it as a misdemeanor or a felony. As a felony it carries 2, 3 or 4 years in state prison and fines of up to $6,000. Which statute gets filed, and at what level, often depends on photographs, medical records and the 911 call — evidence a defense lawyer needs to be examining from day one.",
+        "Prior convictions raise the stakes further. If you have a prior PC 273.5 conviction within the past seven years, a new felony conviction exposes you to 2, 4 or 5 years in prison. And if the prosecution alleges you personally inflicted great bodily injury under Penal Code section 12022.7, the enhancement can add years to the sentence and turn the case into a strike under California's Three Strikes law.",
       ],
     },
     {
       h2: "What Penalties Can You Face for a Domestic Violence Charge?",
       paras: [
         "The court judge starts by determining if the charges against you are misdemeanor or felony. These facts are evaluated based on the severity of the situation, past history, and previous charges.",
+        "Even when probation is granted, California law is unusually rigid in domestic violence cases: Penal Code section 1203.097 requires a minimum three-year term of probation, completion of a 52-week batterer's intervention program, a protective order in favor of the alleged victim, and mandatory fees and contributions — no matter how minor the incident was.",
       ],
     },
     {
       h3: "Misdemeanor Domestic Violence Penalties",
       list: [
-        "20+ hours of community service",
         "Up to a year in jail",
         "Fines and court fees",
-        "Loss of contact with the victim – Criminal Protective Order",
-        "52-week anger management course",
-        "No right to own or possess a firearm for 10 years",
+        "A minimum of three years of probation",
+        "Loss of contact with the alleged victim – Criminal Protective Order",
+        "52-week batterer's intervention program",
+        "Loss of firearm rights — 10 years under state law, and federal law makes the ban lifetime for qualifying domestic violence convictions",
       ],
     },
     {
       h3: "Felony Domestic Violence Penalties",
       list: [
         "No right to own or possess a firearm for life",
-        "2-4 years of prison sentence or 1 year in county jail",
+        "2, 3 or 4 years in state prison, or up to 1 year in county jail with felony probation",
         "Fines and court fees",
-        "Loss of contact with the victim – Criminal Protective Order",
+        "Loss of contact with the alleged victim – Criminal Protective Order",
+        "A possible strike if great bodily injury is found",
       ],
     },
     {
-      h2: "Schedule an Initial Consultation with an Expert Domestic Violence Lawyer in San Diego",
+      h2: "Defenses to Domestic Violence Charges",
+      paras: [
+        "Domestic violence cases are more defensible than most people believe, because they are usually built on one person's word, given to police in the most emotional moment of a dispute. Self-defense is a complete defense — if your accuser was the aggressor and you used reasonable force to protect yourself, you committed no crime. Accidental injury is a defense too: PC 273.5 requires a willful act, not a door that swung shut or a fall during an argument.",
+        "False accusations are unfortunately common in these cases, especially where a divorce, custody battle or immigration issue gives the accuser a motive. Marc's defense work includes pulling text messages and call records, interviewing neighbors and witnesses, examining whether the injuries in the photographs actually match the story, and documenting the accuser's own history. And when an alleged victim recants — which happens constantly — the District Attorney may still push forward, but a recantation handled correctly by the defense changes the leverage in the case entirely.",
+      ],
+    },
+    {
+      h2: "What Happens After a Domestic Violence Arrest in San Diego",
+      paras: [
+        "In San Diego, once police respond to a domestic violence call, someone usually goes to jail — officers rarely leave the scene without making an arrest, and they will typically request an emergency protective order that bars you from your own home for up to a week, on the spot. You may be booked even when the alleged victim tells the officers nothing happened.",
+        "An arrest is not a conviction. The case file goes to the District Attorney's office, which decides whether to file charges — usually within days of the arrest. This review window is one of the most valuable moments in the entire case: a defense lawyer who gets involved immediately can present evidence, witness statements and context to the prosecutor before charges are ever filed. Our office has repeatedly persuaded prosecutors not to file charges after domestic violence arrests, and in one case involving two felony counts of corporal injury to a spouse, all charges were dismissed.",
+        "If charges are filed, you will be arraigned at the San Diego Superior Court, where the judge will issue a criminal protective order — often a full stay-away order that prevents you from returning home or contacting your partner and children. Marc regularly fights at arraignment to have these orders modified to \"peaceful contact\" orders so families are not torn apart while the case is pending.",
+      ],
+    },
+    {
+      h2: "Schedule a Consultation with a San Diego Domestic Violence Lawyer",
       paras: [
         "Being falsely accused of domestic violence can impact your whole life if you simply decide to give in without consulting a domestic violence lawyer in San Diego first.",
-        "Since the law system isn't likely to treat you with sympathy and kindness, your best bet is to have someone who can defend you aggressively in court. Combined with expert negotiation skills and a proven track record of saving client reputations, Marc is fully braced to take on your case. Not only does Marc evaluate the whole scenario in great detail, but he also offers the best possible outcome – right from the initial consultation.",
+        "Since the law system isn't likely to treat you with sympathy and kindness, your best bet is to have someone who can defend you aggressively in court. Combined with expert negotiation skills and a proven track record of saving client reputations, Marc is fully braced to take on your case. Not only does Marc evaluate the whole scenario in great detail, but he also lays out your realistic options — right from the initial consultation.",
         "When in court, Marc argues the possibilities of false evidence in front of the judge, providing enough reason to have you released without serious implications.",
         "If you fear possible arrest, you know where to look — at The Law Office of Marc S. Kohnen.",
       ],

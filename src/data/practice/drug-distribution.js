@@ -2,7 +2,7 @@
    Note: the live page repeated the "Which Penalties Can You Face…" section — deduplicated here. */
 export default {
   key: "drug-distribution",
-  metaTitle: "Drug Distribution Attorney For Your Defense - Marc Kohnen",
+  metaTitle: "San Diego Drug Distribution Attorney - Marc Kohnen",
   metaDescription:
     "Get a drug distribution attorney for your criminal defense. Hire Marc Kohnen or call us for a free consultation on your criminal case.",
   h1: "Drug Distribution Attorney",
