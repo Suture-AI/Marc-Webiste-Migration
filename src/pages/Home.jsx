@@ -255,11 +255,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== JUST ARRESTED — first-24-hours guidance + office NAP ===== */}
+      <section className="block">
+        <div className="wrap">
+          <div className="sec-head">
+            <span className="sec-rule">If You&rsquo;ve Just Been Arrested</span>
+            <div className="sec-title">The first 24 hours matter most</div>
+          </div>
+          <div className="prose reveal" style={{ maxWidth: 820, margin: "0 auto" }}>
+            <p>
+              Whether the arrest happened downtown, in North County or anywhere in San Diego County,
+              the same three rules apply. First, <b>stay silent</b> — you are required to identify
+              yourself, but nothing else. Politely say you won&rsquo;t answer questions without your
+              attorney, and then stop talking; anything you say in the patrol car or at booking can
+              be used against you. Second, <b>don&rsquo;t consent to searches</b> of your phone, car
+              or home. Third, <b>get a lawyer before your arraignment</b> — in California you must
+              generally be arraigned within 48 hours, and decisions made at that first hearing
+              (bail, protective orders, plea) shape the entire case.
+            </p>
+            <p>
+              The earlier Marc is involved, the more he can do. Before charges are filed he can
+              contact the detective or the District Attorney directly — in past cases that
+              pre-filing work has ended with <b>no charges filed at all</b>. If you can&rsquo;t call
+              yourself, a parent, spouse or friend can call for you: a large share of Marc&rsquo;s
+              clients start with a family member&rsquo;s phone call in the middle of the night.
+              Every case is different and no outcome can be promised — but silence, speed and an
+              experienced San Diego defense attorney are always the right first moves.
+            </p>
+            <p style={{ marginTop: 24 }}>
+              <b>Law Office of Marc S. Kohnen</b> · 425 Tenth Ave, San Diego, CA 92101 — downtown,
+              one block from the Gaslamp Quarter and minutes from the central courthouse and county
+              jail. Available 24/7 at <a href="tel:6193982500">(619) 398-2500</a>.
+            </p>
+            <div className="hero-cta" style={{ marginTop: 12 }}>
+              <a className="btn btn-gold" href="tel:6193982500">Call Marc Now — 24/7</a>
+              <a className="btn btn-ghost" href="https://maps.google.com/?cid=2204679681952717993" rel="noopener">Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== BADGES ===== */}
       <div className="creds">
         <div className="wrap">
           <img src="/assets/badge-71.png" alt="Super Lawyers" loading="lazy" />
-          <img src="/assets/badge-72.png" alt="AVVO Excellent Top Attorney" loading="lazy" />
           <img src="/assets/badge-70.png" alt="National Association of Criminal Defense Lawyers" loading="lazy" />
           <img src="/assets/badge-73.png" alt="National College for DUI Defense" loading="lazy" />
           <img src="/assets/badge-74.png" alt="People Love Us on Yelp" loading="lazy" />

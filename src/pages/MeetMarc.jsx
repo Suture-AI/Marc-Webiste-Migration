@@ -98,7 +98,7 @@ export default function MeetMarc() {
                 Licensed by the State Bar of California since 2008 — license #255303
               </li>
               <li>
-                <a href="https://www.google.com/search?q=Google+reviews+marc+kohnen" rel="noopener">
+                <a href="https://maps.google.com/?cid=2204679681952717993" rel="noopener">
                   Amazing Google reviews &amp; testimonials
                 </a>
               </li>

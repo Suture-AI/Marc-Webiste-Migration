@@ -100,7 +100,7 @@ export default function Contact() {
               <span style={{ fontSize: "1rem", fontFamily: "var(--body)", color: "var(--bone-2)" }}>
                 <a href="https://www.avvo.com/attorneys/92101-ca-marc-kohnen-1754991.html" rel="noopener" style={{ fontSize: "1rem" }}>Highly rated criminal defense attorney on Avvo</a>{" · "}
                 <a href="https://www.yelp.com/biz/law-office-of-marc-s-kohnen-san-diego-2" rel="noopener" style={{ fontSize: "1rem" }}>Highly rated on Yelp</a>{" · "}
-                <a href="https://www.google.com/search?q=Google+reviews+marc+kohnen" rel="noopener" style={{ fontSize: "1rem" }}>Google testimonials</a>
+                <a href="https://maps.google.com/?cid=2204679681952717993" rel="noopener" style={{ fontSize: "1rem" }}>Google testimonials</a>
               </span>
             </div>
           </div>

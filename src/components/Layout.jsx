@@ -108,7 +108,7 @@ export default function Layout() {
             <div className="fgridf">
               <div>
                 <img className="flogo" src="/assets/footer-logo.png" alt="Kohnen Law" />
-                <p style={{ maxWidth: 300 }}>The Law Office of Marc S. Kohnen — aggressive, results-driven criminal defense for all of San Diego County.</p>
+                <p style={{ maxWidth: 300 }}>Law Office of Marc S. Kohnen — aggressive, results-driven criminal defense for all of San Diego County.</p>
                 <div className="socials">
                   <a href="https://www.instagram.com/sandiegocriminallawyer/" aria-label="Instagram">IG</a>
                   <a href="https://twitter.com/marcskohnen?lang=en" aria-label="Twitter">X</a>
@@ -145,7 +145,7 @@ export default function Layout() {
               </div>
             </div>
             <p className="disclaimer">
-              The Law Office of Marc S. Kohnen. All Rights Reserved 2026. This website is for
+              Law Office of Marc S. Kohnen. All Rights Reserved 2026. This website is for
               marketing and advertising purposes, per California Marketing Laws, this site shall not
               be deemed or considered legal advice. None of the information on this website, nor the
               access of this website shall create an attorney client relationship. If you have
