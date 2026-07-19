@@ -10,7 +10,7 @@ export default {
     {
       paras: [
         "Punishments in San Diego criminal cases can be harsh and lead to dire consequences. Even after you're released from prison, you can be stripped of your rights to vote, own a gun, or even join the military ranks. Since California law carries several complexities, it's crucial to have an experienced criminal defense lawyer by your side.",
-        "If you're dreading the court time and looking for an expert to deal with the accusations, Marc Kohnen can be your best choice.",
+        "If you're dreading the court time and looking for an experienced defense lawyer to deal with the accusations, Marc Kohnen is ready to stand in your corner.",
       ],
     },
     {
