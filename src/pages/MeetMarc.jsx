@@ -33,18 +33,6 @@ const GALLERY = [
     outlet: "Robert Branch acquittal",
     alt: "Marc Kohnen speaking at the press conference following the Robert Branch acquittal",
   },
-  {
-    src: "/assets/photos/robert-branch-courthouse-steps-rally-highlight.jpg",
-    title: "Courthouse-steps rally",
-    outlet: "Robert Branch case",
-    alt: "Supporters rally with Marc Kohnen on the San Diego courthouse steps during the Robert Branch case",
-  },
-  {
-    src: "/assets/photos/peter-robbins-press-conference.jpg",
-    title: "Peter Robbins press conference",
-    outlet: "The Charlie Brown case, 2013",
-    alt: "Marc Kohnen addressing cameras at the Peter Robbins press conference",
-  },
 ];
 
 export default function MeetMarc() {
@@ -181,7 +169,7 @@ export default function MeetMarc() {
             <div className="sec-title">Where the work happens</div>
             <p>From the counsel table to the courthouse steps — moments from the cases that made headlines, including the Robert Branch trial that put a NOT GUILTY verdict on the front page.</p>
           </div>
-          <div className="photogrid">
+          <div className="photogrid row4">
             {GALLERY.map((g) => (
               <button key={g.src} className="reveal" onClick={() => setZoom(g)} aria-label={`Enlarge: ${g.alt}`}>
                 <img src={g.src} alt={g.alt} loading="lazy" />

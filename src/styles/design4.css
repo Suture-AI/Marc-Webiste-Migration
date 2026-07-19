@@ -1774,6 +1774,8 @@
   }
   @media (max-width: 980px) { & .photogrid { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 640px) { & .photogrid { grid-template-columns: 1fr 1fr; } }
+  /* exactly-four galleries: one clean row on desktop, tidy 2×2 below */
+  @media (max-width: 980px) { & .photogrid.row4 { grid-template-columns: 1fr 1fr; } }
   & .photogrid button {
     border: 1px solid var(--line);
     background: #000;

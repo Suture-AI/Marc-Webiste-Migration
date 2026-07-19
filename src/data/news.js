@@ -120,6 +120,8 @@ export const VIDEOS = [
 
 /* Courtroom, rally and press-conference photography from Marc's archive. */
 export const PHOTOS = [
+  { case: "branch", title: "Courthouse-steps rally, Robert Branch case", src: "/assets/photos/robert-branch-courthouse-steps-rally-highlight.jpg" },
+  { case: "robbins", title: "Peter Robbins press conference", src: "/assets/photos/peter-robbins-press-conference.jpg" },
   { case: "branch", title: "Addressing supporters outside court", src: "/assets/photos/robert-branch-courthouse-steps-rally.jpg" },
   { case: "mauling", title: "Union-Tribune photo — dog mauling case", src: "/assets/photos/union-tribune-dog-mauling-photo.jpg" },
   { case: "mauling", title: "In court — Union-Tribune photo", src: "/assets/photos/union-tribune-courtroom-photo.jpg" },
