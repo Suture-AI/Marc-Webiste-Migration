@@ -177,16 +177,19 @@ fs.writeFileSync(path.join(dist, "llms.txt"), llms);
 fs.writeFileSync(path.join(dist, "llms-full.txt"), llmsFull);
 fs.writeFileSync(path.join(dist, "sitemap.xml"), sitemap);
 
-/* Staging builds get their own robots.txt: crawling stays ALLOWED so engines
-   can see the per-page noindex that prerender.mjs bakes in (a Disallow would
-   hide the noindex directive — the classic staging anti-pattern), but the
-   production sitemap pointer is dropped so nothing invites bulk discovery. */
+/* Staging builds keep the FULL production robots.txt (AI-crawler allow-list,
+   RSL License: directive) so crawling stays allowed and engines can see the
+   per-page noindex that prerender.mjs bakes in (a Disallow would hide the
+   noindex — the classic staging anti-pattern). Only the production sitemap
+   pointer is dropped so nothing invites bulk discovery of the preview. */
 if (process.env.PAGES_BASE) {
+  const prodRobots = fs.readFileSync(path.join(root, "public/robots.txt"), "utf8");
   fs.writeFileSync(
     path.join(dist, "robots.txt"),
-    "# Staging preview of https://msklawyer.com/ — every page carries noindex.\nUser-agent: *\nAllow: /\n",
+    "# Staging preview of https://msklawyer.com/ — every page carries noindex.\n" +
+      prodRobots.replace(/^Sitemap:.*\n?/gm, ""),
   );
-  console.log("staging build: noindex robots meta on every page; robots.txt sitemap pointer dropped");
+  console.log("staging build: per-page noindex; robots.txt = production minus Sitemap pointer");
 }
 console.log(
   `generated llms.txt (${(llms.length / 1024).toFixed(1)} KB), llms-full.txt (${(llmsFull.length / 1024).toFixed(1)} KB), sitemap.xml (${urls.length} URLs with lastmod)`,
