@@ -31,3 +31,4 @@ desktop.ini
 *.log
 npm-debug.log*
 dist-server/
+HANDOFF.md
